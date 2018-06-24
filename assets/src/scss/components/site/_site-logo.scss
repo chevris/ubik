@@ -1,0 +1,13 @@
+
+.custom-logo {
+  width: auto;
+  transition: all 0.3s ease-in-out;
+  max-height: 50px;
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    max-height: 50px;
+  }
+  @media screen and (max-width: 39.9375em) {
+    max-height: 50px;
+  }
+}
+

@@ -1,0 +1,86 @@
+// FOUC
+.no-js {
+
+  .nav {
+    .menu-item-has-children {
+      .menu {
+        display: none;
+      }
+    }
+  }
+
+  .accordion-menu {
+    display: none !important;
+  }
+
+  .drilldown {
+    display: none !important;
+  }
+
+}
+
+.grid-container {
+  max-width: 1200px;
+}
+
+.transparent-container {
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.is-dropdown-submenu {
+  z-index: 3;
+}
+
+.reveal-overlay {
+  overflow: hidden;
+}
+
+.wp-caption,
+.gallery-caption {
+	color: #666;
+	font-size: 14px;
+	font-style: italic;
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption {
+	img[class*="wp-image-"] {
+		display: block;
+		margin-left: auto;
+	  margin-right: auto;
+  }
+  .wp-caption-text {
+    margin: 0.8075em 0;
+  }
+}
+
+.bypostauthor {
+	font-size: inherit;
+}
+
+.alignleft, img.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+
+.alignright, img.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+
+.aligncenter, img.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+

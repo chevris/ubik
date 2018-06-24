@@ -1,0 +1,32 @@
+p, pre, code, blockquote {
+  clear: both;
+}
+
+p {
+	margin: 0 0 1rem;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+blockquote { 
+  font-style: italic;
+  line-height: 1.6;
+  margin: 20px;
+  padding-left: 20px;
+  border-left: 3px solid #cacaca;
+}
