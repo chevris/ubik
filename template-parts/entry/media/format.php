@@ -22,7 +22,11 @@ $blog_style = ubik_blog_style();
 $show_title = get_theme_mod( 'ubik_h_card_entry_image_title_display', false );
 
 // Add images size
-$size = 'full';
+if ( 'card' == $blog_style || 'h-card' == $blog_style ) {
+	$size = 'medium';
+} else {
+	$size = 'full';
+}
 
 // Image args
 $img_args = array(
