@@ -57,7 +57,7 @@ if ( empty( $meta_elements ) ) {
 
       if ( 'date' == $meta_element ) { ?>
     
-        <li class="meta-date"<?php ubik_schema_markup( 'publish_date' ); ?>><i class="far fa-calendar-alt fa-lg"></i><?php echo get_the_date(); ?></li>
+        <li class="meta-date"<?php ubik_schema_markup( 'publish_date' ); ?>><i class="far fa-calendar-alt fa-lg"></i><?php echo ubik_time(); ?></li>
 
       <?php }
 

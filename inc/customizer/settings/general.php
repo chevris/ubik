@@ -638,7 +638,7 @@ Kirki::add_field( 'ubik_config', array(
 	'section'     => 'ubik_typography_body_section',
 	'default'     => array(
 		'font-family'    => 'Open Sans',
-		'variant'        => '',
+		'variant'        => '300',
 		'font-size'      => '16px',
 		'line-height'    => '1.6',
 		'letter-spacing' => '0',

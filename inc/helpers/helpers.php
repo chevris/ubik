@@ -19,6 +19,7 @@
 		 - ubik_excerpt()
 		 - ubik_page_title()
 		 - ubik_pagination()
+		 - ubik_time()
 	# Other
 		- ubik_minify_css()
 		- ubik_minify_js()
@@ -458,6 +459,37 @@ if ( ! function_exists( 'ubik_pagination') ) {
 	
 		echo sprintf($template, $class, $args['screen_reader_text'], $prev_link, $links, $next_link);
 	
+	}
+
+}
+
+/**
+ * String for the published date
+ *
+ * @since	1.0.0
+ */
+
+if ( ! function_exists( 'ubik_time' ) ) {
+	
+	function ubik_time() {
+
+		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
+			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
+		}
+	
+		$time_string = sprintf( $time_string,
+			get_the_date( DATE_W3C ),
+			get_the_date(),
+			get_the_modified_date( DATE_W3C ),
+			get_the_modified_date()
+		);
+	
+		return sprintf(
+			__( '<span class="screen-reader-text">Posted on</span> %s', 'ubik' ),
+			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+		);
+
 	}
 
 }

@@ -28,6 +28,9 @@ if ( 'card' == $blog_style || 'h-card' == $blog_style ) {
 	$size = 'full';
 }
 
+// Caption
+$caption = get_the_post_thumbnail_caption();
+
 // Image args
 $img_args = array(
   'alt' => get_the_title(),
@@ -42,8 +45,8 @@ if ( ubik_get_schema_markup( 'image' ) ) {
 	<a href="<?php the_permalink(); ?>">
 
 		<?php
-			// Display post thumbnail
-			the_post_thumbnail( $size, $img_args ); ?>
+		// Display post thumbnail
+		the_post_thumbnail( $size, $img_args ); ?>
 
 		<span class="overlay"></span>
 		
@@ -62,3 +65,12 @@ if ( ubik_get_schema_markup( 'image' ) ) {
 	<?php endif; ?>
 
 </div>
+
+<?php
+// Caption
+if ( $caption ) { ?>
+	<div class="img-caption">
+		<?php echo esc_attr( $caption ); ?>
+	</div>
+<?php
+}

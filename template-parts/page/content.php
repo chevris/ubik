@@ -10,7 +10,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 } ?>
 
-<div class="entry">
+<div class="page-content">
+	
 	<?php the_content();
 
 	wp_link_pages( array(

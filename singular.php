@@ -27,7 +27,7 @@ get_header(); ?>
 
         }
 
-        // All other post types.
+        // Other posts
 				else {
 
 					get_template_part( 'template-parts/single/layout', get_post_type() );

@@ -10,12 +10,12 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 } ?>
 
-<article class="single-page-article">
+<article>
 
   <?php
-	// Get page entry
-	get_template_part( 'template-parts/page/article' );
+	get_template_part( 'template-parts/page/content' );
 
+	comments_template();
 	?>
 
 </article>

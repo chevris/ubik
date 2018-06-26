@@ -18,6 +18,9 @@ if ( ! has_post_thumbnail() ) {
 // Add images size
 $size = 'full';
 
+// Caption
+$caption = get_the_post_thumbnail_caption();
+
 // Image args
 $img_args = array(
     'alt' => get_the_title(),
@@ -31,5 +34,14 @@ if ( ubik_get_schema_markup( 'image' ) ) {
 	<?php
 	// Display post thumbnail
 	the_post_thumbnail( $size, $img_args ); ?>
+
+	<?php
+	// Caption
+	if ( $caption ) { ?>
+		<div class="img-caption">
+			<?php echo esc_attr( $caption ); ?>
+		</div>
+	<?php
+	} ?>
 
 </div><!-- .thumbnail -->

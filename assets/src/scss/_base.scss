@@ -11,7 +11,7 @@ button:focus {
 	outline: 0;
 }
 
-article > *, p, pre, code, blockquote {
+article > *, pre, code, blockquote {
   clear: both;
 }
 
@@ -25,7 +25,24 @@ blockquote {
 	font-style: italic;
 	line-height: 1.6;
 	margin: 20px;
-	overflow: hidden;
+
+	&:before, &:after {
+		content: "";
+	}
+}
+
+pre {
+	margin: 20px 0;
+	padding: 20px;
+	background-color: #fafafa;
+}
+
+dl {
+	margin:  15px;
+}
+
+dd {
+	margin-bottom: 15px;
 }
 
 /*

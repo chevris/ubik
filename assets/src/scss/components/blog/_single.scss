@@ -78,6 +78,8 @@
     }
   }
   .nav-next {
+    flex-grow: 1;
+    text-align: right;
     .next-prev {
       justify-content: flex-end;
     }
