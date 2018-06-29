@@ -41,7 +41,10 @@ if ( ! class_exists( 'Ubik_Customizer' ) ) :
 
 		public function kirki_config() {
 
-			return array( 'url_path' => UBIK_INC_DIR_URI . 'customizer/kirki/' );
+			return array( 
+				'url_path' => UBIK_INC_DIR_URI . 'customizer/kirki/',
+				'disable_loader' => true,
+			);
 
 		}
 

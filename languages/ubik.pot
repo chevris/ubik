@@ -1,0 +1,3628 @@
+# Copyright (C) 2018 teva
+# This file is distributed under the GNU General Public License v3.0 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: ubik 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/ubik\n"
+"POT-Creation-Date: 2018-06-28 09:41:32+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: 404.php:19
+msgid "That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:23
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#. translators: %s: post title
+#: comments.php:29
+msgctxt "comments title"
+msgid "One Reply to &ldquo;%s&rdquo;"
+msgstr ""
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:33
+msgctxt "comments title"
+msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:53
+msgid "Reply"
+msgstr ""
+
+#: comments.php:59 template-parts/single/post-nav.php:20
+msgid "Previous"
+msgstr ""
+
+#: comments.php:60 template-parts/single/post-nav.php:21
+msgid "Next"
+msgstr ""
+
+#: comments.php:68
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:207
+msgid "Top Bar"
+msgstr ""
+
+#: functions.php:208
+msgid "Mobile Menu"
+msgstr ""
+
+#: functions.php:209
+msgid "Header Menu Bar"
+msgstr ""
+
+#: functions.php:210
+msgid "Header Content"
+msgstr ""
+
+#: functions.php:211
+msgid "Full Height Vertical Bar"
+msgstr ""
+
+#: functions.php:212 functions.php:282
+msgid "Footer"
+msgstr ""
+
+#: functions.php:260
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:262
+msgid "Widgets in this area appear in the sidebar region."
+msgstr ""
+
+#: functions.php:271
+msgid "Specific Front Page Sidebar"
+msgstr ""
+
+#: functions.php:273
+msgid "Widgets in this area appear in the front page specific sidebar."
+msgstr ""
+
+#: functions.php:284
+msgid "Widgets in this area appear in the footer."
+msgstr ""
+
+#: inc/breadcrumb/inc/breadcrumbs.php:264
+#: template-parts/header/header-content.php:29
+msgid "Browse:"
+msgstr ""
+
+#: inc/breadcrumb/inc/breadcrumbs.php:265
+#: template-parts/header/header-content.php:30
+msgctxt "breadcrumbs aria label"
+msgid "Breadcrumbs"
+msgstr ""
+
+#: inc/breadcrumb/inc/breadcrumbs.php:266
+#: template-parts/header/header-content.php:31
+msgid "Home"
+msgstr ""
+
+#: inc/breadcrumb/inc/breadcrumbs.php:267
+#: template-parts/header/header-content.php:32
+msgid "404 Not Found"
+msgstr ""
+
+#: inc/breadcrumb/inc/breadcrumbs.php:268
+#: template-parts/header/header-content.php:33
+msgid "Archives"
+msgstr ""
+
+#. Translators: %s is the search query.
+#: inc/breadcrumb/inc/breadcrumbs.php:270
+#: template-parts/header/header-content.php:35
+msgid "Search results for: %s"
+msgstr ""
+
+#. Translators: %s is the page number.
+#: inc/breadcrumb/inc/breadcrumbs.php:272
+#: template-parts/header/header-content.php:37
+msgid "Page %s"
+msgstr ""
+
+#. Translators: %s is the page number.
+#: inc/breadcrumb/inc/breadcrumbs.php:274
+#: template-parts/header/header-content.php:39
+msgid "Comment Page %s"
+msgstr ""
+
+#. Translators: Minute archive title. %s is the minute time format.
+#: inc/breadcrumb/inc/breadcrumbs.php:276
+#: template-parts/header/header-content.php:41
+msgid "Minute %s"
+msgstr ""
+
+#. Translators: Weekly archive title. %s is the week date format.
+#: inc/breadcrumb/inc/breadcrumbs.php:278
+#: template-parts/header/header-content.php:43
+msgid "Week %s"
+msgstr ""
+
+#: inc/breadcrumb/inc/breadcrumbs.php:738
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr ""
+
+#: inc/breadcrumb/inc/breadcrumbs.php:755
+msgctxt "minute archives time format"
+msgid "i"
+msgstr ""
+
+#: inc/breadcrumb/inc/breadcrumbs.php:772
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr ""
+
+#: inc/breadcrumb/inc/breadcrumbs.php:788
+#: inc/breadcrumb/inc/breadcrumbs.php:817
+#: inc/breadcrumb/inc/breadcrumbs.php:844
+#: inc/breadcrumb/inc/breadcrumbs.php:871
+#: inc/breadcrumb/inc/breadcrumbs.php:1211
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: inc/breadcrumb/inc/breadcrumbs.php:789
+#: inc/breadcrumb/inc/breadcrumbs.php:845
+#: inc/breadcrumb/inc/breadcrumbs.php:1215
+msgctxt "monthly archives date format"
+msgid "F"
+msgstr ""
+
+#: inc/breadcrumb/inc/breadcrumbs.php:790
+#: inc/breadcrumb/inc/breadcrumbs.php:1219
+msgctxt "daily archives date format"
+msgid "j"
+msgstr ""
+
+#: inc/breadcrumb/inc/breadcrumbs.php:818
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr ""
+
+#: inc/customizer/controls/responsive-dimensions/class-control-responsive-dimensions.php:65
+msgid "Link values together"
+msgstr ""
+
+#: inc/customizer/controls/responsive-dimensions/class-control-responsive-dimensions.php:190
+#: inc/customizer/controls/responsive-dimensions/class-control-responsive-dimensions.php:194
+#: inc/customizer/controls/responsive-dimensions/class-control-responsive-dimensions.php:198
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:130
+#: inc/customizer/kirki/field/class-kirki-field-spacing.php:33
+#: inc/customizer/settings/frontpage/header.php:642
+#: inc/customizer/settings/frontpage/header.php:801
+#: inc/customizer/settings/frontpage/sidebar.php:209
+#: inc/customizer/settings/general.php:2106
+#: inc/customizer/settings/general.php:3618
+#: inc/customizer/settings/general.php:5384
+#: inc/customizer/settings/general.php:5785
+#: inc/customizer/settings/header.php:682
+#: inc/customizer/settings/header.php:821
+#: inc/customizer/settings/sidebar.php:198
+msgid "Top"
+msgstr ""
+
+#: inc/customizer/controls/responsive-dimensions/class-control-responsive-dimensions.php:191
+#: inc/customizer/controls/responsive-dimensions/class-control-responsive-dimensions.php:195
+#: inc/customizer/controls/responsive-dimensions/class-control-responsive-dimensions.php:199
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:133
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:161
+#: inc/customizer/kirki/field/class-kirki-field-spacing.php:36
+#: inc/customizer/settings/frontpage/header.php:804
+#: inc/customizer/settings/frontpage/sidebar.php:102
+#: inc/customizer/settings/frontpage/sidebar.php:616
+#: inc/customizer/settings/frontpage/sidebar.php:683
+#: inc/customizer/settings/frontpage/vertical-bar.php:200
+#: inc/customizer/settings/frontpage/vertical-bar.php:544
+#: inc/customizer/settings/frontpage/vertical-bar.php:697
+#: inc/customizer/settings/frontpage/vertical-bar.php:1118
+#: inc/customizer/settings/frontpage/vertical-bar.php:1487
+#: inc/customizer/settings/frontpage/vertical-bar.php:1827
+#: inc/customizer/settings/general.php:1607
+#: inc/customizer/settings/general.php:2020
+#: inc/customizer/settings/general.php:2109
+#: inc/customizer/settings/general.php:2937
+#: inc/customizer/settings/general.php:3532
+#: inc/customizer/settings/general.php:3621
+#: inc/customizer/settings/general.php:4641
+#: inc/customizer/settings/general.php:5298
+#: inc/customizer/settings/general.php:5387
+#: inc/customizer/settings/general.php:6148
+#: inc/customizer/settings/general.php:6512
+#: inc/customizer/settings/header.php:824
+#: inc/customizer/settings/mobile.php:280
+#: inc/customizer/settings/mobile.php:521
+#: inc/customizer/settings/mobile.php:686
+#: inc/customizer/settings/mobile.php:824
+#: inc/customizer/settings/sidebar.php:90
+#: inc/customizer/settings/sidebar.php:605
+#: inc/customizer/settings/sidebar.php:672
+#: inc/customizer/settings/vertical-bar.php:182
+#: inc/customizer/settings/vertical-bar.php:525
+#: inc/customizer/settings/vertical-bar.php:678
+#: inc/customizer/settings/vertical-bar.php:1099
+#: inc/customizer/settings/vertical-bar.php:1468
+#: inc/customizer/settings/vertical-bar.php:1808
+msgid "Right"
+msgstr ""
+
+#: inc/customizer/controls/responsive-dimensions/class-control-responsive-dimensions.php:192
+#: inc/customizer/controls/responsive-dimensions/class-control-responsive-dimensions.php:196
+#: inc/customizer/controls/responsive-dimensions/class-control-responsive-dimensions.php:200
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:131
+#: inc/customizer/kirki/field/class-kirki-field-spacing.php:34
+#: inc/customizer/settings/frontpage/header.php:643
+#: inc/customizer/settings/frontpage/header.php:802
+#: inc/customizer/settings/frontpage/sidebar.php:210
+#: inc/customizer/settings/general.php:2107
+#: inc/customizer/settings/general.php:3619
+#: inc/customizer/settings/general.php:5385
+#: inc/customizer/settings/general.php:5787
+#: inc/customizer/settings/header.php:683
+#: inc/customizer/settings/header.php:822
+#: inc/customizer/settings/mobile.php:522
+#: inc/customizer/settings/sidebar.php:199
+msgid "Bottom"
+msgstr ""
+
+#: inc/customizer/controls/responsive-dimensions/class-control-responsive-dimensions.php:193
+#: inc/customizer/controls/responsive-dimensions/class-control-responsive-dimensions.php:197
+#: inc/customizer/controls/responsive-dimensions/class-control-responsive-dimensions.php:201
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:132
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:149
+#: inc/customizer/kirki/field/class-kirki-field-spacing.php:35
+#: inc/customizer/settings/frontpage/header.php:803
+#: inc/customizer/settings/frontpage/sidebar.php:101
+#: inc/customizer/settings/frontpage/sidebar.php:614
+#: inc/customizer/settings/frontpage/sidebar.php:681
+#: inc/customizer/settings/frontpage/vertical-bar.php:199
+#: inc/customizer/settings/frontpage/vertical-bar.php:542
+#: inc/customizer/settings/frontpage/vertical-bar.php:695
+#: inc/customizer/settings/frontpage/vertical-bar.php:1116
+#: inc/customizer/settings/frontpage/vertical-bar.php:1485
+#: inc/customizer/settings/frontpage/vertical-bar.php:1825
+#: inc/customizer/settings/general.php:1605
+#: inc/customizer/settings/general.php:2018
+#: inc/customizer/settings/general.php:2108
+#: inc/customizer/settings/general.php:2935
+#: inc/customizer/settings/general.php:3530
+#: inc/customizer/settings/general.php:3620
+#: inc/customizer/settings/general.php:4639
+#: inc/customizer/settings/general.php:5296
+#: inc/customizer/settings/general.php:5386
+#: inc/customizer/settings/general.php:6146
+#: inc/customizer/settings/general.php:6510
+#: inc/customizer/settings/header.php:823
+#: inc/customizer/settings/mobile.php:279
+#: inc/customizer/settings/mobile.php:520
+#: inc/customizer/settings/mobile.php:684
+#: inc/customizer/settings/mobile.php:822
+#: inc/customizer/settings/sidebar.php:89
+#: inc/customizer/settings/sidebar.php:603
+#: inc/customizer/settings/sidebar.php:670
+#: inc/customizer/settings/vertical-bar.php:181
+#: inc/customizer/settings/vertical-bar.php:523
+#: inc/customizer/settings/vertical-bar.php:676
+#: inc/customizer/settings/vertical-bar.php:1097
+#: inc/customizer/settings/vertical-bar.php:1466
+#: inc/customizer/settings/vertical-bar.php:1806
+msgid "Left"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:48
+#: inc/customizer/settings/frontpage/header.php:380
+#: inc/customizer/settings/frontpage/header.php:852
+#: inc/customizer/settings/frontpage/header.php:4487
+#: inc/customizer/settings/frontpage/top-bar.php:190
+#: inc/customizer/settings/general.php:7339
+#: inc/customizer/settings/header.php:399
+#: inc/customizer/settings/header.php:872
+#: inc/customizer/settings/header.php:4611
+msgid "Background Color"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:54
+msgid "Background Image"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:59
+#: inc/customizer/kirki/controls/php/class-kirki-control-base.php:131
+#: inc/customizer/kirki/controls/php/class-kirki-control-repeater.php:409
+#: inc/customizer/kirki/controls/php/class-kirki-control-repeater.php:414
+msgid "No File Selected"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:62
+#: inc/customizer/kirki/controls/php/class-kirki-control-base.php:132
+#: inc/customizer/kirki/controls/php/class-kirki-control-image.php:52
+#: inc/customizer/kirki/controls/php/class-kirki-control-repeater.php:387
+#: inc/customizer/kirki/controls/php/class-kirki-control-repeater.php:444
+#: inc/customizer/kirki/field/class-kirki-field-image.php:44
+msgid "Remove"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:63
+#: inc/customizer/kirki/controls/php/class-kirki-control-base.php:134
+msgid "Select File"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:70
+msgid "Background Repeat"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:72
+msgid "No Repeat"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:73
+msgid "Repeat All"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:74
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:75
+msgid "Repeat Vertically"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:81
+msgid "Background Position"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:83
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:115
+msgid "Left Top"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:84
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:116
+msgid "Left Center"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:85
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:117
+msgid "Left Bottom"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:86
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:118
+msgid "Right Top"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:87
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:119
+msgid "Right Center"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:88
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:120
+msgid "Right Bottom"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:89
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:121
+msgid "Center Top"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:90
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:122
+#: inc/customizer/settings/frontpage/header.php:506
+#: inc/customizer/settings/header.php:518
+msgid "Center Center"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:91
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:123
+msgid "Center Bottom"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:97
+msgid "Background Size"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:100
+#: inc/customizer/settings/frontpage/header.php:540
+#: inc/customizer/settings/header.php:584
+msgid "Cover"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:103
+#: inc/customizer/settings/frontpage/header.php:541
+#: inc/customizer/settings/header.php:585
+msgid "Contain"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:106
+#: inc/customizer/settings/frontpage/header.php:539
+#: inc/customizer/settings/frontpage/header.php:996
+#: inc/customizer/settings/frontpage/header.php:1102
+#: inc/customizer/settings/frontpage/header.php:1211
+#: inc/customizer/settings/header.php:583
+#: inc/customizer/settings/header.php:1006
+#: inc/customizer/settings/header.php:1097
+#: inc/customizer/settings/header.php:1191
+msgid "Auto"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:113
+msgid "Background Attachment"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:116
+#: inc/customizer/settings/frontpage/header.php:488
+#: inc/customizer/settings/frontpage/vertical-bar.php:214
+#: inc/customizer/settings/header.php:541
+#: inc/customizer/settings/vertical-bar.php:196
+msgid "Scroll"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-background.php:119
+#: inc/customizer/settings/frontpage/header.php:489
+#: inc/customizer/settings/header.php:542
+msgid "Fixed"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-base.php:133
+#: inc/customizer/kirki/controls/php/class-kirki-control-image.php:51
+#: inc/customizer/kirki/field/class-kirki-field-image.php:43
+#: inc/customizer/settings/footer.php:610
+#: inc/customizer/settings/footer.php:1061
+#: inc/customizer/settings/frontpage/footer.php:628
+#: inc/customizer/settings/frontpage/footer.php:1079
+#: inc/customizer/settings/frontpage/header.php:1635
+#: inc/customizer/settings/frontpage/header.php:2424
+#: inc/customizer/settings/frontpage/header.php:2795
+#: inc/customizer/settings/frontpage/header.php:3065
+#: inc/customizer/settings/frontpage/header.php:3420
+#: inc/customizer/settings/frontpage/header.php:4288
+#: inc/customizer/settings/frontpage/sidebar.php:579
+#: inc/customizer/settings/frontpage/top-bar.php:655
+#: inc/customizer/settings/frontpage/top-bar.php:1084
+#: inc/customizer/settings/frontpage/vertical-bar.php:1005
+#: inc/customizer/settings/frontpage/vertical-bar.php:1747
+#: inc/customizer/settings/frontpage/vertical-bar.php:2087
+#: inc/customizer/settings/general.php:1565
+#: inc/customizer/settings/general.php:1910
+#: inc/customizer/settings/general.php:2895
+#: inc/customizer/settings/general.php:3291
+#: inc/customizer/settings/general.php:4599
+#: inc/customizer/settings/general.php:5053
+#: inc/customizer/settings/general.php:6106
+#: inc/customizer/settings/general.php:6475
+#: inc/customizer/settings/general.php:6795
+#: inc/customizer/settings/general.php:7063
+#: inc/customizer/settings/header.php:1600
+#: inc/customizer/settings/header.php:2374
+#: inc/customizer/settings/header.php:2799
+#: inc/customizer/settings/header.php:3055
+#: inc/customizer/settings/header.php:3383
+#: inc/customizer/settings/header.php:3718
+#: inc/customizer/settings/header.php:4417
+#: inc/customizer/settings/mobile.php:1078
+#: inc/customizer/settings/sidebar.php:568
+#: inc/customizer/settings/top-bar.php:644
+#: inc/customizer/settings/top-bar.php:1073
+#: inc/customizer/settings/vertical-bar.php:986
+#: inc/customizer/settings/vertical-bar.php:1728
+#: inc/customizer/settings/vertical-bar.php:2068
+msgid "Default"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-base.php:135
+msgid "Standard Fonts"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-base.php:136
+msgid "Google Fonts"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-base.php:137
+msgid "CSS Defaults"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-base.php:138
+msgid "Default Browser Font-Family"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-code.php:37
+msgid ""
+"Please update your WordPress installation to a version newer than 4.9 to "
+"access the code control."
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimension.php:39
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:140
+msgid "Invalid Value"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:124
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:106
+#: inc/customizer/settings/general.php:2035
+#: inc/customizer/settings/general.php:3547
+#: inc/customizer/settings/general.php:5313
+msgid "Font Size"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:125
+msgid "Font Weight"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:126
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:114
+msgid "Line Height"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:127
+msgid "Font Style"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:128
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:122
+msgid "Letter Spacing"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:129
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:130
+msgid "Word Spacing"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:134
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:155
+#: inc/customizer/settings/footer.php:170
+#: inc/customizer/settings/frontpage/footer.php:188
+#: inc/customizer/settings/frontpage/header.php:2555
+#: inc/customizer/settings/frontpage/header.php:2603
+#: inc/customizer/settings/frontpage/header.php:2874
+#: inc/customizer/settings/frontpage/header.php:3144
+#: inc/customizer/settings/frontpage/header.php:3499
+#: inc/customizer/settings/frontpage/header.php:3895
+#: inc/customizer/settings/frontpage/header.php:4004
+#: inc/customizer/settings/frontpage/header.php:4367
+#: inc/customizer/settings/frontpage/sidebar.php:615
+#: inc/customizer/settings/frontpage/sidebar.php:682
+#: inc/customizer/settings/frontpage/vertical-bar.php:543
+#: inc/customizer/settings/frontpage/vertical-bar.php:696
+#: inc/customizer/settings/frontpage/vertical-bar.php:1117
+#: inc/customizer/settings/frontpage/vertical-bar.php:1486
+#: inc/customizer/settings/frontpage/vertical-bar.php:1826
+#: inc/customizer/settings/general.php:1606
+#: inc/customizer/settings/general.php:2019
+#: inc/customizer/settings/general.php:2936
+#: inc/customizer/settings/general.php:3531
+#: inc/customizer/settings/general.php:4640
+#: inc/customizer/settings/general.php:5297
+#: inc/customizer/settings/general.php:5786
+#: inc/customizer/settings/general.php:6147
+#: inc/customizer/settings/general.php:6511
+#: inc/customizer/settings/header.php:2460
+#: inc/customizer/settings/header.php:2508
+#: inc/customizer/settings/header.php:2617
+#: inc/customizer/settings/header.php:2873
+#: inc/customizer/settings/header.php:3129
+#: inc/customizer/settings/header.php:3457
+#: inc/customizer/settings/header.php:3792
+#: inc/customizer/settings/header.php:4153
+#: inc/customizer/settings/header.php:4491
+#: inc/customizer/settings/mobile.php:685
+#: inc/customizer/settings/mobile.php:823
+#: inc/customizer/settings/sidebar.php:604
+#: inc/customizer/settings/sidebar.php:671
+#: inc/customizer/settings/vertical-bar.php:524
+#: inc/customizer/settings/vertical-bar.php:677
+#: inc/customizer/settings/vertical-bar.php:1098
+#: inc/customizer/settings/vertical-bar.php:1467
+#: inc/customizer/settings/vertical-bar.php:1807
+msgid "Center"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:135
+msgid "Size"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:136
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:139
+msgid "Height"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:137
+#: inc/customizer/settings/footer.php:353
+#: inc/customizer/settings/footer.php:726
+#: inc/customizer/settings/frontpage/footer.php:371
+#: inc/customizer/settings/frontpage/footer.php:744
+#: inc/customizer/settings/frontpage/header.php:1315
+#: inc/customizer/settings/frontpage/header.php:1379
+#: inc/customizer/settings/frontpage/header.php:1722
+#: inc/customizer/settings/frontpage/header.php:2612
+#: inc/customizer/settings/frontpage/header.php:2883
+#: inc/customizer/settings/frontpage/header.php:3508
+#: inc/customizer/settings/frontpage/header.php:3944
+#: inc/customizer/settings/frontpage/header.php:4023
+#: inc/customizer/settings/frontpage/top-bar.php:368
+#: inc/customizer/settings/frontpage/top-bar.php:430
+#: inc/customizer/settings/frontpage/top-bar.php:730
+#: inc/customizer/settings/frontpage/vertical-bar.php:559
+#: inc/customizer/settings/frontpage/vertical-bar.php:1144
+#: inc/customizer/settings/frontpage/vertical-bar.php:1502
+#: inc/customizer/settings/frontpage/vertical-bar.php:1842
+#: inc/customizer/settings/general.php:2590
+#: inc/customizer/settings/general.php:2648
+#: inc/customizer/settings/general.php:3564
+#: inc/customizer/settings/general.php:4354
+#: inc/customizer/settings/general.php:5330
+#: inc/customizer/settings/general.php:6254
+#: inc/customizer/settings/general.php:6310
+#: inc/customizer/settings/general.php:6601
+#: inc/customizer/settings/general.php:6842
+#: inc/customizer/settings/general.php:7110
+#: inc/customizer/settings/general.php:7148
+#: inc/customizer/settings/header.php:1290
+#: inc/customizer/settings/header.php:1354
+#: inc/customizer/settings/header.php:1682
+#: inc/customizer/settings/header.php:2557
+#: inc/customizer/settings/header.php:2626
+#: inc/customizer/settings/header.php:2882
+#: inc/customizer/settings/header.php:3138
+#: inc/customizer/settings/header.php:3801
+#: inc/customizer/settings/header.php:4172
+#: inc/customizer/settings/mobile.php:238
+#: inc/customizer/settings/mobile.php:319
+#: inc/customizer/settings/mobile.php:428
+#: inc/customizer/settings/mobile.php:700
+#: inc/customizer/settings/mobile.php:1119
+#: inc/customizer/settings/top-bar.php:357
+#: inc/customizer/settings/top-bar.php:419
+#: inc/customizer/settings/top-bar.php:719
+#: inc/customizer/settings/vertical-bar.php:540
+#: inc/customizer/settings/vertical-bar.php:1125
+#: inc/customizer/settings/vertical-bar.php:1483
+#: inc/customizer/settings/vertical-bar.php:1823
+msgid "Spacing"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-dimensions.php:138
+#: inc/customizer/settings/frontpage/header.php:991
+#: inc/customizer/settings/frontpage/header.php:1097
+#: inc/customizer/settings/frontpage/header.php:1206
+#: inc/customizer/settings/header.php:1001
+#: inc/customizer/settings/header.php:1092
+#: inc/customizer/settings/header.php:1186
+msgid "Width"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-image.php:49
+#: inc/customizer/kirki/controls/php/class-kirki-control-image.php:54
+#: inc/customizer/kirki/field/class-kirki-field-image.php:41
+#: inc/customizer/kirki/field/class-kirki-field-image.php:46
+msgid "Select image"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-image.php:50
+#: inc/customizer/kirki/field/class-kirki-field-image.php:42
+msgid "Change image"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-image.php:53
+#: inc/customizer/kirki/field/class-kirki-field-image.php:45
+msgid "No image selected"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-image.php:55
+#: inc/customizer/kirki/field/class-kirki-field-image.php:47
+msgid "Choose image"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-repeater.php:78
+msgid "row"
+msgstr ""
+
+#. translators: %s represents the label of the row.
+#: inc/customizer/kirki/controls/php/class-kirki-control-repeater.php:87
+msgid "Add new %s"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-repeater.php:122
+msgid "Select a Page"
+msgstr ""
+
+#. translators: %s represents the number of rows we're limiting the repeater to
+#. allow.
+#: inc/customizer/kirki/controls/php/class-kirki-control-repeater.php:228
+msgid "Limit: %s rows"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-repeater.php:362
+msgid "Hex Value"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-repeater.php:377
+#: inc/customizer/kirki/controls/php/class-kirki-control-repeater.php:382
+msgid "No Image Selected"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-repeater.php:388
+#: inc/customizer/kirki/controls/php/class-kirki-control-repeater.php:392
+msgid "Add Image"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-repeater.php:388
+#: inc/customizer/kirki/controls/php/class-kirki-control-repeater.php:390
+msgid "Change Image"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-repeater.php:420
+#: inc/customizer/kirki/controls/php/class-kirki-control-repeater.php:424
+msgid "Add File"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-repeater.php:420
+#: inc/customizer/kirki/controls/php/class-kirki-control-repeater.php:422
+msgid "Change File"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-slider.php:65
+msgid "Reset"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-switch.php:52
+#: inc/customizer/kirki/field/class-kirki-field-switch.php:42
+msgid "On"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-switch.php:56
+#: inc/customizer/kirki/field/class-kirki-field-switch.php:43
+msgid "Off"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:80
+msgid "Font Family"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:81
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:86
+msgid "Select Font Family"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:85
+msgid "Backup Font"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:91
+msgid "Variant"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:98
+msgid "Download font-family to server instead of using the Google CDN."
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:138
+#: inc/customizer/settings/general.php:1601
+#: inc/customizer/settings/general.php:2931
+#: inc/customizer/settings/general.php:4635
+#: inc/customizer/settings/general.php:6142
+#: inc/customizer/settings/general.php:6506
+msgid "Text Align"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:143
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:185
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:201
+msgid "Inherit"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:167
+msgid "Justify"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:177
+#: inc/customizer/settings/footer.php:606
+#: inc/customizer/settings/footer.php:1057
+#: inc/customizer/settings/frontpage/footer.php:624
+#: inc/customizer/settings/frontpage/footer.php:1075
+#: inc/customizer/settings/frontpage/header.php:1631
+#: inc/customizer/settings/frontpage/header.php:2420
+#: inc/customizer/settings/frontpage/header.php:2791
+#: inc/customizer/settings/frontpage/header.php:3061
+#: inc/customizer/settings/frontpage/header.php:3416
+#: inc/customizer/settings/frontpage/header.php:4284
+#: inc/customizer/settings/frontpage/top-bar.php:651
+#: inc/customizer/settings/frontpage/top-bar.php:1080
+#: inc/customizer/settings/frontpage/vertical-bar.php:1001
+#: inc/customizer/settings/frontpage/vertical-bar.php:1743
+#: inc/customizer/settings/frontpage/vertical-bar.php:2083
+#: inc/customizer/settings/general.php:1561
+#: inc/customizer/settings/general.php:1906
+#: inc/customizer/settings/general.php:2891
+#: inc/customizer/settings/general.php:3287
+#: inc/customizer/settings/general.php:4595
+#: inc/customizer/settings/general.php:5049
+#: inc/customizer/settings/general.php:6102
+#: inc/customizer/settings/general.php:6471
+#: inc/customizer/settings/general.php:6791
+#: inc/customizer/settings/general.php:7059
+#: inc/customizer/settings/header.php:1596
+msgid "Text Transform"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:180
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:196
+#: inc/customizer/settings/footer.php:611
+#: inc/customizer/settings/footer.php:1062
+#: inc/customizer/settings/frontpage/footer.php:629
+#: inc/customizer/settings/frontpage/footer.php:1080
+#: inc/customizer/settings/frontpage/header.php:331
+#: inc/customizer/settings/frontpage/header.php:782
+#: inc/customizer/settings/frontpage/header.php:1636
+#: inc/customizer/settings/frontpage/header.php:2425
+#: inc/customizer/settings/frontpage/header.php:2796
+#: inc/customizer/settings/frontpage/header.php:3066
+#: inc/customizer/settings/frontpage/header.php:3421
+#: inc/customizer/settings/frontpage/header.php:4289
+#: inc/customizer/settings/frontpage/header.php:4433
+#: inc/customizer/settings/frontpage/sidebar.php:580
+#: inc/customizer/settings/frontpage/top-bar.php:656
+#: inc/customizer/settings/frontpage/top-bar.php:1085
+#: inc/customizer/settings/frontpage/vertical-bar.php:1006
+#: inc/customizer/settings/frontpage/vertical-bar.php:1748
+#: inc/customizer/settings/frontpage/vertical-bar.php:2088
+#: inc/customizer/settings/general.php:1566
+#: inc/customizer/settings/general.php:1911
+#: inc/customizer/settings/general.php:2896
+#: inc/customizer/settings/general.php:3292
+#: inc/customizer/settings/general.php:4600
+#: inc/customizer/settings/general.php:5054
+#: inc/customizer/settings/general.php:6107
+#: inc/customizer/settings/general.php:6476
+#: inc/customizer/settings/general.php:6796
+#: inc/customizer/settings/general.php:7064
+#: inc/customizer/settings/header.php:350
+#: inc/customizer/settings/header.php:802
+#: inc/customizer/settings/header.php:1601
+#: inc/customizer/settings/header.php:2375
+#: inc/customizer/settings/header.php:2800
+#: inc/customizer/settings/header.php:3056
+#: inc/customizer/settings/header.php:3384
+#: inc/customizer/settings/header.php:3719
+#: inc/customizer/settings/header.php:4418
+#: inc/customizer/settings/header.php:4557
+#: inc/customizer/settings/mobile.php:1079
+#: inc/customizer/settings/sidebar.php:569
+#: inc/customizer/settings/top-bar.php:645
+#: inc/customizer/settings/top-bar.php:1074
+#: inc/customizer/settings/vertical-bar.php:987
+#: inc/customizer/settings/vertical-bar.php:1729
+#: inc/customizer/settings/vertical-bar.php:2069
+msgid "None"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:181
+#: inc/customizer/settings/footer.php:612
+#: inc/customizer/settings/footer.php:1063
+#: inc/customizer/settings/frontpage/footer.php:630
+#: inc/customizer/settings/frontpage/footer.php:1081
+#: inc/customizer/settings/frontpage/header.php:1637
+#: inc/customizer/settings/frontpage/header.php:2426
+#: inc/customizer/settings/frontpage/header.php:2797
+#: inc/customizer/settings/frontpage/header.php:3067
+#: inc/customizer/settings/frontpage/header.php:3422
+#: inc/customizer/settings/frontpage/header.php:4290
+#: inc/customizer/settings/frontpage/sidebar.php:581
+#: inc/customizer/settings/frontpage/top-bar.php:657
+#: inc/customizer/settings/frontpage/top-bar.php:1086
+#: inc/customizer/settings/frontpage/vertical-bar.php:1007
+#: inc/customizer/settings/frontpage/vertical-bar.php:1749
+#: inc/customizer/settings/frontpage/vertical-bar.php:2089
+#: inc/customizer/settings/general.php:1567
+#: inc/customizer/settings/general.php:1912
+#: inc/customizer/settings/general.php:2897
+#: inc/customizer/settings/general.php:3293
+#: inc/customizer/settings/general.php:4601
+#: inc/customizer/settings/general.php:5055
+#: inc/customizer/settings/general.php:6108
+#: inc/customizer/settings/general.php:6477
+#: inc/customizer/settings/general.php:6797
+#: inc/customizer/settings/general.php:7065
+#: inc/customizer/settings/header.php:1602
+#: inc/customizer/settings/header.php:2376
+#: inc/customizer/settings/header.php:2801
+#: inc/customizer/settings/header.php:3057
+#: inc/customizer/settings/header.php:3385
+#: inc/customizer/settings/header.php:3720
+#: inc/customizer/settings/header.php:4419
+#: inc/customizer/settings/mobile.php:1080
+#: inc/customizer/settings/sidebar.php:570
+#: inc/customizer/settings/top-bar.php:646
+#: inc/customizer/settings/top-bar.php:1075
+#: inc/customizer/settings/vertical-bar.php:988
+#: inc/customizer/settings/vertical-bar.php:1730
+#: inc/customizer/settings/vertical-bar.php:2070
+msgid "Capitalize"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:182
+#: inc/customizer/settings/footer.php:614
+#: inc/customizer/settings/footer.php:1065
+#: inc/customizer/settings/frontpage/footer.php:632
+#: inc/customizer/settings/frontpage/footer.php:1083
+#: inc/customizer/settings/frontpage/header.php:1639
+#: inc/customizer/settings/frontpage/header.php:2428
+#: inc/customizer/settings/frontpage/header.php:2799
+#: inc/customizer/settings/frontpage/header.php:3069
+#: inc/customizer/settings/frontpage/header.php:3424
+#: inc/customizer/settings/frontpage/header.php:4292
+#: inc/customizer/settings/frontpage/sidebar.php:583
+#: inc/customizer/settings/frontpage/top-bar.php:659
+#: inc/customizer/settings/frontpage/top-bar.php:1088
+#: inc/customizer/settings/frontpage/vertical-bar.php:1009
+#: inc/customizer/settings/frontpage/vertical-bar.php:1751
+#: inc/customizer/settings/frontpage/vertical-bar.php:2091
+#: inc/customizer/settings/general.php:1569
+#: inc/customizer/settings/general.php:1914
+#: inc/customizer/settings/general.php:2899
+#: inc/customizer/settings/general.php:3295
+#: inc/customizer/settings/general.php:4603
+#: inc/customizer/settings/general.php:5057
+#: inc/customizer/settings/general.php:6110
+#: inc/customizer/settings/general.php:6479
+#: inc/customizer/settings/general.php:6799
+#: inc/customizer/settings/general.php:7067
+#: inc/customizer/settings/header.php:1604
+#: inc/customizer/settings/header.php:2378
+#: inc/customizer/settings/header.php:2803
+#: inc/customizer/settings/header.php:3059
+#: inc/customizer/settings/header.php:3387
+#: inc/customizer/settings/header.php:3722
+#: inc/customizer/settings/header.php:4421
+#: inc/customizer/settings/mobile.php:1082
+#: inc/customizer/settings/sidebar.php:572
+#: inc/customizer/settings/top-bar.php:648
+#: inc/customizer/settings/top-bar.php:1077
+#: inc/customizer/settings/vertical-bar.php:990
+#: inc/customizer/settings/vertical-bar.php:1732
+#: inc/customizer/settings/vertical-bar.php:2072
+msgid "Uppercase"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:183
+#: inc/customizer/settings/footer.php:613
+#: inc/customizer/settings/footer.php:1064
+#: inc/customizer/settings/frontpage/footer.php:631
+#: inc/customizer/settings/frontpage/footer.php:1082
+#: inc/customizer/settings/frontpage/header.php:1638
+#: inc/customizer/settings/frontpage/header.php:2427
+#: inc/customizer/settings/frontpage/header.php:2798
+#: inc/customizer/settings/frontpage/header.php:3068
+#: inc/customizer/settings/frontpage/header.php:3423
+#: inc/customizer/settings/frontpage/header.php:4291
+#: inc/customizer/settings/frontpage/sidebar.php:582
+#: inc/customizer/settings/frontpage/top-bar.php:658
+#: inc/customizer/settings/frontpage/top-bar.php:1087
+#: inc/customizer/settings/frontpage/vertical-bar.php:1008
+#: inc/customizer/settings/frontpage/vertical-bar.php:1750
+#: inc/customizer/settings/frontpage/vertical-bar.php:2090
+#: inc/customizer/settings/general.php:1568
+#: inc/customizer/settings/general.php:1913
+#: inc/customizer/settings/general.php:2898
+#: inc/customizer/settings/general.php:3294
+#: inc/customizer/settings/general.php:4602
+#: inc/customizer/settings/general.php:5056
+#: inc/customizer/settings/general.php:6109
+#: inc/customizer/settings/general.php:6478
+#: inc/customizer/settings/general.php:6798
+#: inc/customizer/settings/general.php:7066
+#: inc/customizer/settings/header.php:1603
+#: inc/customizer/settings/header.php:2377
+#: inc/customizer/settings/header.php:2802
+#: inc/customizer/settings/header.php:3058
+#: inc/customizer/settings/header.php:3386
+#: inc/customizer/settings/header.php:3721
+#: inc/customizer/settings/header.php:4420
+#: inc/customizer/settings/mobile.php:1081
+#: inc/customizer/settings/sidebar.php:571
+#: inc/customizer/settings/top-bar.php:647
+#: inc/customizer/settings/top-bar.php:1076
+#: inc/customizer/settings/vertical-bar.php:989
+#: inc/customizer/settings/vertical-bar.php:1731
+#: inc/customizer/settings/vertical-bar.php:2071
+msgid "Lowercase"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:184
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:200
+msgid "Initial"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:193
+msgid "Text Decoration"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:197
+msgid "Underline"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:198
+msgid "Overline"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:199
+msgid "Line-Through"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:209
+msgid "Margin Top"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:217
+msgid "Margin Bottom"
+msgstr ""
+
+#: inc/customizer/kirki/controls/php/class-kirki-control-typography.php:225
+msgid "Color"
+msgstr ""
+
+#. translators: %s represents the field ID where the error occurs.
+#: inc/customizer/kirki/core/class-kirki-field.php:248
+msgid "Typo found in field %s - setting instead of settings."
+msgstr ""
+
+#. translators: %1$s represents the field ID where the error occurs. %2$s is
+#. the URL in the documentation site.
+#: inc/customizer/kirki/core/class-kirki-field.php:257
+#: inc/customizer/kirki/core/class-kirki-field.php:267
+msgid ""
+"Config not defined for field %1$s - See %2$s for details on how to properly "
+"add fields."
+msgstr ""
+
+#. translators: %1$s represents the field ID where the error occurs.
+#: inc/customizer/kirki/core/class-kirki-field.php:407
+msgid "Typo found in field %s - \"theme_mods\" vs \"theme_mod\""
+msgstr ""
+
+#. translators: %1$s represents the field ID where the error occurs.
+#: inc/customizer/kirki/core/class-kirki-field.php:425
+msgid "\"partial_refresh\" invalid entry in field %s"
+msgstr ""
+
+#. translators: The field ID where the error occurs.
+#: inc/customizer/kirki/core/class-kirki-field.php:554
+#: inc/customizer/kirki/core/class-kirki-field.php:564
+msgid ""
+"\"output\" invalid format in field %s. The \"output\" argument should be "
+"defined as an array of arrays."
+msgstr ""
+
+#: inc/customizer/kirki/core/class-kirki-init.php:282
+msgid ""
+"We detected you're using Kirki_Init::get_variables(). Please use Kirki_Util::"
+"get_variables() instead."
+msgstr ""
+
+#: inc/customizer/kirki/core/class-kirki.php:228
+msgid ""
+"Kirki fields should not be added on customize_register. Please add them "
+"directly, or on init."
+msgstr ""
+
+#: inc/customizer/kirki/deprecated/functions.php:19
+msgid "%1$s or %2$s"
+msgstr ""
+
+#: inc/customizer/kirki/field/class-kirki-field-color.php:55
+msgid ""
+"Do not use \"alpha\" as an argument in color controls. Use "
+"\"choices[alpha]\" instead."
+msgstr ""
+
+#. translators: %1$s represents the field ID where the error occurs. %2%s is
+#. buttonset/image.
+#: inc/customizer/kirki/field/class-kirki-field-radio.php:37
+msgid ""
+"Error in field %1$s. The \"mode\" argument has been deprecated since Kirki "
+"v0.8. Use the \"radio-%2$s\" type instead."
+msgstr ""
+
+#: inc/customizer/kirki/modules/custom-sections/sections/class-kirki-sections-nested-section.php:59
+msgid "Customizing"
+msgstr ""
+
+#. translators: The title.
+#: inc/customizer/kirki/modules/custom-sections/sections/class-kirki-sections-nested-section.php:62
+msgid "Customizing &#9656; %s"
+msgstr ""
+
+#: inc/customizer/kirki/modules/webfonts/class-kirki-fonts.php:210
+#: inc/customizer/kirki/modules/webfonts/class-kirki-fonts.php:211
+msgid "Ultra-Light 100"
+msgstr ""
+
+#: inc/customizer/kirki/modules/webfonts/class-kirki-fonts.php:212
+msgid "Ultra-Light 100 Italic"
+msgstr ""
+
+#: inc/customizer/kirki/modules/webfonts/class-kirki-fonts.php:213
+msgid "Light 200"
+msgstr ""
+
+#: inc/customizer/kirki/modules/webfonts/class-kirki-fonts.php:214
+msgid "Light 200 Italic"
+msgstr ""
+
+#: inc/customizer/kirki/modules/webfonts/class-kirki-fonts.php:215
+msgid "Book 300"
+msgstr ""
+
+#: inc/customizer/kirki/modules/webfonts/class-kirki-fonts.php:216
+msgid "Book 300 Italic"
+msgstr ""
+
+#: inc/customizer/kirki/modules/webfonts/class-kirki-fonts.php:217
+#: inc/customizer/kirki/modules/webfonts/class-kirki-fonts.php:218
+msgid "Normal 400"
+msgstr ""
+
+#: inc/customizer/kirki/modules/webfonts/class-kirki-fonts.php:219
+msgid "Normal 400 Italic"
+msgstr ""
+
+#: inc/customizer/kirki/modules/webfonts/class-kirki-fonts.php:220
+msgid "Medium 500"
+msgstr ""
+
+#: inc/customizer/kirki/modules/webfonts/class-kirki-fonts.php:221
+msgid "Medium 500 Italic"
+msgstr ""
+
+#: inc/customizer/kirki/modules/webfonts/class-kirki-fonts.php:222
+#: inc/customizer/kirki/modules/webfonts/class-kirki-fonts.php:223
+msgid "Semi-Bold 600"
+msgstr ""
+
+#: inc/customizer/kirki/modules/webfonts/class-kirki-fonts.php:224
+msgid "Semi-Bold 600 Italic"
+msgstr ""
+
+#: inc/customizer/kirki/modules/webfonts/class-kirki-fonts.php:225
+msgid "Bold 700"
+msgstr ""
+
+#: inc/customizer/kirki/modules/webfonts/class-kirki-fonts.php:226
+msgid "Bold 700 Italic"
+msgstr ""
+
+#: inc/customizer/kirki/modules/webfonts/class-kirki-fonts.php:227
+#: inc/customizer/kirki/modules/webfonts/class-kirki-fonts.php:228
+msgid "Extra-Bold 800"
+msgstr ""
+
+#: inc/customizer/kirki/modules/webfonts/class-kirki-fonts.php:229
+msgid "Extra-Bold 800 Italic"
+msgstr ""
+
+#: inc/customizer/kirki/modules/webfonts/class-kirki-fonts.php:230
+#: inc/customizer/kirki/modules/webfonts/class-kirki-fonts.php:231
+msgid "Ultra-Bold 900"
+msgstr ""
+
+#: inc/customizer/kirki/modules/webfonts/class-kirki-fonts.php:232
+msgid "Ultra-Bold 900 Italic"
+msgstr ""
+
+#: inc/customizer/kirki/upgrade-notifications.php:30
+msgid "Important Upgrade Notice:"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:81
+msgid "Display the footer"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:86
+#: inc/customizer/settings/frontpage/footer.php:93
+#: inc/customizer/settings/frontpage/header.php:247
+#: inc/customizer/settings/frontpage/sidebar.php:72
+#: inc/customizer/settings/frontpage/top-bar.php:101
+#: inc/customizer/settings/frontpage/vertical-bar.php:142
+#: inc/customizer/settings/sidebar.php:70
+#: inc/customizer/settings/top-bar.php:95
+#: inc/customizer/settings/vertical-bar.php:134
+msgid "Enable"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:87
+#: inc/customizer/settings/frontpage/footer.php:94
+#: inc/customizer/settings/frontpage/header.php:248
+#: inc/customizer/settings/frontpage/sidebar.php:73
+#: inc/customizer/settings/frontpage/top-bar.php:102
+#: inc/customizer/settings/frontpage/vertical-bar.php:143
+#: inc/customizer/settings/sidebar.php:71
+#: inc/customizer/settings/top-bar.php:96
+#: inc/customizer/settings/vertical-bar.php:135
+msgid "Disable"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:116
+#: inc/customizer/settings/frontpage/footer.php:134
+msgid "Footer Height (px)"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:138
+#: inc/customizer/settings/frontpage/footer.php:156
+msgid "Direction"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:143
+#: inc/customizer/settings/frontpage/footer.php:161
+#: inc/customizer/settings/frontpage/header.php:2541
+#: inc/customizer/settings/frontpage/header.php:4508
+#: inc/customizer/settings/header.php:2446
+#: inc/customizer/settings/header.php:4632
+msgid "Row"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:144
+#: inc/customizer/settings/frontpage/footer.php:162
+#: inc/customizer/settings/frontpage/header.php:2540
+#: inc/customizer/settings/frontpage/header.php:4507
+#: inc/customizer/settings/header.php:2445
+#: inc/customizer/settings/header.php:4631
+msgid "Column"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:165
+#: inc/customizer/settings/frontpage/footer.php:183
+msgid "Positioning"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:171
+#: inc/customizer/settings/frontpage/footer.php:189
+msgid "Start"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:172
+#: inc/customizer/settings/frontpage/footer.php:190
+msgid "End"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:173
+#: inc/customizer/settings/frontpage/footer.php:191
+msgid "Space-between"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:174
+#: inc/customizer/settings/frontpage/footer.php:192
+msgid "Space-around"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:175
+#: inc/customizer/settings/frontpage/footer.php:193
+msgid "Space-evenly"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:196
+#: inc/customizer/settings/frontpage/footer.php:214
+#: inc/customizer/settings/frontpage/header.php:672
+#: inc/customizer/settings/frontpage/top-bar.php:163
+#: inc/customizer/settings/header.php:707
+#: inc/customizer/settings/top-bar.php:148
+msgid "Full Width"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:217
+#: inc/customizer/settings/footer.php:391
+#: inc/customizer/settings/footer.php:878
+#: inc/customizer/settings/frontpage/footer.php:235
+#: inc/customizer/settings/frontpage/footer.php:409
+#: inc/customizer/settings/frontpage/footer.php:896
+#: inc/customizer/settings/frontpage/header.php:368
+#: inc/customizer/settings/frontpage/header.php:840
+#: inc/customizer/settings/frontpage/header.php:1406
+#: inc/customizer/settings/frontpage/header.php:1749
+#: inc/customizer/settings/frontpage/header.php:2639
+#: inc/customizer/settings/frontpage/header.php:2910
+#: inc/customizer/settings/frontpage/header.php:3208
+#: inc/customizer/settings/frontpage/header.php:3558
+#: inc/customizer/settings/frontpage/header.php:4050
+#: inc/customizer/settings/frontpage/sidebar.php:152
+#: inc/customizer/settings/frontpage/sidebar.php:385
+#: inc/customizer/settings/frontpage/top-bar.php:178
+#: inc/customizer/settings/frontpage/top-bar.php:457
+#: inc/customizer/settings/frontpage/top-bar.php:757
+#: inc/customizer/settings/frontpage/top-bar.php:916
+#: inc/customizer/settings/frontpage/vertical-bar.php:311
+#: inc/customizer/settings/frontpage/vertical-bar.php:586
+#: inc/customizer/settings/frontpage/vertical-bar.php:767
+#: inc/customizer/settings/frontpage/vertical-bar.php:1171
+#: inc/customizer/settings/frontpage/vertical-bar.php:1529
+#: inc/customizer/settings/frontpage/vertical-bar.php:1869
+#: inc/customizer/settings/general.php:1184
+#: inc/customizer/settings/general.php:1381
+#: inc/customizer/settings/general.php:1728
+#: inc/customizer/settings/general.php:2168
+#: inc/customizer/settings/general.php:2501
+#: inc/customizer/settings/general.php:2675
+#: inc/customizer/settings/general.php:3073
+#: inc/customizer/settings/general.php:3400
+#: inc/customizer/settings/general.php:3680
+#: inc/customizer/settings/general.php:4252
+#: inc/customizer/settings/general.php:4381
+#: inc/customizer/settings/general.php:4835
+#: inc/customizer/settings/general.php:5164
+#: inc/customizer/settings/general.php:5446
+#: inc/customizer/settings/general.php:5886
+#: inc/customizer/settings/general.php:6337
+#: inc/customizer/settings/general.php:6628
+#: inc/customizer/settings/general.php:6869
+#: inc/customizer/settings/header.php:387
+#: inc/customizer/settings/header.php:860
+#: inc/customizer/settings/header.php:1381
+#: inc/customizer/settings/header.php:1709
+#: inc/customizer/settings/header.php:2653
+#: inc/customizer/settings/header.php:2909
+#: inc/customizer/settings/header.php:3165
+#: inc/customizer/settings/header.php:3521
+#: inc/customizer/settings/header.php:3851
+#: inc/customizer/settings/header.php:4199
+#: inc/customizer/settings/mobile.php:155
+#: inc/customizer/settings/mobile.php:345
+#: inc/customizer/settings/mobile.php:454
+#: inc/customizer/settings/mobile.php:726
+#: inc/customizer/settings/mobile.php:891
+#: inc/customizer/settings/mobile.php:1145
+#: inc/customizer/settings/sidebar.php:140
+#: inc/customizer/settings/sidebar.php:374
+#: inc/customizer/settings/top-bar.php:163
+#: inc/customizer/settings/top-bar.php:446
+#: inc/customizer/settings/top-bar.php:746
+#: inc/customizer/settings/top-bar.php:905
+#: inc/customizer/settings/vertical-bar.php:293
+#: inc/customizer/settings/vertical-bar.php:567
+#: inc/customizer/settings/vertical-bar.php:748
+#: inc/customizer/settings/vertical-bar.php:1152
+#: inc/customizer/settings/vertical-bar.php:1510
+#: inc/customizer/settings/vertical-bar.php:1850
+msgid "Colors"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:229
+#: inc/customizer/settings/frontpage/footer.php:247
+#: inc/customizer/settings/frontpage/header.php:1925
+#: inc/customizer/settings/frontpage/vertical-bar.php:323
+#: inc/customizer/settings/frontpage/vertical-bar.php:598
+#: inc/customizer/settings/general.php:2252
+#: inc/customizer/settings/general.php:2687
+#: inc/customizer/settings/general.php:3085
+#: inc/customizer/settings/general.php:3412
+#: inc/customizer/settings/general.php:3692
+#: inc/customizer/settings/general.php:4393
+#: inc/customizer/settings/general.php:4847
+#: inc/customizer/settings/general.php:5176
+#: inc/customizer/settings/general.php:5458
+#: inc/customizer/settings/general.php:5898
+#: inc/customizer/settings/header.php:1885
+#: inc/customizer/settings/mobile.php:166
+#: inc/customizer/settings/mobile.php:737
+#: inc/customizer/settings/mobile.php:943
+#: inc/customizer/settings/mobile.php:1156
+#: inc/customizer/settings/top-bar.php:175
+#: inc/customizer/settings/vertical-bar.php:305
+#: inc/customizer/settings/vertical-bar.php:579
+msgid "Background"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:267
+#: inc/customizer/settings/frontpage/footer.php:285
+#: inc/customizer/settings/frontpage/header.php:564
+#: inc/customizer/settings/frontpage/header.php:917
+#: inc/customizer/settings/frontpage/header.php:1026
+#: inc/customizer/settings/frontpage/header.php:1132
+#: inc/customizer/settings/frontpage/header.php:2514
+#: inc/customizer/settings/header.php:614
+#: inc/customizer/settings/header.php:937
+#: inc/customizer/settings/header.php:1031
+#: inc/customizer/settings/header.php:1122
+#: inc/customizer/settings/header.php:2417
+msgid "Elements"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:273
+#: inc/customizer/settings/frontpage/footer.php:291
+#: inc/customizer/settings/frontpage/header.php:923
+#: inc/customizer/settings/frontpage/header.php:1029
+#: inc/customizer/settings/frontpage/header.php:1138
+#: inc/customizer/settings/frontpage/header.php:2520
+#: inc/customizer/settings/frontpage/top-bar.php:266
+#: inc/customizer/settings/frontpage/top-bar.php:292
+#: inc/customizer/settings/frontpage/vertical-bar.php:455
+#: inc/customizer/settings/frontpage/vertical-bar.php:471
+#: inc/customizer/settings/header.php:943
+#: inc/customizer/settings/header.php:1034
+#: inc/customizer/settings/header.php:1128
+#: inc/customizer/settings/header.php:2424
+#: inc/customizer/settings/top-bar.php:252
+#: inc/customizer/settings/top-bar.php:281
+#: inc/customizer/settings/vertical-bar.php:436
+#: inc/customizer/settings/vertical-bar.php:452
+msgid "Site Logo"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:274
+#: inc/customizer/settings/frontpage/footer.php:292
+#: inc/customizer/settings/frontpage/header.php:924
+#: inc/customizer/settings/frontpage/header.php:1030
+#: inc/customizer/settings/frontpage/header.php:1139
+#: inc/customizer/settings/frontpage/header.php:2523
+#: inc/customizer/settings/frontpage/top-bar.php:267
+#: inc/customizer/settings/frontpage/top-bar.php:293
+#: inc/customizer/settings/frontpage/vertical-bar.php:456
+#: inc/customizer/settings/general.php:6208
+#: inc/customizer/settings/header.php:944
+#: inc/customizer/settings/header.php:1035
+#: inc/customizer/settings/header.php:1129
+#: inc/customizer/settings/header.php:2428
+#: inc/customizer/settings/mobile.php:623
+#: inc/customizer/settings/mobile.php:793
+#: inc/customizer/settings/top-bar.php:253
+#: inc/customizer/settings/top-bar.php:282
+#: inc/customizer/settings/vertical-bar.php:437
+msgid "Navigation"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:275
+#: inc/customizer/settings/frontpage/footer.php:293
+#: inc/customizer/settings/frontpage/header.php:925
+#: inc/customizer/settings/frontpage/header.php:1031
+#: inc/customizer/settings/frontpage/header.php:1140
+#: inc/customizer/settings/frontpage/header.php:2525
+#: inc/customizer/settings/frontpage/top-bar.php:268
+#: inc/customizer/settings/frontpage/top-bar.php:294
+#: inc/customizer/settings/frontpage/vertical-bar.php:458
+#: inc/customizer/settings/frontpage/vertical-bar.php:473
+#: inc/customizer/settings/header.php:945
+#: inc/customizer/settings/header.php:1036
+#: inc/customizer/settings/header.php:1130
+#: inc/customizer/settings/header.php:2430
+#: inc/customizer/settings/top-bar.php:254
+#: inc/customizer/settings/top-bar.php:283
+#: inc/customizer/settings/vertical-bar.php:439
+msgid "Custom Text"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:294
+#: inc/customizer/settings/frontpage/footer.php:312
+#: inc/customizer/settings/frontpage/header.php:1341
+#: inc/customizer/settings/frontpage/header.php:3970
+#: inc/customizer/settings/frontpage/top-bar.php:394
+#: inc/customizer/settings/frontpage/vertical-bar.php:1457
+#: inc/customizer/settings/header.php:1316
+#: inc/customizer/settings/header.php:4119
+#: inc/customizer/settings/top-bar.php:383
+#: inc/customizer/settings/vertical-bar.php:1438
+msgid "Custom Text Options"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:306
+#: inc/customizer/settings/footer.php:662
+#: inc/customizer/settings/footer.php:775
+#: inc/customizer/settings/frontpage/footer.php:324
+#: inc/customizer/settings/frontpage/footer.php:680
+#: inc/customizer/settings/frontpage/footer.php:793
+#: inc/customizer/settings/frontpage/header.php:606
+#: inc/customizer/settings/frontpage/header.php:1257
+#: inc/customizer/settings/frontpage/header.php:1353
+#: inc/customizer/settings/frontpage/header.php:1692
+#: inc/customizer/settings/frontpage/header.php:2146
+#: inc/customizer/settings/frontpage/header.php:2581
+#: inc/customizer/settings/frontpage/header.php:2852
+#: inc/customizer/settings/frontpage/header.php:3122
+#: inc/customizer/settings/frontpage/header.php:3477
+#: inc/customizer/settings/frontpage/header.php:3873
+#: inc/customizer/settings/frontpage/header.php:3982
+#: inc/customizer/settings/frontpage/header.php:4345
+#: inc/customizer/settings/frontpage/sidebar.php:110
+#: inc/customizer/settings/frontpage/top-bar.php:125
+#: inc/customizer/settings/frontpage/top-bar.php:331
+#: inc/customizer/settings/frontpage/top-bar.php:406
+#: inc/customizer/settings/frontpage/top-bar.php:702
+#: inc/customizer/settings/frontpage/top-bar.php:847
+#: inc/customizer/settings/frontpage/vertical-bar.php:180
+#: inc/customizer/settings/general.php:2985
+#: inc/customizer/settings/general.php:3343
+#: inc/customizer/settings/general.php:3500
+#: inc/customizer/settings/general.php:4337
+#: inc/customizer/settings/general.php:4689
+#: inc/customizer/settings/general.php:5105
+#: inc/customizer/settings/general.php:5264
+#: inc/customizer/settings/general.php:5763
+#: inc/customizer/settings/header.php:651
+#: inc/customizer/settings/header.php:1232
+#: inc/customizer/settings/header.php:1328
+#: inc/customizer/settings/header.php:1652
+#: inc/customizer/settings/header.php:2106
+#: inc/customizer/settings/header.php:2486
+#: inc/customizer/settings/header.php:2595
+#: inc/customizer/settings/header.php:2851
+#: inc/customizer/settings/header.php:3107
+#: inc/customizer/settings/header.php:3435
+#: inc/customizer/settings/header.php:3770
+#: inc/customizer/settings/header.php:4131
+#: inc/customizer/settings/header.php:4469
+#: inc/customizer/settings/sidebar.php:98
+#: inc/customizer/settings/top-bar.php:109
+#: inc/customizer/settings/top-bar.php:320
+#: inc/customizer/settings/top-bar.php:395
+#: inc/customizer/settings/top-bar.php:691
+#: inc/customizer/settings/top-bar.php:836
+#: inc/customizer/settings/vertical-bar.php:162
+msgid "Device Visibility"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:311
+#: inc/customizer/settings/footer.php:667
+#: inc/customizer/settings/footer.php:780
+#: inc/customizer/settings/frontpage/footer.php:329
+#: inc/customizer/settings/frontpage/footer.php:685
+#: inc/customizer/settings/frontpage/footer.php:798
+#: inc/customizer/settings/frontpage/header.php:2586
+#: inc/customizer/settings/frontpage/header.php:2857
+#: inc/customizer/settings/frontpage/header.php:3127
+#: inc/customizer/settings/frontpage/header.php:3482
+#: inc/customizer/settings/frontpage/header.php:3878
+#: inc/customizer/settings/frontpage/header.php:3987
+#: inc/customizer/settings/frontpage/header.php:4350
+#: inc/customizer/settings/general.php:2990
+#: inc/customizer/settings/general.php:3348
+#: inc/customizer/settings/general.php:3505
+#: inc/customizer/settings/general.php:4342
+#: inc/customizer/settings/general.php:4694
+#: inc/customizer/settings/general.php:5110
+#: inc/customizer/settings/general.php:5269
+#: inc/customizer/settings/general.php:5768
+#: inc/customizer/settings/header.php:2491
+#: inc/customizer/settings/header.php:2600
+#: inc/customizer/settings/header.php:2856
+#: inc/customizer/settings/header.php:3112
+#: inc/customizer/settings/header.php:3440
+#: inc/customizer/settings/header.php:3775
+#: inc/customizer/settings/header.php:4136
+#: inc/customizer/settings/header.php:4474
+msgid "Show on All Devices"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:312
+#: inc/customizer/settings/footer.php:668
+#: inc/customizer/settings/footer.php:781
+#: inc/customizer/settings/frontpage/footer.php:330
+#: inc/customizer/settings/frontpage/footer.php:686
+#: inc/customizer/settings/frontpage/footer.php:799
+#: inc/customizer/settings/frontpage/header.php:2587
+#: inc/customizer/settings/frontpage/header.php:2858
+#: inc/customizer/settings/frontpage/header.php:3128
+#: inc/customizer/settings/frontpage/header.php:3483
+#: inc/customizer/settings/frontpage/header.php:3879
+#: inc/customizer/settings/frontpage/header.php:3988
+#: inc/customizer/settings/frontpage/header.php:4351
+#: inc/customizer/settings/frontpage/sidebar.php:115
+#: inc/customizer/settings/general.php:2991
+#: inc/customizer/settings/general.php:3349
+#: inc/customizer/settings/general.php:3506
+#: inc/customizer/settings/general.php:4343
+#: inc/customizer/settings/general.php:4695
+#: inc/customizer/settings/general.php:5111
+#: inc/customizer/settings/general.php:5270
+#: inc/customizer/settings/general.php:5769
+#: inc/customizer/settings/header.php:2492
+#: inc/customizer/settings/header.php:2601
+#: inc/customizer/settings/header.php:2857
+#: inc/customizer/settings/header.php:3113
+#: inc/customizer/settings/header.php:3441
+#: inc/customizer/settings/header.php:3776
+#: inc/customizer/settings/header.php:4137
+#: inc/customizer/settings/header.php:4475
+#: inc/customizer/settings/sidebar.php:103
+#: inc/customizer/settings/top-bar.php:114
+msgid "Hide on Tablet & Mobile"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:313
+#: inc/customizer/settings/footer.php:669
+#: inc/customizer/settings/footer.php:782
+#: inc/customizer/settings/frontpage/footer.php:331
+#: inc/customizer/settings/frontpage/footer.php:687
+#: inc/customizer/settings/frontpage/footer.php:800
+#: inc/customizer/settings/frontpage/header.php:2588
+#: inc/customizer/settings/frontpage/header.php:2859
+#: inc/customizer/settings/frontpage/header.php:3129
+#: inc/customizer/settings/frontpage/header.php:3484
+#: inc/customizer/settings/frontpage/header.php:3880
+#: inc/customizer/settings/frontpage/header.php:3989
+#: inc/customizer/settings/frontpage/header.php:4352
+#: inc/customizer/settings/frontpage/sidebar.php:116
+#: inc/customizer/settings/general.php:2992
+#: inc/customizer/settings/general.php:3350
+#: inc/customizer/settings/general.php:3507
+#: inc/customizer/settings/general.php:4344
+#: inc/customizer/settings/general.php:4696
+#: inc/customizer/settings/general.php:5112
+#: inc/customizer/settings/general.php:5271
+#: inc/customizer/settings/header.php:2493
+#: inc/customizer/settings/header.php:2602
+#: inc/customizer/settings/header.php:2858
+#: inc/customizer/settings/header.php:3114
+#: inc/customizer/settings/header.php:3442
+#: inc/customizer/settings/header.php:3777
+#: inc/customizer/settings/header.php:4138
+#: inc/customizer/settings/header.php:4476
+#: inc/customizer/settings/sidebar.php:104
+#: inc/customizer/settings/top-bar.php:115
+msgid "Hide on Mobile"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:332
+#: inc/customizer/settings/frontpage/footer.php:350
+#: inc/customizer/settings/frontpage/header.php:1368
+#: inc/customizer/settings/frontpage/header.php:4013
+#: inc/customizer/settings/frontpage/top-bar.php:420
+#: inc/customizer/settings/frontpage/vertical-bar.php:1469
+#: inc/customizer/settings/frontpage/vertical-bar.php:1809
+#: inc/customizer/settings/general.php:1247
+#: inc/customizer/settings/general.php:2564
+#: inc/customizer/settings/general.php:4311
+#: inc/customizer/settings/general.php:6205
+#: inc/customizer/settings/header.php:1343
+#: inc/customizer/settings/header.php:4162
+#: inc/customizer/settings/top-bar.php:409
+#: inc/customizer/settings/vertical-bar.php:1450
+#: inc/customizer/settings/vertical-bar.php:1790
+msgid "Content"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:516
+#: inc/customizer/settings/footer.php:967
+#: inc/customizer/settings/frontpage/footer.php:534
+#: inc/customizer/settings/frontpage/footer.php:985
+#: inc/customizer/settings/frontpage/header.php:1531
+#: inc/customizer/settings/frontpage/header.php:2320
+#: inc/customizer/settings/frontpage/header.php:2697
+#: inc/customizer/settings/frontpage/header.php:2968
+#: inc/customizer/settings/frontpage/header.php:3322
+#: inc/customizer/settings/frontpage/header.php:4190
+#: inc/customizer/settings/frontpage/sidebar.php:495
+#: inc/customizer/settings/frontpage/top-bar.php:567
+#: inc/customizer/settings/frontpage/top-bar.php:1000
+#: inc/customizer/settings/frontpage/vertical-bar.php:912
+#: inc/customizer/settings/frontpage/vertical-bar.php:1654
+#: inc/customizer/settings/frontpage/vertical-bar.php:1994
+#: inc/customizer/settings/general.php:1470
+#: inc/customizer/settings/general.php:1817
+#: inc/customizer/settings/general.php:2800
+#: inc/customizer/settings/general.php:3198
+#: inc/customizer/settings/general.php:4506
+#: inc/customizer/settings/general.php:4960
+#: inc/customizer/settings/general.php:6011
+#: inc/customizer/settings/general.php:6385
+#: inc/customizer/settings/general.php:6707
+#: inc/customizer/settings/general.php:6979
+#: inc/customizer/settings/header.php:1506
+#: inc/customizer/settings/header.php:2280
+#: inc/customizer/settings/header.php:2706
+#: inc/customizer/settings/header.php:2963
+#: inc/customizer/settings/header.php:3290
+#: inc/customizer/settings/header.php:3625
+#: inc/customizer/settings/header.php:4324
+#: inc/customizer/settings/mobile.php:1005
+#: inc/customizer/settings/sidebar.php:484
+#: inc/customizer/settings/top-bar.php:556
+#: inc/customizer/settings/top-bar.php:989
+#: inc/customizer/settings/vertical-bar.php:893
+#: inc/customizer/settings/vertical-bar.php:1635
+#: inc/customizer/settings/vertical-bar.php:1975
+msgid "Typography"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:528
+#: inc/customizer/settings/footer.php:979
+#: inc/customizer/settings/frontpage/footer.php:546
+#: inc/customizer/settings/frontpage/footer.php:997
+#: inc/customizer/settings/frontpage/header.php:1543
+#: inc/customizer/settings/frontpage/header.php:2332
+#: inc/customizer/settings/frontpage/top-bar.php:1012
+#: inc/customizer/settings/general.php:6991
+#: inc/customizer/settings/general.php:7229
+#: inc/customizer/settings/header.php:1518
+#: inc/customizer/settings/header.php:2292
+#: inc/customizer/settings/mobile.php:1016
+#: inc/customizer/settings/top-bar.php:1001
+msgid "Font Size (px)"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:567
+#: inc/customizer/settings/footer.php:1018
+#: inc/customizer/settings/frontpage/footer.php:585
+#: inc/customizer/settings/frontpage/footer.php:1036
+#: inc/customizer/settings/frontpage/header.php:1587
+#: inc/customizer/settings/frontpage/header.php:2376
+#: inc/customizer/settings/frontpage/header.php:2747
+#: inc/customizer/settings/frontpage/header.php:3017
+#: inc/customizer/settings/frontpage/header.php:3372
+#: inc/customizer/settings/frontpage/header.php:4240
+#: inc/customizer/settings/frontpage/top-bar.php:617
+#: inc/customizer/settings/frontpage/top-bar.php:1046
+#: inc/customizer/settings/frontpage/vertical-bar.php:962
+#: inc/customizer/settings/frontpage/vertical-bar.php:1704
+#: inc/customizer/settings/frontpage/vertical-bar.php:2044
+#: inc/customizer/settings/general.php:1522
+#: inc/customizer/settings/general.php:1867
+#: inc/customizer/settings/general.php:2852
+#: inc/customizer/settings/general.php:3248
+#: inc/customizer/settings/general.php:4556
+#: inc/customizer/settings/general.php:5010
+#: inc/customizer/settings/general.php:6063
+#: inc/customizer/settings/general.php:6437
+#: inc/customizer/settings/general.php:6757
+#: inc/customizer/settings/general.php:7025
+#: inc/customizer/settings/header.php:1557
+#: inc/customizer/settings/header.php:2331
+#: inc/customizer/settings/header.php:2756
+#: inc/customizer/settings/header.php:3012
+#: inc/customizer/settings/header.php:3340
+#: inc/customizer/settings/header.php:3675
+#: inc/customizer/settings/header.php:4374
+#: inc/customizer/settings/mobile.php:1045
+#: inc/customizer/settings/top-bar.php:606
+#: inc/customizer/settings/top-bar.php:1035
+#: inc/customizer/settings/vertical-bar.php:943
+#: inc/customizer/settings/vertical-bar.php:1685
+#: inc/customizer/settings/vertical-bar.php:2025
+msgid "Letter Spacing (px)"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:650
+#: inc/customizer/settings/frontpage/footer.php:668
+#: inc/customizer/settings/frontpage/header.php:1245
+#: inc/customizer/settings/frontpage/top-bar.php:319
+#: inc/customizer/settings/frontpage/vertical-bar.php:502
+#: inc/customizer/settings/header.php:1220
+#: inc/customizer/settings/header.php:2474
+#: inc/customizer/settings/top-bar.php:308
+#: inc/customizer/settings/vertical-bar.php:483
+msgid "Logo Options"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:704
+#: inc/customizer/settings/frontpage/footer.php:722
+msgid "Footer Logo Max Height (px)"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:763
+#: inc/customizer/settings/frontpage/footer.php:781
+#: inc/customizer/settings/frontpage/header.php:2134
+#: inc/customizer/settings/frontpage/header.php:3110
+#: inc/customizer/settings/frontpage/top-bar.php:835
+#: inc/customizer/settings/frontpage/vertical-bar.php:664
+#: inc/customizer/settings/general.php:7136
+#: inc/customizer/settings/header.php:2094
+#: inc/customizer/settings/header.php:3423
+#: inc/customizer/settings/top-bar.php:824
+#: inc/customizer/settings/vertical-bar.php:645
+msgid "Navigation Options"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:801
+#: inc/customizer/settings/frontpage/footer.php:819
+#: inc/customizer/settings/frontpage/header.php:2161
+#: inc/customizer/settings/frontpage/header.php:3153
+#: inc/customizer/settings/frontpage/top-bar.php:861
+#: inc/customizer/settings/frontpage/vertical-bar.php:712
+#: inc/customizer/settings/header.php:2121
+#: inc/customizer/settings/header.php:3466
+#: inc/customizer/settings/mobile.php:838
+#: inc/customizer/settings/top-bar.php:850
+#: inc/customizer/settings/vertical-bar.php:693
+msgid "Menu Spacing"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:834
+#: inc/customizer/settings/frontpage/footer.php:852
+#: inc/customizer/settings/frontpage/header.php:2183
+#: inc/customizer/settings/frontpage/header.php:3175
+#: inc/customizer/settings/frontpage/top-bar.php:883
+#: inc/customizer/settings/header.php:2143
+#: inc/customizer/settings/header.php:3488
+#: inc/customizer/settings/top-bar.php:872
+msgid "Menu Items Spacing (Left/Right)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/footer.php:88
+msgid "Activate a specific footer for the front page"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/footer.php:101
+msgid "No Footer (Front Page only)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:242
+msgid "Activate a specific header for the front page"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:255
+#: inc/customizer/settings/header.php:260
+msgid "Header Format"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:260
+#: inc/customizer/settings/header.php:265
+msgid "Simple Bar"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:261
+#: inc/customizer/settings/header.php:266
+msgid "Image"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:262
+#: inc/customizer/settings/header.php:267
+msgid "No Header"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:300
+#: inc/customizer/settings/frontpage/header.php:724
+#: inc/customizer/settings/header.php:319
+#: inc/customizer/settings/header.php:749
+#: inc/customizer/settings/mobile.php:128
+msgid "Min Height (px)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:322
+msgid "Border style"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:327
+#: inc/customizer/settings/frontpage/header.php:778
+#: inc/customizer/settings/frontpage/header.php:4429
+#: inc/customizer/settings/header.php:346
+#: inc/customizer/settings/header.php:798
+#: inc/customizer/settings/header.php:4553
+msgid "Solid"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:328
+#: inc/customizer/settings/frontpage/header.php:779
+#: inc/customizer/settings/frontpage/header.php:4430
+#: inc/customizer/settings/header.php:347
+#: inc/customizer/settings/header.php:799
+#: inc/customizer/settings/header.php:4554
+msgid "Dashed"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:329
+#: inc/customizer/settings/frontpage/header.php:780
+#: inc/customizer/settings/frontpage/header.php:4431
+#: inc/customizer/settings/header.php:348
+#: inc/customizer/settings/header.php:800
+#: inc/customizer/settings/header.php:4555
+msgid "Dotted"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:330
+#: inc/customizer/settings/frontpage/header.php:781
+#: inc/customizer/settings/frontpage/header.php:4432
+#: inc/customizer/settings/header.php:349
+#: inc/customizer/settings/header.php:801
+#: inc/customizer/settings/header.php:4556
+msgid "Double"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:346
+msgid "Border width"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:421
+#: inc/customizer/settings/header.php:430
+#: inc/customizer/settings/header.php:886
+msgid "Borders Color"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:483
+#: inc/customizer/settings/header.php:536
+msgid "Background Image Attachment"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:497
+#: inc/customizer/settings/header.php:509
+msgid "Background Image Position"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:502
+#: inc/customizer/settings/header.php:514
+msgid "Top Left"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:503
+#: inc/customizer/settings/header.php:515
+msgid "Top Center"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:504
+#: inc/customizer/settings/header.php:516
+msgid "Top Right"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:505
+#: inc/customizer/settings/header.php:517
+msgid "Center Left"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:507
+#: inc/customizer/settings/header.php:519
+msgid "Center Right"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:508
+#: inc/customizer/settings/header.php:520
+msgid "Bottom Left"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:509
+#: inc/customizer/settings/header.php:521
+msgid "Bottom Center"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:510
+#: inc/customizer/settings/header.php:522
+msgid "Bottom Right"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:518
+#: inc/customizer/settings/header.php:556
+msgid "Background Image Repeat"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:523
+#: inc/customizer/settings/header.php:561
+msgid "No-repeat"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:524
+#: inc/customizer/settings/header.php:562
+msgid "Repeat"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:525
+#: inc/customizer/settings/header.php:563
+msgid "Repeat-x"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:526
+#: inc/customizer/settings/header.php:564
+msgid "Repeat-y"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:534
+#: inc/customizer/settings/header.php:578
+msgid "Background Image Size"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:563
+#: inc/customizer/settings/header.php:613
+#: inc/customizer/settings/mobile.php:117
+#: inc/customizer/settings/mobile.php:504
+msgid "General"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:575
+#: inc/customizer/settings/header.php:625
+msgid "Deactivate Menu Bar"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:611
+#: inc/customizer/settings/frontpage/header.php:1262
+#: inc/customizer/settings/frontpage/header.php:1358
+#: inc/customizer/settings/frontpage/header.php:1697
+#: inc/customizer/settings/frontpage/header.php:2151
+#: inc/customizer/settings/header.php:656
+#: inc/customizer/settings/header.php:1237
+#: inc/customizer/settings/header.php:1333
+#: inc/customizer/settings/header.php:1657
+#: inc/customizer/settings/header.php:2111
+msgid "Show on Desktop Only"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:612
+#: inc/customizer/settings/frontpage/header.php:1263
+#: inc/customizer/settings/frontpage/header.php:1359
+#: inc/customizer/settings/frontpage/header.php:1698
+#: inc/customizer/settings/frontpage/header.php:2152
+#: inc/customizer/settings/header.php:657
+#: inc/customizer/settings/header.php:1238
+#: inc/customizer/settings/header.php:1334
+#: inc/customizer/settings/header.php:1658
+#: inc/customizer/settings/header.php:2112
+msgid "Show on Desktop & Tablet"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:613
+#: inc/customizer/settings/header.php:658
+msgid "Show on Tablet"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:637
+#: inc/customizer/settings/frontpage/vertical-bar.php:194
+#: inc/customizer/settings/header.php:677
+#: inc/customizer/settings/vertical-bar.php:176
+msgid "Bar Position"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:698
+#: inc/customizer/settings/frontpage/top-bar.php:153
+#: inc/customizer/settings/header.php:728
+#: inc/customizer/settings/top-bar.php:138
+msgid "Enable Sticky Bar"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:761
+#: inc/customizer/settings/frontpage/sidebar.php:293
+#: inc/customizer/settings/header.php:781
+#: inc/customizer/settings/sidebar.php:282
+msgid "Borders"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:773
+#: inc/customizer/settings/header.php:793
+msgid "Borders style"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:791
+#: inc/customizer/settings/header.php:811
+msgid "Borders width"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:866
+msgid "Border Top Color"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:884
+#: inc/customizer/settings/frontpage/top-bar.php:231
+#: inc/customizer/settings/header.php:904
+#: inc/customizer/settings/top-bar.php:217
+msgid "Select elements in each area"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:904
+#: inc/customizer/settings/frontpage/top-bar.php:251
+#: inc/customizer/settings/header.php:924
+#: inc/customizer/settings/top-bar.php:237
+msgid "Left area"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:905
+#: inc/customizer/settings/header.php:925
+msgid "Center area"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:906
+#: inc/customizer/settings/frontpage/top-bar.php:252
+#: inc/customizer/settings/header.php:926
+#: inc/customizer/settings/top-bar.php:238
+msgid "Right area"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:926
+#: inc/customizer/settings/frontpage/header.php:1032
+#: inc/customizer/settings/frontpage/header.php:1141
+#: inc/customizer/settings/frontpage/top-bar.php:269
+#: inc/customizer/settings/frontpage/top-bar.php:295
+#: inc/customizer/settings/frontpage/vertical-bar.php:457
+#: inc/customizer/settings/frontpage/vertical-bar.php:472
+#: inc/customizer/settings/header.php:946
+#: inc/customizer/settings/header.php:1037
+#: inc/customizer/settings/header.php:1131
+#: inc/customizer/settings/mobile.php:386
+#: inc/customizer/settings/mobile.php:1108
+#: inc/customizer/settings/top-bar.php:255
+#: inc/customizer/settings/top-bar.php:284
+#: inc/customizer/settings/vertical-bar.php:438
+#: inc/customizer/settings/vertical-bar.php:453
+#: template-parts/site/site-search-overlay.php:17
+msgid "Search"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:956
+#: inc/customizer/settings/frontpage/header.php:1062
+#: inc/customizer/settings/frontpage/header.php:1171
+#: inc/customizer/settings/header.php:971
+#: inc/customizer/settings/header.php:1062
+#: inc/customizer/settings/header.php:1156
+msgid "Elements Alignment"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:961
+#: inc/customizer/settings/frontpage/header.php:1067
+#: inc/customizer/settings/frontpage/header.php:1176
+#: inc/customizer/settings/header.php:976
+#: inc/customizer/settings/header.php:1067
+#: inc/customizer/settings/header.php:1161
+msgid "Horizontal"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:962
+#: inc/customizer/settings/frontpage/header.php:1068
+#: inc/customizer/settings/frontpage/header.php:1177
+#: inc/customizer/settings/header.php:977
+#: inc/customizer/settings/header.php:1068
+#: inc/customizer/settings/header.php:1162
+msgid "Vertical"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:997
+#: inc/customizer/settings/frontpage/header.php:1103
+#: inc/customizer/settings/frontpage/header.php:1212
+#: inc/customizer/settings/header.php:1007
+#: inc/customizer/settings/header.php:1098
+#: inc/customizer/settings/header.php:1192
+msgid "Shrink"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:1264
+#: inc/customizer/settings/frontpage/header.php:1360
+#: inc/customizer/settings/frontpage/header.php:1699
+#: inc/customizer/settings/frontpage/header.php:2153
+#: inc/customizer/settings/header.php:1239
+#: inc/customizer/settings/header.php:1335
+#: inc/customizer/settings/header.php:1659
+#: inc/customizer/settings/header.php:2113
+msgid "Show on Tablet Only"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:1284
+#: inc/customizer/settings/frontpage/header.php:3922
+#: inc/customizer/settings/header.php:1259
+#: inc/customizer/settings/header.php:2535
+#: inc/customizer/settings/mobile.php:216
+msgid "Logo Max Height (px)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:1305
+#: inc/customizer/settings/header.php:1280
+msgid "Hover Effect"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:1680
+#: inc/customizer/settings/frontpage/top-bar.php:690
+#: inc/customizer/settings/frontpage/vertical-bar.php:1071
+#: inc/customizer/settings/header.php:1640
+#: inc/customizer/settings/top-bar.php:679
+#: inc/customizer/settings/vertical-bar.php:1052
+msgid "Search Options"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:1707
+#: inc/customizer/settings/frontpage/top-bar.php:716
+#: inc/customizer/settings/frontpage/vertical-bar.php:1083
+#: inc/customizer/settings/header.php:1667
+#: inc/customizer/settings/top-bar.php:705
+#: inc/customizer/settings/vertical-bar.php:1064
+msgid "Search Style"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:1712
+#: inc/customizer/settings/frontpage/vertical-bar.php:1088
+#: inc/customizer/settings/frontpage/vertical-bar.php:1102
+#: inc/customizer/settings/header.php:1672
+#: inc/customizer/settings/vertical-bar.php:1069
+#: inc/customizer/settings/vertical-bar.php:1083
+msgid "Form"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:1713
+#: inc/customizer/settings/frontpage/top-bar.php:721
+#: inc/customizer/settings/frontpage/vertical-bar.php:1089
+#: inc/customizer/settings/frontpage/vertical-bar.php:1103
+#: inc/customizer/settings/header.php:1673
+#: inc/customizer/settings/top-bar.php:710
+#: inc/customizer/settings/vertical-bar.php:1070
+#: inc/customizer/settings/vertical-bar.php:1084
+msgid "Icon - Overlay"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:1714
+#: inc/customizer/settings/frontpage/top-bar.php:722
+#: inc/customizer/settings/header.php:1674
+#: inc/customizer/settings/top-bar.php:711
+msgid "Icon - Replace"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:1884
+#: inc/customizer/settings/header.php:1844
+msgid "Border: Focus"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:1966
+#: inc/customizer/settings/frontpage/header.php:4407
+#: inc/customizer/settings/frontpage/top-bar.php:469
+#: inc/customizer/settings/general.php:2324
+#: inc/customizer/settings/general.php:3872
+#: inc/customizer/settings/general.php:5638
+#: inc/customizer/settings/general.php:6881
+#: inc/customizer/settings/header.php:1926
+#: inc/customizer/settings/header.php:4531
+#: inc/customizer/settings/top-bar.php:458
+msgid "Text"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:2007
+msgid "Search Button Background test"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:2048
+#: inc/customizer/settings/header.php:2008
+msgid "Search Icon"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:2089
+#: inc/customizer/settings/header.php:2049
+msgid "Search Icon: Hover-focus"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:2216
+#: inc/customizer/settings/header.php:2176
+msgid "Menu Items Color"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:2521
+#: inc/customizer/settings/header.php:2425
+msgid "Site Tagline"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:2522
+#: inc/customizer/settings/header.php:2426
+msgid "Page Title"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:2524
+#: inc/customizer/settings/header.php:2429
+#: inc/customizer/settings/mobile.php:624
+msgid "Search Form"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:2526
+#: inc/customizer/settings/header.php:2431
+msgid "Action Links"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:2535
+#: inc/customizer/settings/header.php:2440
+msgid "Elements Direction"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:2549
+#: inc/customizer/settings/header.php:2454
+msgid "Elements Vertical Alignment"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:2554
+#: inc/customizer/settings/header.php:2459
+msgid "Top (Left)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:2556
+#: inc/customizer/settings/header.php:2461
+msgid "Bottom (Right)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:2557
+#: inc/customizer/settings/header.php:2462
+msgid "Spaced"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:2569
+#: inc/customizer/settings/header.php:2583
+msgid "Site Tagline Options"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:2589
+#: inc/customizer/settings/frontpage/header.php:2860
+#: inc/customizer/settings/frontpage/header.php:3130
+#: inc/customizer/settings/frontpage/header.php:3485
+#: inc/customizer/settings/frontpage/header.php:3881
+#: inc/customizer/settings/frontpage/header.php:3990
+#: inc/customizer/settings/frontpage/header.php:4353
+#: inc/customizer/settings/header.php:2494
+#: inc/customizer/settings/header.php:2603
+#: inc/customizer/settings/header.php:2859
+#: inc/customizer/settings/header.php:3115
+#: inc/customizer/settings/header.php:3443
+#: inc/customizer/settings/header.php:3778
+#: inc/customizer/settings/header.php:4139
+#: inc/customizer/settings/header.php:4477
+msgid "Show on tablet Only"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:2597
+#: inc/customizer/settings/frontpage/header.php:2868
+#: inc/customizer/settings/frontpage/header.php:3138
+#: inc/customizer/settings/frontpage/header.php:3493
+#: inc/customizer/settings/frontpage/header.php:3889
+#: inc/customizer/settings/frontpage/header.php:3998
+#: inc/customizer/settings/frontpage/header.php:4361
+#: inc/customizer/settings/header.php:2502
+#: inc/customizer/settings/header.php:2611
+#: inc/customizer/settings/header.php:2867
+#: inc/customizer/settings/header.php:3123
+#: inc/customizer/settings/header.php:3451
+#: inc/customizer/settings/header.php:3786
+#: inc/customizer/settings/header.php:4147
+#: inc/customizer/settings/header.php:4485
+msgid "Horizontal Alignment"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:2602
+#: inc/customizer/settings/frontpage/header.php:2873
+#: inc/customizer/settings/frontpage/header.php:3143
+#: inc/customizer/settings/frontpage/header.php:3498
+#: inc/customizer/settings/frontpage/header.php:3894
+#: inc/customizer/settings/frontpage/header.php:4003
+#: inc/customizer/settings/frontpage/header.php:4366
+#: inc/customizer/settings/header.php:2507
+#: inc/customizer/settings/header.php:2616
+#: inc/customizer/settings/header.php:2872
+#: inc/customizer/settings/header.php:3128
+#: inc/customizer/settings/header.php:3456
+#: inc/customizer/settings/header.php:3791
+#: inc/customizer/settings/header.php:4152
+#: inc/customizer/settings/header.php:4490
+msgid "Left (Top)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:2604
+#: inc/customizer/settings/frontpage/header.php:2875
+#: inc/customizer/settings/frontpage/header.php:3145
+#: inc/customizer/settings/frontpage/header.php:3500
+#: inc/customizer/settings/frontpage/header.php:3896
+#: inc/customizer/settings/frontpage/header.php:4005
+#: inc/customizer/settings/frontpage/header.php:4368
+#: inc/customizer/settings/header.php:2509
+#: inc/customizer/settings/header.php:2618
+#: inc/customizer/settings/header.php:2874
+#: inc/customizer/settings/header.php:3130
+#: inc/customizer/settings/header.php:3458
+#: inc/customizer/settings/header.php:3793
+#: inc/customizer/settings/header.php:4154
+#: inc/customizer/settings/header.php:4492
+msgid "Right (Bottom)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:2725
+#: inc/customizer/settings/frontpage/header.php:2995
+#: inc/customizer/settings/frontpage/header.php:3350
+#: inc/customizer/settings/frontpage/header.php:4218
+#: inc/customizer/settings/frontpage/top-bar.php:595
+#: inc/customizer/settings/frontpage/vertical-bar.php:940
+#: inc/customizer/settings/frontpage/vertical-bar.php:1682
+#: inc/customizer/settings/frontpage/vertical-bar.php:2022
+#: inc/customizer/settings/general.php:736
+#: inc/customizer/settings/general.php:810
+#: inc/customizer/settings/general.php:884
+#: inc/customizer/settings/general.php:958
+#: inc/customizer/settings/general.php:1032
+#: inc/customizer/settings/general.php:1106
+#: inc/customizer/settings/general.php:1500
+#: inc/customizer/settings/general.php:1845
+#: inc/customizer/settings/general.php:2830
+#: inc/customizer/settings/general.php:3226
+#: inc/customizer/settings/general.php:4534
+#: inc/customizer/settings/general.php:4988
+#: inc/customizer/settings/general.php:6041
+#: inc/customizer/settings/general.php:6415
+#: inc/customizer/settings/general.php:6735
+#: inc/customizer/settings/header.php:2734
+#: inc/customizer/settings/header.php:2990
+#: inc/customizer/settings/header.php:3318
+#: inc/customizer/settings/header.php:3653
+#: inc/customizer/settings/header.php:4352
+#: inc/customizer/settings/top-bar.php:584
+#: inc/customizer/settings/vertical-bar.php:921
+#: inc/customizer/settings/vertical-bar.php:1663
+#: inc/customizer/settings/vertical-bar.php:2003
+msgid "Font size (px)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:2840
+#: inc/customizer/settings/header.php:2839
+msgid "Page Title Options"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:3465
+#: inc/customizer/settings/header.php:3758
+msgid "Search Form Options"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:3530
+#: inc/customizer/settings/header.php:3823
+msgid "Form Width (px)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:3570
+#: inc/customizer/settings/header.php:3863
+#: inc/customizer/settings/mobile.php:1182
+msgid "Form Border"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:3611
+#: inc/customizer/settings/frontpage/vertical-bar.php:1299
+#: inc/customizer/settings/header.php:3899
+#: inc/customizer/settings/mobile.php:1208
+#: inc/customizer/settings/vertical-bar.php:1280
+msgid "Form Border: Focus"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:3652
+#: inc/customizer/settings/frontpage/vertical-bar.php:1335
+#: inc/customizer/settings/header.php:3935
+#: inc/customizer/settings/vertical-bar.php:1316
+msgid "Form Background"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:3693
+#: inc/customizer/settings/frontpage/vertical-bar.php:1371
+#: inc/customizer/settings/header.php:3971
+#: inc/customizer/settings/mobile.php:1260
+#: inc/customizer/settings/vertical-bar.php:1352
+msgid "Form Text"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:3734
+#: inc/customizer/settings/general.php:7377
+#: inc/customizer/settings/header.php:4007
+msgid "Search Button Background Color"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:3775
+#: inc/customizer/settings/general.php:7396
+#: inc/customizer/settings/header.php:4043
+msgid "Search Icon Color"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:3816
+#: inc/customizer/settings/general.php:7415
+#: inc/customizer/settings/header.php:4079
+msgid "Search Icon Color: Hover"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:3861
+msgid "Site Logo Options"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4333
+#: inc/customizer/settings/header.php:4457
+msgid "Action Links Options"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4376
+#: inc/customizer/settings/frontpage/top-bar.php:500
+#: inc/customizer/settings/general.php:6912
+#: inc/customizer/settings/header.php:4500
+#: inc/customizer/settings/top-bar.php:489
+#: inc/customizer/settings/top-bar.php:917
+msgid "Links"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4381
+#: inc/customizer/settings/header.php:4505
+msgid "your custom value"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4384
+#: inc/customizer/settings/header.php:4508
+msgid "\"Add new link\""
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4387
+#: inc/customizer/settings/header.php:4511
+msgid "Kirki Site"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4408
+#: inc/customizer/settings/header.php:4532
+msgid "This will be the label for your link"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4413
+#: inc/customizer/settings/header.php:4537
+msgid "URL"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4414
+#: inc/customizer/settings/header.php:4538
+msgid "This will be the link URL"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4420
+#: inc/customizer/settings/general.php:7188
+#: inc/customizer/settings/header.php:1721
+#: inc/customizer/settings/header.php:4544
+#: inc/customizer/settings/mobile.php:356
+#: inc/customizer/settings/mobile.php:465
+#: inc/customizer/settings/top-bar.php:758
+msgid "Icon"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4421
+#: inc/customizer/settings/general.php:7189
+#: inc/customizer/settings/header.php:4545
+#: inc/customizer/settings/mobile.php:288
+#: inc/customizer/settings/mobile.php:648
+msgid "Enter the full icon class: %1$sfontawsome%2$s"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4426
+#: inc/customizer/settings/header.php:4550
+msgid "Borders Style"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4438
+#: inc/customizer/settings/header.php:4562
+msgid "Borders Width (px)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4444
+#: inc/customizer/settings/header.php:4568
+msgid "Borders Radius (px)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4450
+#: inc/customizer/settings/header.php:4574
+msgid "Vertical Padding (px)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4456
+#: inc/customizer/settings/header.php:4580
+msgid "Horizontal Padding (px)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4461
+#: inc/customizer/settings/header.php:4585
+msgid "Text Font Size (px)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4467
+#: inc/customizer/settings/general.php:7358
+#: inc/customizer/settings/header.php:4591
+msgid "Text Color"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4472
+#: inc/customizer/settings/header.php:4596
+msgid "Text:hover Color"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4477
+#: inc/customizer/settings/general.php:7301
+#: inc/customizer/settings/header.php:4601
+msgid "Border Color"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4482
+#: inc/customizer/settings/header.php:4606
+msgid "Border:hover Color"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4492
+#: inc/customizer/settings/header.php:4616
+msgid "Background:hover Color"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4502
+#: inc/customizer/settings/header.php:4626
+msgid "Links Direction"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4516
+#: inc/customizer/settings/header.php:4640
+msgid "Links Spacing"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4538
+#: inc/customizer/settings/header.php:4662
+msgid "Links Items Spacing (Left/Right)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/header.php:4587
+#: inc/customizer/settings/header.php:4706
+msgid "Links Items Spacing (Top/bottom)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/sidebar.php:67
+msgid "Activate a specific sidebar for the front page"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/sidebar.php:80
+msgid "No Sidebar (Front Page Only)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/sidebar.php:96
+#: inc/customizer/settings/sidebar.php:84
+msgid "Sidebar Position"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/sidebar.php:124
+#: inc/customizer/settings/sidebar.php:112
+msgid "Sidebar Width (%)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/sidebar.php:237
+#: inc/customizer/settings/sidebar.php:226
+msgid "Widgets Padding"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/sidebar.php:265
+#: inc/customizer/settings/sidebar.php:254
+msgid "Title Margin Bottom"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/sidebar.php:313
+#: inc/customizer/settings/frontpage/sidebar.php:353
+#: inc/customizer/settings/general.php:7280
+#: inc/customizer/settings/header.php:365
+#: inc/customizer/settings/sidebar.php:302
+#: inc/customizer/settings/sidebar.php:342
+msgid "Border Width"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/sidebar.php:314
+#: inc/customizer/settings/general.php:2140
+#: inc/customizer/settings/general.php:3652
+#: inc/customizer/settings/general.php:5418
+#: inc/customizer/settings/general.php:7281
+#: inc/customizer/settings/sidebar.php:303
+msgid "Border Radius"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/sidebar.php:507
+#: inc/customizer/settings/sidebar.php:496
+msgid "Widgets Title: Font Size (px)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/sidebar.php:541
+#: inc/customizer/settings/sidebar.php:530
+msgid "Widgets Title: Letter Spacing (px)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/sidebar.php:575
+#: inc/customizer/settings/sidebar.php:564
+msgid "Widgets Title: Text Transform"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/sidebar.php:610
+#: inc/customizer/settings/sidebar.php:599
+msgid "Widgets Title: Text Align"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/sidebar.php:643
+#: inc/customizer/settings/sidebar.php:632
+msgid "Widgets Items: Font Size (px)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/sidebar.php:677
+#: inc/customizer/settings/sidebar.php:666
+msgid "Widgets Items: Text Align"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/top-bar.php:96
+msgid "Activate a specific top bar for the front page"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/top-bar.php:109
+msgid "No Top Bar (Front Page Only)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/top-bar.php:130
+msgid "Hide On Tablet & Mobile"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/top-bar.php:131
+msgid "Hide On Mobile"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/top-bar.php:139
+#: inc/customizer/settings/top-bar.php:123
+msgid "Height (em)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/top-bar.php:263
+#: inc/customizer/settings/top-bar.php:249
+msgid "Left Elements"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/top-bar.php:289
+#: inc/customizer/settings/top-bar.php:275
+msgid "Right Elements"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/top-bar.php:336
+#: inc/customizer/settings/frontpage/top-bar.php:411
+#: inc/customizer/settings/frontpage/top-bar.php:707
+#: inc/customizer/settings/frontpage/top-bar.php:852
+#: inc/customizer/settings/frontpage/vertical-bar.php:185
+#: inc/customizer/settings/top-bar.php:325
+#: inc/customizer/settings/top-bar.php:400
+#: inc/customizer/settings/top-bar.php:696
+#: inc/customizer/settings/top-bar.php:841
+#: inc/customizer/settings/vertical-bar.php:167
+msgid "Show On Desktop Only"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/top-bar.php:337
+#: inc/customizer/settings/frontpage/top-bar.php:412
+#: inc/customizer/settings/frontpage/top-bar.php:708
+#: inc/customizer/settings/frontpage/top-bar.php:853
+#: inc/customizer/settings/frontpage/vertical-bar.php:186
+#: inc/customizer/settings/top-bar.php:326
+#: inc/customizer/settings/top-bar.php:401
+#: inc/customizer/settings/top-bar.php:697
+#: inc/customizer/settings/top-bar.php:842
+#: inc/customizer/settings/vertical-bar.php:168
+msgid "Show On Desktop & Tablet"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/top-bar.php:345
+#: inc/customizer/settings/frontpage/vertical-bar.php:514
+#: inc/customizer/settings/top-bar.php:334
+#: inc/customizer/settings/vertical-bar.php:495
+msgid "Max Height (px)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/top-bar.php:531
+#: inc/customizer/settings/top-bar.php:520
+msgid "Links: hover"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/vertical-bar.php:137
+msgid "Activate a specific vertical bar for the front page"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/vertical-bar.php:150
+msgid "No Vertical Bar (Front Page only)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/vertical-bar.php:160
+#: inc/customizer/settings/vertical-bar.php:142
+msgid "Vertical Bar Style"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/vertical-bar.php:165
+#: inc/customizer/settings/general.php:1141
+#: inc/customizer/settings/vertical-bar.php:147
+msgid "Classic"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/vertical-bar.php:208
+#: inc/customizer/settings/vertical-bar.php:190
+msgid "Scroll Behavior"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/vertical-bar.php:213
+#: inc/customizer/settings/vertical-bar.php:195
+msgid "Sticky"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/vertical-bar.php:222
+#: inc/customizer/settings/vertical-bar.php:204
+msgid "Width (px)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/vertical-bar.php:250
+#: inc/customizer/settings/vertical-bar.php:232
+msgid "Width (px) - Tablet only"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/vertical-bar.php:359
+#: inc/customizer/settings/vertical-bar.php:341
+msgid "Footer: Background"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/vertical-bar.php:400
+#: inc/customizer/settings/general.php:2180
+#: inc/customizer/settings/general.php:2513
+#: inc/customizer/settings/general.php:3728
+#: inc/customizer/settings/general.php:4264
+#: inc/customizer/settings/general.php:5494
+#: inc/customizer/settings/header.php:1803
+#: inc/customizer/settings/vertical-bar.php:382
+msgid "Border"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/vertical-bar.php:447
+#: inc/customizer/settings/general.php:1234
+#: inc/customizer/settings/general.php:2551
+#: inc/customizer/settings/general.php:4301
+#: inc/customizer/settings/general.php:6190
+#: inc/customizer/settings/mobile.php:615
+#: inc/customizer/settings/vertical-bar.php:428
+msgid "Elements Positioning"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/vertical-bar.php:467
+#: inc/customizer/settings/vertical-bar.php:448
+msgid "Footer Elements Positioning"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/vertical-bar.php:468
+#: inc/customizer/settings/vertical-bar.php:449
+msgid "Only if the bar is sticky"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/vertical-bar.php:537
+#: inc/customizer/settings/frontpage/vertical-bar.php:690
+#: inc/customizer/settings/frontpage/vertical-bar.php:1111
+#: inc/customizer/settings/frontpage/vertical-bar.php:1480
+#: inc/customizer/settings/frontpage/vertical-bar.php:1820
+#: inc/customizer/settings/general.php:2013
+#: inc/customizer/settings/general.php:3525
+#: inc/customizer/settings/general.php:5291
+#: inc/customizer/settings/mobile.php:679
+#: inc/customizer/settings/mobile.php:817
+#: inc/customizer/settings/vertical-bar.php:518
+#: inc/customizer/settings/vertical-bar.php:671
+#: inc/customizer/settings/vertical-bar.php:1092
+#: inc/customizer/settings/vertical-bar.php:1461
+#: inc/customizer/settings/vertical-bar.php:1801
+msgid "Position"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/vertical-bar.php:634
+#: inc/customizer/settings/frontpage/vertical-bar.php:1041
+#: inc/customizer/settings/frontpage/vertical-bar.php:1443
+#: inc/customizer/settings/frontpage/vertical-bar.php:1783
+#: inc/customizer/settings/frontpage/vertical-bar.php:2123
+#: inc/customizer/settings/vertical-bar.php:615
+#: inc/customizer/settings/vertical-bar.php:1022
+#: inc/customizer/settings/vertical-bar.php:1424
+#: inc/customizer/settings/vertical-bar.php:1764
+#: inc/customizer/settings/vertical-bar.php:2104
+msgid "Hide on Tablet"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/vertical-bar.php:676
+#: inc/customizer/settings/mobile.php:804
+#: inc/customizer/settings/vertical-bar.php:657
+msgid "Navigation Style"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/vertical-bar.php:681
+#: inc/customizer/settings/mobile.php:809
+#: inc/customizer/settings/vertical-bar.php:662
+msgid "Accordion"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/vertical-bar.php:682
+#: inc/customizer/settings/mobile.php:810
+#: inc/customizer/settings/vertical-bar.php:663
+msgid "Drilldown"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/vertical-bar.php:734
+#: inc/customizer/settings/mobile.php:859
+#: inc/customizer/settings/vertical-bar.php:715
+msgid "Menu Items Spacing (Top/Bottom)"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/vertical-bar.php:1097
+#: inc/customizer/settings/vertical-bar.php:1078
+msgid "Search Style - Tablet only"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/vertical-bar.php:1407
+#: inc/customizer/settings/header.php:1967
+#: inc/customizer/settings/mobile.php:1286
+#: inc/customizer/settings/vertical-bar.php:1388
+msgid "Search Button Background"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/vertical-bar.php:1797
+#: inc/customizer/settings/vertical-bar.php:1778
+msgid "Footer Custom Text Options"
+msgstr ""
+
+#: inc/customizer/settings/general.php:415
+msgid "Global Colors Options"
+msgstr ""
+
+#: inc/customizer/settings/general.php:420
+msgid "Light"
+msgstr ""
+
+#: inc/customizer/settings/general.php:421
+msgid "Custom"
+msgstr ""
+
+#: inc/customizer/settings/general.php:624
+msgid "Set global typography settings here"
+msgstr ""
+
+#: inc/customizer/settings/general.php:637
+msgid "Global Typography Options"
+msgstr ""
+
+#: inc/customizer/settings/general.php:665
+msgid "Headings Font Family"
+msgstr ""
+
+#: inc/customizer/settings/general.php:687
+msgid "H1"
+msgstr ""
+
+#: inc/customizer/settings/general.php:761
+msgid "H2"
+msgstr ""
+
+#: inc/customizer/settings/general.php:835
+msgid "H3"
+msgstr ""
+
+#: inc/customizer/settings/general.php:909
+msgid "H4"
+msgstr ""
+
+#: inc/customizer/settings/general.php:983
+msgid "H5"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1057
+msgid "H6"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1136
+msgid "Blog Style"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1142
+msgid "Cards"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1143
+msgid "Horizontal Cards"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1156
+msgid "Posts Spacing (px)"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1244
+#: inc/customizer/settings/general.php:2561
+#: inc/customizer/settings/general.php:6202
+msgid "Featured Image"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1245
+#: inc/customizer/settings/general.php:1393
+#: inc/customizer/settings/general.php:2562
+#: inc/customizer/settings/general.php:2723
+#: inc/customizer/settings/general.php:4309
+#: inc/customizer/settings/general.php:4429
+#: inc/customizer/settings/general.php:5934
+#: inc/customizer/settings/general.php:6203
+#: inc/customizer/settings/general.php:6349
+msgid "Title"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1246
+#: inc/customizer/settings/general.php:2563
+#: inc/customizer/settings/general.php:4310
+#: inc/customizer/settings/general.php:6204
+msgid "Meta"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1248
+#: inc/customizer/settings/general.php:2565
+#: inc/customizer/settings/general.php:4312
+msgid "Read More"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1261
+#: inc/customizer/settings/general.php:2578
+#: inc/customizer/settings/general.php:6219
+msgid "Featured Image Options"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1296
+#: inc/customizer/settings/general.php:1354
+#: inc/customizer/settings/general.php:1701
+#: inc/customizer/settings/general.php:2052
+msgid "Margin"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1318
+#: inc/customizer/settings/general.php:2612
+msgid "Hover Zoom Effect"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1328
+#: inc/customizer/settings/general.php:2622
+msgid "Hover Overlay Effect"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1342
+#: inc/customizer/settings/general.php:2636
+#: inc/customizer/settings/general.php:4325
+#: inc/customizer/settings/general.php:5751
+#: inc/customizer/settings/general.php:6280
+msgid "Title Options"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1429
+#: inc/customizer/settings/general.php:2759
+#: inc/customizer/settings/general.php:4465
+#: inc/customizer/settings/general.php:5970
+msgid "Title: Hover"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1643
+#: inc/customizer/settings/general.php:2973
+#: inc/customizer/settings/general.php:4677
+#: inc/customizer/settings/general.php:6543
+msgid "Meta Options"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1655
+#: inc/customizer/settings/general.php:3000
+#: inc/customizer/settings/general.php:4706
+#: inc/customizer/settings/general.php:6555
+msgid "Meta Elements Positioning"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1664
+#: inc/customizer/settings/general.php:3009
+#: inc/customizer/settings/general.php:4713
+#: inc/customizer/settings/general.php:6564
+msgid "Author"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1665
+#: inc/customizer/settings/general.php:3010
+#: inc/customizer/settings/general.php:4714
+#: inc/customizer/settings/general.php:6565
+msgid "Date"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1666
+#: inc/customizer/settings/general.php:3011
+#: inc/customizer/settings/general.php:4715
+#: inc/customizer/settings/general.php:6566
+msgid "Categories"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1667
+#: inc/customizer/settings/general.php:3012
+#: inc/customizer/settings/general.php:4716
+#: inc/customizer/settings/general.php:6207
+#: inc/customizer/settings/general.php:6567
+msgid "Comments"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1676
+#: inc/customizer/settings/general.php:3021
+#: inc/customizer/settings/general.php:4725
+#: inc/customizer/settings/general.php:6576
+msgid "Hide Meta Icons"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1686
+#: inc/customizer/settings/general.php:3031
+#: inc/customizer/settings/general.php:4735
+#: inc/customizer/settings/general.php:6586
+msgid "Menu Position"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1740
+#: inc/customizer/settings/general.php:3121
+#: inc/customizer/settings/general.php:4883
+#: inc/customizer/settings/general.php:6640
+msgid "Items"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1776
+#: inc/customizer/settings/general.php:3157
+#: inc/customizer/settings/general.php:4919
+#: inc/customizer/settings/general.php:6671
+#: inc/customizer/settings/top-bar.php:953
+msgid "Links: Hover"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1950
+#: inc/customizer/settings/general.php:3331
+#: inc/customizer/settings/general.php:5093
+msgid "Content Options"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1962
+#: inc/customizer/settings/general.php:3358
+#: inc/customizer/settings/general.php:5122
+msgid "Excerpt Length"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1977
+msgid "Display Full content"
+msgstr ""
+
+#: inc/customizer/settings/general.php:1991
+#: inc/customizer/settings/general.php:3488
+#: inc/customizer/settings/general.php:5252
+msgid "Read More Options"
+msgstr ""
+
+#: inc/customizer/settings/general.php:2003
+#: inc/customizer/settings/general.php:3515
+#: inc/customizer/settings/general.php:5281
+msgid "Read More Text"
+msgstr ""
+
+#: inc/customizer/settings/general.php:2074
+#: inc/customizer/settings/general.php:3586
+msgid "Padding"
+msgstr ""
+
+#: inc/customizer/settings/general.php:2216
+#: inc/customizer/settings/general.php:3764
+#: inc/customizer/settings/general.php:5530
+msgid "Border: Hover"
+msgstr ""
+
+#: inc/customizer/settings/general.php:2288
+msgid "Background: Hover"
+msgstr ""
+
+#: inc/customizer/settings/general.php:2360
+#: inc/customizer/settings/general.php:3908
+#: inc/customizer/settings/general.php:5674
+msgid "Text: Hover"
+msgstr ""
+
+#: inc/customizer/settings/general.php:2418
+#: inc/customizer/settings/general.php:3966
+msgid "Columns Number"
+msgstr ""
+
+#: inc/customizer/settings/general.php:2440
+msgid "Equal Heights"
+msgstr ""
+
+#: inc/customizer/settings/general.php:2450
+#: inc/customizer/settings/general.php:4115
+msgid "Cards Border Width (px)"
+msgstr ""
+
+#: inc/customizer/settings/general.php:2473
+#: inc/customizer/settings/general.php:4138
+msgid "Cards Border Radius (px)"
+msgstr ""
+
+#: inc/customizer/settings/general.php:3046
+#: inc/customizer/settings/general.php:3373
+#: inc/customizer/settings/general.php:4764
+#: inc/customizer/settings/general.php:5137
+msgid "spacing"
+msgstr ""
+
+#: inc/customizer/settings/general.php:3448
+#: inc/customizer/settings/general.php:5212
+msgid "text"
+msgstr ""
+
+#: inc/customizer/settings/general.php:3800
+#: inc/customizer/settings/general.php:5566
+msgid "Link Background"
+msgstr ""
+
+#: inc/customizer/settings/general.php:3836
+#: inc/customizer/settings/general.php:5602
+msgid "Link Background: Hover"
+msgstr ""
+
+#: inc/customizer/settings/general.php:4004
+msgid "Cards Min Height (px)"
+msgstr ""
+
+#: inc/customizer/settings/general.php:4041
+msgid "Cards Custom Height (px)"
+msgstr ""
+
+#: inc/customizer/settings/general.php:4079
+msgid "Image Width (%)"
+msgstr ""
+
+#: inc/customizer/settings/general.php:4101
+msgid "Featured Image Position"
+msgstr ""
+
+#: inc/customizer/settings/general.php:4216
+msgid "Cards Margin (px)"
+msgstr ""
+
+#: inc/customizer/settings/general.php:4345
+#: inc/customizer/settings/general.php:4697
+#: inc/customizer/settings/general.php:5113
+#: inc/customizer/settings/general.php:5272
+#: inc/customizer/settings/general.php:5771
+msgid "Show on Tablet & Mobile"
+msgstr ""
+
+#: inc/customizer/settings/general.php:4346
+#: inc/customizer/settings/general.php:4698
+#: inc/customizer/settings/general.php:5114
+#: inc/customizer/settings/general.php:5273
+#: inc/customizer/settings/general.php:5772
+msgid "Show on Mobile Only"
+msgstr ""
+
+#: inc/customizer/settings/general.php:4750
+msgid "Menu Direction"
+msgstr ""
+
+#: inc/customizer/settings/general.php:4786
+msgid "Items Spacing (Top/Bottom)"
+msgstr ""
+
+#: inc/customizer/settings/general.php:5352
+msgid "Link Padding"
+msgstr ""
+
+#: inc/customizer/settings/general.php:5717
+msgid "Image Hover Zoom Effect"
+msgstr ""
+
+#: inc/customizer/settings/general.php:5727
+msgid "Image Hover Overlay Effect"
+msgstr ""
+
+#: inc/customizer/settings/general.php:5737
+msgid "Show the Post Title"
+msgstr ""
+
+#: inc/customizer/settings/general.php:5770
+msgid "Hide on Mobile Only"
+msgstr ""
+
+#: inc/customizer/settings/general.php:5780
+msgid "Title Position"
+msgstr ""
+
+#: inc/customizer/settings/general.php:5850
+msgid "Title Padding (px)"
+msgstr ""
+
+#: inc/customizer/settings/general.php:6206
+msgid "Tags"
+msgstr ""
+
+#: inc/customizer/settings/general.php:6292
+msgid "Tag"
+msgstr ""
+
+#: inc/customizer/settings/general.php:6297
+msgid "h1"
+msgstr ""
+
+#: inc/customizer/settings/general.php:6298
+msgid "h2"
+msgstr ""
+
+#: inc/customizer/settings/general.php:6299
+msgid "h3"
+msgstr ""
+
+#: inc/customizer/settings/general.php:6300
+msgid "h4"
+msgstr ""
+
+#: inc/customizer/settings/general.php:6301
+msgid "h5"
+msgstr ""
+
+#: inc/customizer/settings/general.php:6302
+msgid "h6"
+msgstr ""
+
+#: inc/customizer/settings/general.php:6830
+msgid "Tags Options"
+msgstr ""
+
+#: inc/customizer/settings/general.php:6943
+msgid "Links:hover"
+msgstr ""
+
+#: inc/customizer/settings/general.php:7098
+msgid "Comments Options"
+msgstr ""
+
+#: inc/customizer/settings/general.php:7179
+msgid "Deactivate Scroll to Top"
+msgstr ""
+
+#: inc/customizer/settings/general.php:7207
+msgid "Form Height (px)"
+msgstr ""
+
+#: inc/customizer/settings/general.php:7251
+msgid "Form Padding"
+msgstr ""
+
+#: inc/customizer/settings/general.php:7320
+msgid "Border Color: Focus"
+msgstr ""
+
+#: inc/customizer/settings/header.php:280
+msgid "Control for the section not empty"
+msgstr ""
+
+#: inc/customizer/settings/header.php:341
+msgid "Border Style"
+msgstr ""
+
+#: inc/customizer/settings/header.php:461
+msgid "Use the featured image for pages that have one"
+msgstr ""
+
+#: inc/customizer/settings/header.php:477
+msgid "Use the featured image for single posts that have one"
+msgstr ""
+
+#: inc/customizer/settings/header.php:493
+msgid "Background Image (Default)"
+msgstr ""
+
+#: inc/customizer/settings/header.php:1762
+#: inc/customizer/settings/top-bar.php:789
+msgid "Icon: Hover"
+msgstr ""
+
+#: inc/customizer/settings/header.php:2370
+#: inc/customizer/settings/header.php:2795
+#: inc/customizer/settings/header.php:3051
+#: inc/customizer/settings/header.php:3379
+#: inc/customizer/settings/header.php:3714
+#: inc/customizer/settings/header.php:4413
+#: inc/customizer/settings/mobile.php:1074
+#: inc/customizer/settings/top-bar.php:640
+#: inc/customizer/settings/top-bar.php:1069
+#: inc/customizer/settings/vertical-bar.php:982
+#: inc/customizer/settings/vertical-bar.php:1724
+#: inc/customizer/settings/vertical-bar.php:2064
+msgid "Text Transform (px)"
+msgstr ""
+
+#: inc/customizer/settings/header.php:2427
+msgid "Breadcrumbs"
+msgstr ""
+
+#: inc/customizer/settings/header.php:3095
+msgid "Breadcrumbs Options"
+msgstr ""
+
+#: inc/customizer/settings/mobile.php:196
+msgid "Logo"
+msgstr ""
+
+#: inc/customizer/settings/mobile.php:207
+msgid "Display the Logo"
+msgstr ""
+
+#: inc/customizer/settings/mobile.php:263
+msgid "Menu toggle Icon"
+msgstr ""
+
+#: inc/customizer/settings/mobile.php:274
+msgid "Menu Toggle Position"
+msgstr ""
+
+#: inc/customizer/settings/mobile.php:287
+msgid "Menu Toggle Icon"
+msgstr ""
+
+#: inc/customizer/settings/mobile.php:297
+msgid "Icon Size (px)"
+msgstr ""
+
+#: inc/customizer/settings/mobile.php:397
+msgid "Display Search Icon"
+msgstr ""
+
+#: inc/customizer/settings/mobile.php:406
+msgid "Search Icon Size (px)"
+msgstr ""
+
+#: inc/customizer/settings/mobile.php:515
+msgid "Opening Direction"
+msgstr ""
+
+#: inc/customizer/settings/mobile.php:529
+msgid "Panel Top Space (px)"
+msgstr ""
+
+#: inc/customizer/settings/mobile.php:563
+msgid "Panel Width (%)"
+msgstr ""
+
+#: inc/customizer/settings/mobile.php:597
+msgid "Overlay"
+msgstr ""
+
+#: inc/customizer/settings/mobile.php:606
+msgid "Push the content"
+msgstr ""
+
+#: inc/customizer/settings/mobile.php:622
+#: inc/customizer/settings/mobile.php:636
+msgid "Close Button"
+msgstr ""
+
+#: inc/customizer/settings/mobile.php:647
+msgid "Close Button Icon"
+msgstr ""
+
+#: inc/customizer/settings/mobile.php:657
+msgid "Close Icon Size (px)"
+msgstr ""
+
+#: inc/customizer/settings/mobile.php:763
+msgid "Close Icon"
+msgstr ""
+
+#: inc/customizer/settings/sidebar.php:65
+msgid "Activate the Sidebar"
+msgstr ""
+
+#: inc/customizer/settings/top-bar.php:90
+msgid "Activate The Top Bar"
+msgstr ""
+
+#: inc/customizer/settings/vertical-bar.php:129
+msgid "Activate The Vertical Bar"
+msgstr ""
+
+#: inc/customizer/settings/vertical-bar.php:454
+msgid "Footer Custom Text"
+msgstr ""
+
+#: inc/helpers/helpers.php:323
+msgid "Recent Posts"
+msgstr ""
+
+#: inc/helpers/helpers.php:336
+msgid "Search Results Found"
+msgstr ""
+
+#: inc/helpers/helpers.php:354
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: inc/helpers/helpers.php:359
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: inc/helpers/helpers.php:359
+msgctxt "Page title monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: inc/helpers/helpers.php:364
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: inc/helpers/helpers.php:364
+msgctxt "Page title yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: inc/helpers/helpers.php:386
+msgid "404: Page Not Found"
+msgstr ""
+
+#: inc/helpers/helpers.php:446
+msgid "Posts navigation"
+msgstr ""
+
+#: inc/helpers/helpers.php:489
+msgid "<span class=\"screen-reader-text\">Posted on</span> %s"
+msgstr ""
+
+#: searchform.php:19
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:22
+msgid "Search &hellip;"
+msgstr ""
+
+#: template-parts/entry/meta.php:72 template-parts/single/meta.php:55
+msgid "0 Comments"
+msgstr ""
+
+#: template-parts/entry/meta.php:72 template-parts/single/meta.php:55
+msgid "1 Comment"
+msgstr ""
+
+#: template-parts/entry/meta.php:72 template-parts/single/meta.php:55
+msgid "% Comments"
+msgstr ""
+
+#: template-parts/entry/readmore.php:28 template-parts/single/post-nav.php:23
+msgid "Continue Reading"
+msgstr ""
+
+#: template-parts/header/frontpage/frontpage-menu-bar-search-replace.php:19
+#: template-parts/mobile/mobile-bar-search-replace.php:16
+msgid "Search..."
+msgstr ""
+
+#: template-parts/header/menu-bar-search-replace.php:19
+#: template-parts/top-bar/top-bar-search-replace.php:19
+msgid "search..."
+msgstr ""
+
+#: template-parts/none.php:11
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/none.php:13
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with "
+"different keywords."
+msgstr ""
+
+#: template-parts/none.php:15
+msgid "There aren't any posts currently published in this category."
+msgstr ""
+
+#: template-parts/none.php:17
+msgid "There aren't any posts currently published under this taxonomy."
+msgstr ""
+
+#: template-parts/none.php:19
+msgid "There aren't any posts currently published under this tag."
+msgstr ""
+
+#: template-parts/none.php:21
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for."
+msgstr ""
+
+#: template-parts/page/content.php:18 template-parts/single/content.php:18
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/search/layout.php:16
+msgid "Read more"
+msgstr ""
+
+#: template-parts/single/related-posts.php:19
+msgid "You Might Also Like"
+msgstr ""
+
+#: template-parts/top-bar/frontpage/frontpage-top-bar-search-replace.php:19
+msgid "Type then hit enter to search..."
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "ubik"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "teva"
+msgstr ""
