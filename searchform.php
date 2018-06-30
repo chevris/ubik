@@ -21,6 +21,6 @@ $unique_id = esc_attr( uniqid( 'search-form-' ) );
 	
 	<input type="search" id="<?php echo $unique_id; ?>" class="search-field" name="s" id="s" autocomplete="off" placeholder="<?php esc_html_e( 'Search &hellip;', 'ubik' ); ?>" value="<?php echo get_search_query(); ?>" />
 
-	<button type="submit" class="search-submit"><i class="icon-magnifier"></i></button>
+	<button type="submit" class="search-submit"><i class="fas fa-search"></i></button>
 
 </form>

@@ -14,6 +14,22 @@
   SHARED
   LAYOUTS
   COMPONENTS
+    TOP BAR
+    HEADER
+    VERTICAL BAR
+    MOBILE
+    BLOG
+    PAGE
+    SEARCH
+    SIDEBAR
+    FOOTER
+    PAGINATION
+    SCROLL TOP
+    COMMENTS
+    WIDGETS
+    SEARCH-FORM
+    404
+  FRONT PAGE
 
 ---------------------------------------*/
 
@@ -82,17 +98,7 @@ LAYOUTS
 @import "layout";
 
 /*------------------------------------*
-COMPONENTS - SITE
-*------------------------------------*/
-@import "components/site/screen-reader-text";
-@import "components/site/search-overlay";
-@import "components/site/site-logo";
-@import "components/site/site-title";
-@import "components/site/site-tagline";
-@import "components/site/site-page-title";
-
-/*------------------------------------*
-COMPONENTS - VERTICAL BAR
+COMPONENTS - TOP BAR
 *------------------------------------*/
 @import "components/top-bar/top-bar";
 

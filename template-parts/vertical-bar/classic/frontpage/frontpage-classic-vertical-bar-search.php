@@ -24,7 +24,7 @@ $tablet_search_style = get_theme_mod( 'ubik_frontpage_classic_vertical_bar_searc
 
 			<div class="frontpage-classic-vertical-bar-search-icon">
 
-				<a href="#" class="frontpage-classic_vertical_bar-search-toggle" data-open = "search-overlay-container"><span class="icon-magnifier"></span></a>
+				<a href="#" class="frontpage-classic_vertical_bar-search-toggle" data-open = "search-overlay-container"><span class="fas fa-search"></span></a>
 
 			</div>
 
@@ -52,7 +52,7 @@ $tablet_search_style = get_theme_mod( 'ubik_frontpage_classic_vertical_bar_searc
 
 				<div class="frontpage-classic-vertical-bar-search-icon">
 
-					<a href="#" class="frontpage-classic_vertical_bar-search-toggle" data-open = "search-overlay-container"><span class="icon-magnifier"></span></a>
+					<a href="#" class="frontpage-classic_vertical_bar-search-toggle" data-open = "search-overlay-container"><span class="fas fa-search"></span></a>
 
 				</div>
 

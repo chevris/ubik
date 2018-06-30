@@ -19,7 +19,7 @@ $search_style = get_theme_mod( 'ubik_frontpage_menubar_search_style', 'overlay' 
 
     <div class="frontpage-menu-bar-search-icon">
 
-      <a href="#" class="frontpage-menu-bar-search-toggle" <?php echo esc_attr( ubik_frontpage_menubar_search_toggle_attr() ); ?>><span class="icon-magnifier"></span></a>
+      <a href="#" class="frontpage-menu-bar-search-toggle" <?php echo esc_attr( ubik_frontpage_menubar_search_toggle_attr() ); ?>><span class="fas fa-search"></span></a>
 
     </div>
 

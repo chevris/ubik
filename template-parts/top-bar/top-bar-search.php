@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div class="top-bar-search <?php echo esc_attr( ubik_top_bar_search_classes() ); ?>">
 
-  <a href="#" class="top-bar-search-toggle" <?php echo esc_attr( ubik_top_bar_search_toggle_attr() ); ?>><span class="icon-magnifier"></span></a>
+  <a href="#" class="top-bar-search-toggle" <?php echo esc_attr( ubik_top_bar_search_toggle_attr() ); ?>><span class="fas fa-search"></span></a>
 
 </div>
 
