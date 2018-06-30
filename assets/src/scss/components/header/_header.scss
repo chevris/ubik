@@ -1,7 +1,4 @@
-/**
- * Image Header
- */
-
+// Image header
 .image-header {
   display: flex;
   flex-direction: column;
@@ -27,10 +24,7 @@
   display: flex;
 }
 
-/**
- * Menu Bar
- */
-
+// Menu Bar
 .menu-bar {
   position: relative;
   background-color: $white;
@@ -130,10 +124,7 @@
   cursor: pointer;
 }
 
-/**
- * Content
- */
-
+// Content
 .header-content {
   width: 100%;
   display: flex;

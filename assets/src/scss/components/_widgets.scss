@@ -28,7 +28,7 @@
   text-transform: uppercase;
 }
 
-/* List items borders */
+// List items borders
 .widget ul li {
    padding: 5px 0;
    border-bottom: 1px solid $global-border-color;
@@ -38,7 +38,7 @@
    }
  }
 
-/* Tag cloud widget */
+// Tag cloud widget
 .widget .tagcloud ul li {
 	float: left;
 	border-top: 0;
@@ -76,8 +76,7 @@
 	text-decoration: none;
 }
 
-/* Calendar widget */
-
+// Calendar widget
 .widget_calendar th,
 .widget_calendar td {
 	text-align: center;
