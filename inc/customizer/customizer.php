@@ -96,6 +96,7 @@ if ( ! class_exists( 'Ubik_Customizer' ) ) :
 
 			// Move Colors section to ubik_general_panel and remove core header textcolor control
 			$wp_customize->get_section( 'colors' )->panel = 'ubik_general_panel';
+			$wp_customize->get_section( 'colors' )->title = 'Colors & Background Image';
 			$wp_customize->remove_control( 'header_textcolor' );
 
 			// Tweak default controls

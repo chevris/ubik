@@ -13,3 +13,5 @@ mix.scripts([
   'assets/src/scripts/foundation.js',
   'assets/src/scripts/scroll-top.js'
 ], 'assets/dist/js/all.js');
+
+mix.sourceMaps();

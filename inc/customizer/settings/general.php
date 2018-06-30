@@ -10,6 +10,10 @@
  * 
  * Panel : ubik_general_panel
  * 
+ * 	Section : ubik_layout_section
+ * 
+ * 		ubik_container_width
+ * 
  * 	Section : colors
  * 
  * 		ubik_colorscheme
@@ -17,10 +21,17 @@
  * 		[if : ubik_colorscheme == custom]
  * 		ubik_site_primary_color
  * 		ubik_site_bg_color
+ * 		ubik_content_wrap_color
  * 		ubik_site_text_color
  * 		ubik_site_headings_color
  * 		ubik_site_links_color
  * 		ubik_site_borders_color
+ * 
+ * 		ubik_site_bg_img
+ * 		ubik_site_bg_img_position
+ *    ubik_site_bg_img_attachment
+ *    ubik_site_bg_img_repeat
+ *    ubik_site_bg_img_size
  * 
  * 	Section : ubik_typography_section
  * 
@@ -407,6 +418,36 @@ Kirki::add_panel( 'ubik_general_panel', array(
   'priority'    => 150,
 ));
 
+/** Layout section */
+
+Kirki::add_section( 'ubik_layout_section', array(
+  'title'       => 'Layout',
+  'panel'       => 'ubik_general_panel',
+  'priority'    => 160,
+));
+
+Kirki::add_field( 'ubik_config', array(
+	'type'            => 'slider',
+	'settings'        => 'ubik_container_width',
+	'description'     => esc_attr__( 'Containers Max Width (px)', 'ubik' ),
+	'section'         => 'ubik_layout_section',
+	'default'         => '1200',
+	'choices'         => array(
+		'min'   => '0',
+    'max'		=> '3000',
+		'step'  => '1',
+	),
+	'priority'    		=> 10,
+	'output' => array(
+		array(
+			'element'  				=> '.grid-container',
+			'property' 				=> 'max-width',
+			'units'						=> 'px',
+		),
+	),
+  'transport'       => 'auto',
+) );
+
 /** Colors section */
 
 Kirki::add_field( 'ubik_config', array(
@@ -465,6 +506,32 @@ Kirki::add_field( 'ubik_config', array(
 	'output' 						=> array(
 		array(
 			'element'  => 'body.colors-custom',
+			'property' => 'background-color',
+		),
+	),
+	'transport' => 'auto',
+	'active_callback' => array(
+    array(
+      'setting'       => 'ubik_colorscheme',
+      'operator'      => '==',
+      'value'         => 'custom',
+    ),
+  ),
+) );
+
+Kirki::add_field( 'ubik_config', array(
+	'type'              => 'color',
+	'settings'          => 'ubik_content_wrap_color',
+	'label'							=> 'Main Content Background Color',
+	'section'           => 'colors',
+  'default'           => 'rgba(255,255,255,0)',
+  'priority' 				  => 10,
+  'choices'     			=> array(
+		'alpha' 		=> true,
+	),
+	'output' 						=> array(
+		array(
+			'element'  => '#content-wrap',
 			'property' => 'background-color',
 		),
 	),
@@ -608,6 +675,29 @@ Kirki::add_field( 'ubik_config', array(
       'value'         => 'custom',
     ),
   ),
+) );
+
+Kirki::add_field( 'ubik_config', array(
+	'type'        => 'background',
+	'settings'    => 'ubik_site_bg_img',
+	'label'       => esc_attr__( 'Site Background Image', 'ubik' ),
+	'section'     => 'colors',
+	'default'     => array(
+		'background-image'		 => '',
+		'background-repeat'		 => 'repeat',
+		'background-position'	 => 'center center',
+		'background-size'		 => 'cover',
+		'background-attachment'	 => 'scroll',
+	),
+	'priority'    => 10,
+	'output'	 		=> array(
+		array(
+			'element' 	=> array(
+				'body',
+			),
+		),
+	),
+	'transport'   => 'auto'
 ) );
 
 

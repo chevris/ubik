@@ -14,8 +14,12 @@
 }
 
 #content-wrap {
-  margin-top: 50px;
-	margin-bottom: 50px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  @media screen and (min-width: 64em) { 
+    margin-top: 50px;
+	  margin-bottom: 50px;
+  }
 }
 
 .has-sidebar {
