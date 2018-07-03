@@ -55,18 +55,8 @@ if ( ! function_exists( 'ubik_body_classes' ) ) {
 		// A top bar is activated
 		if ( ubik_frontpage_top_bar_display() ) {
 			$classes[] = 'has-frontpage-top-bar';
-			// if ( true == get_theme_mod( 'ubik_frontpage_top_bar_sticky', false ) ) {
-			// 	$classes[] = 'has-frontpage-top-bar-sticky';
-			// } else {
-			// 	$classes[] = 'has-frontpage-top-bar';
-			// }
 		} elseif ( ubik_top_bar_display() ) {
 			$classes[] = 'has-top-bar';
-			// if ( true == get_theme_mod( 'ubik_top_bar_sticky', false ) ) {
-			// 	$classes[] = 'has-top-bar-sticky';
-			// } else {
-			// 	$classes[] = 'has-top-bar';
-			// }
 		}
 
 		// A classic vertical bar is activated

@@ -15,6 +15,6 @@ $tagline = get_bloginfo( 'description', 'display' );
 
 if ( $tagline || is_customize_preview() ) : ?>
 
-  <h2 class="site-tagline"><?php echo $tagline; ?></h2>
+  <h2 class="site-tagline"><?php echo esc_html( $tagline ); ?></h2>
 
 <?php endif; ?>

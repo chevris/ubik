@@ -86,7 +86,7 @@ class UBIK_Init {
 	 *
 	 * @since   1.0.0
 	 */
-	public static function theme_version() {
+	public static function ubik_theme_version() {
 
 		// Get theme data
 		$theme = wp_get_theme();
@@ -103,7 +103,7 @@ class UBIK_Init {
 	 */
 	public static function constants() {
 
-		$version = self::theme_version();
+		$version = self::ubik_theme_version();
 
 		// Theme version
 		define( 'UBIK_THEME_VERSION', $version );
