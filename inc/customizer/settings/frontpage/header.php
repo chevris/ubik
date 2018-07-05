@@ -45,10 +45,6 @@
  *        ubik_frontpage_menubar_full_width
  *        ubik_frontpage_menubar_sticky
  * 				ubik_frontpage_menubar_min_height
- * 				ubik_frontpage_menubar_borders_heading
- * 					[if : ubik_frontpage_menubar_borders_heading == true]
- * 					ubik_frontpage_menubar_borders_style
- * 					ubik_frontpage_menubar_borders_width
  * 				ubik_frontpage_menubar_color_heading
  * 					[if : ubik_frontpage_menubar_color_heading = true]
  * 					ubik_frontpage_menubar_bg_color
@@ -748,85 +744,6 @@ Kirki::add_field( 'ubik_config', array(
       'value'         => 'general',
     ),
   )
-) );
-
-function ubik_frontpage_menubar_borders_heading( $wp_customize ) {
-	
-	$wp_customize->add_setting( 'ubik_frontpage_menubar_borders_heading', array(
-    'sanitize_callback' 	=> 'ubik_sanitize_switch',
-    'default'     		    => 0,
-	) );
-
-	$wp_customize->add_control( new Ubik_Customizer_Toggle_Control_Heading_Control( $wp_customize, 'ubik_frontpage_menubar_borders_heading', array(
-    'label'	   		        => esc_html__( 'Borders', 'ubik' ),
-    'section'  				    => 'ubik_frontpage_menubar_section',
-		'priority' 				    => 11,
-		'active_callback'     => 'ubik_frontpage_menubar_heading_is_general',
-	) ) );
-
-}
-add_action( 'customize_register', 'ubik_frontpage_menubar_borders_heading' );
-
-Kirki::add_field( 'ubik_config', array(
-	'type'              => 'select',
-	'settings'          => 'ubik_frontpage_menubar_borders_style',
-	'description'       => esc_html__( 'Borders style', 'ubik' ),
-	'section'           => 'ubik_frontpage_menubar_section',
-  'default'           => 'solid',
-  'priority' 				  => 12,
-  'choices'     			=> array(
-		'solid' 	=> esc_attr__( 'Solid', 'ubik' ),
-		'dashed' 	=> esc_attr__( 'Dashed', 'ubik' ),
-		'dotted' 	=> esc_attr__( 'Dotted', 'ubik' ),
-		'double' 	=> esc_attr__( 'Double', 'ubik' ),
-		'none' 		=> esc_attr__( 'None', 'ubik' ),
-	),
-	'transport' 				=> 'postMessage',
-	'active_callback'		=> 'ubik_frontpage_menubar_heading_is_general_and_borders_on',
-) );
-
-Kirki::add_field( 'ubik_config', array(
-	'type'              => 'dimensions',
-	'settings'          => 'ubik_frontpage_menubar_borders_width',
-	'description'       => esc_html__( 'Borders width', 'ubik' ),
-	'section'           => 'ubik_frontpage_menubar_section',
-	'priority' 				  => 12,
-	'default'     		=> array(
-		'top'    => '0px',
-		'bottom' => '1px',
-		'left'   => '0px',
-		'right'  => '0px',
-	),
-	'choices'     			=> array(
-		'top' 		=> esc_attr__( 'Top', 'ubik' ),
-		'bottom' 	=> esc_attr__( 'Bottom', 'ubik' ),
-		'left' 		=> esc_attr__( 'Left', 'ubik' ),
-    'right' 	=> esc_attr__( 'Right', 'ubik' ),
-	),
-	'transport' 				=> 'refresh',
-	'output' 						=> array(
-		array(
-			'choice'      	=> 'top',
-			'element'  			=> '.frontpage-menu-bar-inner',
-			'property' 			=> 'border-top-width',
-		),
-		array(
-			'choice'      	=> 'bottom',
-			'element'  			=> '.frontpage-menu-bar-inner',
-			'property' 			=> 'border-bottom-width',
-		),
-		array(
-			'choice'      	=> 'left',
-			'element'  			=> '.frontpage-menu-bar-inner',
-			'property' 			=> 'border-left-width',
-		),
-		array(
-			'choice'      	=> 'right',
-			'element'  			=> '.frontpage-menu-bar-inner',
-			'property' 			=> 'border-right-width',
-		),
-	),
-	'active_callback'		=> 'ubik_frontpage_menubar_heading_is_general_and_borders_on',
 ) );
 
 function ubik_frontpage_menubar_color_heading( $wp_customize ) {
@@ -4670,9 +4587,9 @@ function ubik_frontpage_menubar_heading_is_general() {
 	return ( ubik_specific_frontpage_header_is_activated() && 'general' == get_theme_mod( 'ubik_frontpage_menubar_heading_tabs', 'general' ) ) ? true : false;
 }
 
-function ubik_frontpage_menubar_heading_is_general_and_borders_on() {
-	return ( ubik_specific_frontpage_header_is_activated() && 'general' == get_theme_mod( 'ubik_frontpage_menubar_heading_tabs', 'general' ) && '1' == get_theme_mod('ubik_frontpage_menubar_borders_heading', '0') ) ? true : false;
-}
+// function ubik_frontpage_menubar_heading_is_general_and_borders_on() {
+// 	return ( ubik_specific_frontpage_header_is_activated() && 'general' == get_theme_mod( 'ubik_frontpage_menubar_heading_tabs', 'general' ) && '1' == get_theme_mod('ubik_frontpage_menubar_borders_heading', '0') ) ? true : false;
+// }
 
 function ubik_frontpage_menubar_heading_is_general_and_colors_on() {
 	return ( ubik_specific_frontpage_header_is_activated() && 'general' == get_theme_mod( 'ubik_frontpage_menubar_heading_tabs', 'general' ) && '1' == get_theme_mod('ubik_frontpage_menubar_color_heading', '0') ) ? true : false;

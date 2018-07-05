@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 $header_format = ubik_header_format(); ?>
 
 <header id="header" class="<?php echo esc_attr( ubik_header_classes() ); ?>" <?php ubik_schema_markup( 'header' ); ?>>
-
+  
   <?php
   // If simple bar header
   if ( 'simple' == $header_format ) {
@@ -27,5 +27,7 @@ $header_format = ubik_header_format(); ?>
     get_template_part( 'template-parts/header/image-header' );
 
   } ?>
+
+  <div class="header-overlay"></div>
 
 </header><!-- #header -->

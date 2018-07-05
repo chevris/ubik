@@ -858,7 +858,6 @@ if ( ! function_exists( 'ubik_header_css' ) ) {
 
 				// vars
 				$frontpage_menubar_min_height	= get_theme_mod( 'ubik_frontpage_menubar_min_height', '50' );
-				$frontpage_menubar_borders_style	= get_theme_mod( 'ubik_frontpage_menubar_borders_style', 'solid' );
 				$frontpage_menubar_bg_color	= get_theme_mod( 'ubik_frontpage_menubar_bg_color', '#fefefe' );
 				$frontpage_menubar_borders_color	= get_theme_mod( 'ubik_frontpage_menubar_borders_color', '#e9e9e9' );
 				$frontpage_logo_max_height_desktop = get_theme_mod( 'ubik_frontpage_menubar_logo_max_height_desktop', '50' );
@@ -867,11 +866,6 @@ if ( ! function_exists( 'ubik_header_css' ) ) {
 				// Front page menu-bar min height
 				if ( ! empty( $frontpage_menubar_min_height ) && '50' != $frontpage_menubar_min_height ) {
 					$css .= '.frontpage-menu-bar-inner{min-height:'. $frontpage_menubar_min_height .'px;}';
-				}
-
-				// Front page menu-bar borders style
-				if ( ! empty( $frontpage_menubar_borders_style ) && '1' == get_theme_mod('ubik_frontpage_menubar_borders_heading', '1') ) {
-					$css .= '.frontpage-menu-bar-inner{border-style:'. $frontpage_menubar_borders_style .';}';
 				}
 
 				// Front page menu-bar background color
@@ -1162,7 +1156,6 @@ if ( ! function_exists( 'ubik_header_css' ) ) {
 
 				// vars
 				$menubar_min_height	= get_theme_mod( 'ubik_menubar_min_height', '50' );
-				$menubar_borders_style	= get_theme_mod( 'ubik_menubar_borders_style', 'solid' );
 				$menubar_bg_color	= get_theme_mod( 'ubik_menubar_bg_color', '#fefefe' );
 				$menubar_borders_color	= get_theme_mod( 'ubik_menubar_borders_color', '#e9e9e9' );
 				$menubar_logo_max_height_desktop = get_theme_mod( 'ubik_menubar_logo_max_height_desktop', '50' );
@@ -1171,11 +1164,6 @@ if ( ! function_exists( 'ubik_header_css' ) ) {
 				// Menu-bar min height
 				if ( ! empty( $menubar_min_height ) && '50' != $menubar_min_height ) {
 					$css .= '.menu-bar-inner{min-height:'. $menubar_min_height .'px;}';
-				}
-
-				// Menu-bar borders style
-				if ( ! empty( $menubar_borders_style ) && '1' == get_theme_mod('ubik_menubar_borders_heading', '1') ) {
-					$css .= '.menu-bar-inner{border-style:'. $menubar_borders_style .';}';
 				}
 
 				// Menu-bar background color

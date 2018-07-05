@@ -1209,54 +1209,6 @@
     } );
   } );
 
-  // Menu bar text
-  // api('ubik_menubar_text_content', function( value ) {
-  //   value.bind( function( newval ) {
-  //     $( '.menu-bar-text' ).text( newval );
-  //   });
-  // });
-
-  // Front page menu bar text
-  // api('ubik_frontpage_menubar_text_content', function( value ) {
-  //   value.bind( function( newval ) {
-  //     $( '.frontpage-menu-bar-text' ).text( newval );
-  //   });
-  // });
-
-  // Menu-bar borders style
-  api( 'ubik_menubar_borders_style', function( value ) {
-    value.bind( function( to ) {
-      var $child = $( '.customizer-ubik_menubar_borders_style' );
-      if ( to ) {
-        var style = '<style class="customizer-ubik_menubar_borders_style">.menu-bar-inner{ border-style: ' + to + '; }</style>';
-        if ( $child.length ) {
-          $child.replaceWith( style );
-        } else {
-          $( 'head' ).append( style );
-        }
-      } else {
-        $child.remove();
-      }
-    } );
-  } );
-
-  // Front page menu-bar borders style
-  api( 'ubik_frontpage_menubar_borders_style', function( value ) {
-    value.bind( function( to ) {
-      var $child = $( '.customizer-ubik_frontpage_menubar_borders_style' );
-      if ( to ) {
-        var style = '<style class="customizer-ubik_frontpage_menubar_borders_style">.frontpage-menu-bar-inner{ border-style: ' + to + '; }</style>';
-        if ( $child.length ) {
-          $child.replaceWith( style );
-        } else {
-          $( 'head' ).append( style );
-        }
-      } else {
-        $child.remove();
-      }
-    } );
-  } );
-
   // Menu-bar background color
   api( 'ubik_menubar_bg_color', function( value ) {
     value.bind( function( to ) {
