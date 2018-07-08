@@ -976,10 +976,10 @@ if ( ! function_exists( 'ubik_header_css' ) ) {
 					// $css .= '@media screen and (max-width: 39.9375em) {.admin-bar .image-header{min-height: calc('. $image_header_height_mobile .'vh - 46px);}}';
 				}
 
-				// // Image-header border width
-				// if ( ! empty( $image_header_border_width ) ) {
-				// 	$css .= '.image-header{border-bottom-width:'. $image_header_border_width .';}';
-				// }
+				// Image-header border width
+				if ( ! empty( $image_header_border_width ) ) {
+					$css .= '.image-header{border-bottom-width:'. $image_header_border_width .';}';
+				}
 
 				// Image-header background image
 				if ( ! empty( $bg_img ) ) {

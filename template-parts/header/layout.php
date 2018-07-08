@@ -24,10 +24,11 @@ $header_format = ubik_header_format(); ?>
   // Default header style : image-header
   } else {
 
-    get_template_part( 'template-parts/header/image-header' );
+    get_template_part( 'template-parts/header/image-header' ); ?>
 
+    <div class="image-header__overlay"></div>
+
+  <?php
   } ?>
-
-  <div class="header-overlay"></div>
 
 </header><!-- #header -->

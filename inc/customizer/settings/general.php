@@ -26,9 +26,8 @@
  * 		ubik_site_headings_color
  * 		ubik_site_links_color
  * 		ubik_site_borders_color
- * 
  * 		ubik_site_bg_img
- * 		ubik_site_bg_img_position
+ *    ubik_site_bg_img_position
  *    ubik_site_bg_img_attachment
  *    ubik_site_bg_img_repeat
  *    ubik_site_bg_img_size
@@ -677,27 +676,162 @@ Kirki::add_field( 'ubik_config', array(
   ),
 ) );
 
+// Kirki::add_field( 'ubik_config', array(
+// 	'type'        => 'background',
+// 	'settings'    => 'ubik_site_bg_img',
+// 	'label'       => esc_attr__( 'Site Background Image', 'ubik' ),
+// 	'section'     => 'colors',
+// 	'default'     => array(
+// 		'background-color'		 	=> '#fefefe',
+// 		'background-image'		 	=> '',
+// 		'background-repeat'		 	=> 'repeat',
+// 		'background-position'	 	=> 'center center',
+// 		'background-size'		 		=> 'cover',
+// 		'background-attachment'	=> 'scroll',
+// 	),
+// 	'priority'    => 10,
+// 	'output'	 		=> array(
+// 		array(
+// 			'element' 	=> array(
+// 				'body',
+// 			),
+// 		),
+// 	),
+// 	'transport'   => 'auto'
+// ) );
+
 Kirki::add_field( 'ubik_config', array(
-	'type'        => 'background',
+	'type'        => 'image',
 	'settings'    => 'ubik_site_bg_img',
 	'label'       => esc_attr__( 'Site Background Image', 'ubik' ),
 	'section'     => 'colors',
-	'default'     => array(
-		'background-image'		 => '',
-		'background-repeat'		 => 'repeat',
-		'background-position'	 => 'center center',
-		'background-size'		 => 'cover',
-		'background-attachment'	 => 'scroll',
-	),
+	'default'     => '',
 	'priority'    => 10,
 	'output'	 		=> array(
 		array(
-			'element' 	=> array(
-				'body',
-			),
+			'element'  				=> 'body',
+			'property' 				=> 'background-image',
 		),
 	),
-	'transport'   => 'auto'
+	'transport'   => 'auto',
+) );
+
+Kirki::add_field( 'ubik_config', array(
+	'type'        => 'select',
+	'settings'    => 'ubik_site_bg_img_position',
+  'label'	   		=> esc_html__( 'Site Background Image Position', 'ubik' ),
+	'section'     => 'colors',
+	'default' 		=> 'center center',
+	'priority'    => 10,
+	'choices'     => array(
+		'top left' 				=> esc_html__( 'Top Left', 'ubik' ),
+    'top center' 			=> esc_html__( 'Top Center', 'ubik' ),
+    'top right'  			=> esc_html__( 'Top Right', 'ubik' ),
+    'center left' 		=> esc_html__( 'Center Left', 'ubik' ),
+    'center center' 	=> esc_html__( 'Center Center', 'ubik' ),
+    'center right' 		=> esc_html__( 'Center Right', 'ubik' ),
+    'bottom left' 		=> esc_html__( 'Bottom Left', 'ubik' ),
+    'bottom center' 	=> esc_html__( 'Bottom Center', 'ubik' ),
+    'bottom right' 		=> esc_html__( 'Bottom Right', 'ubik' ),
+	),
+	'output'	 		=> array(
+		array(
+			'element'  				=> 'body',
+			'property' 				=> 'background-position',
+		),
+	),
+	'transport'   => 'auto',
+  'active_callback' => array(
+		array(
+      'setting'       => 'ubik_site_bg_img',
+      'operator'      => '!=',
+      'value'         => '',
+    ),
+  )
+) );
+
+Kirki::add_field( 'ubik_config', array(
+	'type'        => 'select',
+	'settings'    => 'ubik_site_bg_img_repeat',
+  'label'	   		=> esc_html__( 'Site Background Image Repeat', 'ubik' ),
+	'section'     => 'colors',
+	'default' 		=> 'repeat',
+	'priority'    => 10,
+	'choices'     		=> array(
+		'no-repeat' 		=> esc_html__( 'No-repeat', 'ubik' ),
+    'repeat' 				=> esc_html__( 'Repeat', 'ubik' ),
+    'repeat-x' 			=> esc_html__( 'Repeat-x', 'ubik' ),
+    'repeat-y' 			=> esc_html__( 'Repeat-y', 'ubik' ),
+	),
+	'output'	 		=> array(
+		array(
+			'element'  				=> 'body',
+			'property' 				=> 'background-repeat',
+		),
+	),
+	'transport'   => 'auto',
+  'active_callback' => array(
+		array(
+      'setting'       => 'ubik_site_bg_img',
+      'operator'      => '!=',
+      'value'         => '',
+    ),
+  )
+) );
+
+Kirki::add_field( 'ubik_config', array(
+	'type'        => 'radio-buttonset',
+	'settings'    => 'ubik_site_bg_img_attachment',
+  'label'	   		=> esc_html__( 'Site Background Image Attachment', 'ubik' ),
+	'section'     => 'colors',
+	'default' 		=> 'scroll',
+	'priority'    => 10,
+	'choices'     => array(
+		'scroll' 		=> esc_html__( 'Scroll', 'ubik' ),
+		'fixed' 		=> esc_html__( 'Fixed', 'ubik' ),
+	),
+	'output'	 		=> array(
+		array(
+			'element'  				=> 'body',
+			'property' 				=> 'background-attachment',
+		),
+	),
+	'transport'   => 'auto',
+  'active_callback' => array(
+		array(
+      'setting'       => 'ubik_site_bg_img',
+      'operator'      => '!=',
+      'value'         => '',
+    ),
+  )
+) );
+
+Kirki::add_field( 'ubik_config', array(
+	'type'        => 'radio-buttonset',
+	'settings'    => 'ubik_site_bg_img_size',
+  'label'	   		=> esc_html__( 'Site Background Image Size', 'ubik' ),
+	'section'     => 'colors',
+	'default' 		=> 'auto',
+	'priority'    => 10,
+	'choices'     => array(
+		'auto' 			=> esc_html__( 'Auto', 'ubik' ),
+    'cover' 		=> esc_html__( 'Cover', 'ubik' ),
+    'contain' 	=> esc_html__( 'Contain', 'ubik' ),
+  ),
+  'output'	 		=> array(
+		array(
+			'element'  				=> 'body',
+			'property' 				=> 'background-size',
+		),
+	),
+	'transport'   => 'auto',
+  'active_callback' => array(
+		array(
+      'setting'       => 'ubik_site_bg_img',
+      'operator'      => '!=',
+      'value'         => '',
+    ),
+  )
 ) );
 
 

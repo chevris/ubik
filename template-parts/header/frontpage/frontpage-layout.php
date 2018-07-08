@@ -24,8 +24,11 @@ $frontpage_header_format = ubik_frontpage_header_format(); ?>
   // Default header style : image-header
   } else {
 
-    get_template_part( 'template-parts/header/frontpage/frontpage-image-header' );
+    get_template_part( 'template-parts/header/frontpage/frontpage-image-header' ); ?>
 
+    <div class="frontpage-image-header__overlay"></div>
+
+  <?php
   } ?>
 
 </header><!-- #header -->

@@ -23,19 +23,24 @@
  *      ubik_image_header_height_desktop
  *      ubik_image_header_height_tablet
  *      ubik_image_header_height_mobile
+ * 			ubik_image_header_bg_heading
+ * 			ubik_image_header_bg_color
+ * 			ubik_image_header_page_featured_img_bg
+ * 			ubik_image_header_single_featured_img_bg
+ *      ubik_image_header_bg_img
+ *      ubik_image_header_bg_img_position
+ *      ubik_image_header_bg_img_repeat
+ *      ubik_image_header_bg_img_attachment
+ *      ubik_image_header_bg_img_size
+ * 			ubik_image_header_border_heading
  * 			ubik_image_header_border_style
  * 			ubik_image_header_border_width
  * 			ubik_image_header_colors_heading
  * 				[if : ubik_image_header_colors_heading == true]
- * 				ubik_image_header_bg_color
- * 				ubik_image_header_borders_color
- *      ubik_image_header_page_featured_img_bg
- *      ubik_image_header_single_featured_img_bg
- *      ubik_image_header_bg_img
- *      ubik_image_header_bg_img_position
- *      ubik_image_header_bg_img_attachment
- *      ubik_image_header_bg_img_repeat
- *      ubik_image_header_bg_img_size
+ * 				ubik_image_header_border_color
+ * 			ubik_image_header_overlay_heading
+ *      ubik_image_header_overlay_style
+ *      ubik_image_header_overlay_color
  *    
  *    [if : ubik_header_format != no-header]
  *    Sub-section : ubik_menubar_section
@@ -331,71 +336,29 @@ function ubik_image_header_height( $wp_customize ) {
 }
 add_action( 'customize_register', 'ubik_image_header_height' );
 
-Kirki::add_field( 'ubik_config', array(
-	'type'              => 'select',
-	'settings'          => 'ubik_image_header_border_style',
-	'label'			        => esc_html__( 'Border Style', 'ubik' ),
-	'section'           => 'ubik_image_header_general_options_section',
-  'default'           => 'solid',
-  'priority' 				  => 11,
-  'choices'     			=> array(
-		'solid' 	=> esc_attr__( 'Solid', 'ubik' ),
-		'dashed' 	=> esc_attr__( 'Dashed', 'ubik' ),
-		'dotted' 	=> esc_attr__( 'Dotted', 'ubik' ),
-		'double' 	=> esc_attr__( 'Double', 'ubik' ),
-		'none' 		=> esc_attr__( 'None', 'ubik' ),
-	),
-	'output' 						=> array(
-		array(
-			'element'  => '.image-header',
-			'property' => 'border-bottom-style',
-		),
-	),
-	'transport' 				=> 'auto',
-	'active_callback' 	=> 'ubik_header_format_is_image',
-) );
-
-Kirki::add_field( 'ubik_config', array(
-	'type'              => 'dimension',
-	'settings'          => 'ubik_image_header_border_width',
-	'label'       			=> esc_html__( 'Border Width', 'ubik' ),
-	'section'           => 'ubik_image_header_general_options_section',
-	'priority' 				  => 11,
-	'default'     			=> '1px',
-	'transport' 				=> 'auto',
-	'output' 						=> array(
-		array(
-			'element'  => '.image-header',
-			'property' => 'border-bottom-width',
-		),
-	),
-	'active_callback' 	=> 'ubik_header_format_is_image',
-) );
-
-function ubik_image_header_colors_heading( $wp_customize ) {
+function ubik_image_header_bg_heading( $wp_customize ) {
 	
-	$wp_customize->add_setting( 'ubik_image_header_colors_heading', array(
-    'sanitize_callback' 	=> 'ubik_sanitize_switch',
-    'default'     		    => 0,
+	$wp_customize->add_setting( 'ubik_image_header_bg_heading', array(
+    'sanitize_callback' 	=> 'wp_kses',
 	) );
 
-	$wp_customize->add_control( new Ubik_Customizer_Toggle_Control_Heading_Control( $wp_customize, 'ubik_image_header_colors_heading', array(
-    'label'	   		        => esc_html__( 'Colors', 'ubik' ),
+	$wp_customize->add_control( new Ubik_Customizer_Heading_Control( $wp_customize, 'ubik_image_header_bg_heading', array(
+    'label'	   		        => esc_html__( 'Background', 'ubik' ),
     'section'  				    => 'ubik_image_header_general_options_section',
-		'priority' 				    => 13,
-		'active_callback'     => 'ubik_header_format_is_image',
+		'priority' 				    => 11,
+		'active_callback' 		=> 'ubik_header_format_is_image',
 	) ) );
 
 }
-add_action( 'customize_register', 'ubik_image_header_colors_heading' );
+add_action( 'customize_register', 'ubik_image_header_bg_heading' );
 
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'color',
 	'settings'          => 'ubik_image_header_bg_color',
-	'description'       => esc_html__( 'Background Color', 'ubik' ),
+	'label'       			=> esc_html__( 'Background Color', 'ubik' ),
 	'section'           => 'ubik_image_header_general_options_section',
   'default'           => '#fefefe',
-  'priority' 				  => 14,
+  'priority' 				  => 11,
   'choices'     => array(
 		'alpha' => true,
 	),
@@ -412,52 +375,16 @@ Kirki::add_field( 'ubik_config', array(
       'operator'      => '==',
       'value'         => 'image',
     ),
-    array(
-      'setting'       => 'ubik_image_header_colors_heading',
-      'operator'      => '==',
-      'value'         => '1',
-    ),
   ),
 ) );
 
 Kirki::add_field( 'ubik_config', array(
-	'type'              => 'color',
-	'settings'          => 'ubik_image_header_borders_color',
-	'description'       => esc_html__( 'Borders Color', 'ubik' ),
-	'section'           => 'ubik_image_header_general_options_section',
-  'default'           => '#e9e9e9',
-  'priority' 				  => 14,
-  'choices'     => array(
-		'alpha' => true,
-	),
-	'output' => array(
-		array(
-			'element'  => '#header.image-header',
-			'property' => 'border-color',
-		),
-	),
-	'transport' => 'auto',
-	'active_callback' => array(
-    array(
-      'setting'       => 'ubik_header_format',
-      'operator'      => '==',
-      'value'         => 'image',
-    ),
-    array(
-      'setting'       => 'ubik_image_header_colors_heading',
-      'operator'      => '==',
-      'value'         => '1',
-    ),
-  ),
-) );
-
-Kirki::add_field( 'ubik_config', array(
-	'type'        => 'toggle',
-	'settings'    => 'ubik_image_header_page_featured_img_bg',
-	'label'       => esc_html__( 'Use the featured image for pages that have one', 'ubik' ),
-	'section'     => 'ubik_image_header_general_options_section',
-	'default'     => '0',
-  'priority'    => 15,
+	'type'        		=> 'toggle',
+	'settings'    		=> 'ubik_image_header_page_featured_img_bg',
+	'label'       		=> esc_html__( 'Use the featured image for pages that have one', 'ubik' ),
+	'section'     		=> 'ubik_image_header_general_options_section',
+	'default'     		=> '0',
+  'priority'    		=> 11,
   'active_callback' => array(
     array(
       'setting'       => 'ubik_header_format',
@@ -473,7 +400,7 @@ Kirki::add_field( 'ubik_config', array(
 	'label'       => esc_html__( 'Use the featured image for single posts that have one', 'ubik' ),
 	'section'     => 'ubik_image_header_general_options_section',
 	'default'     => '0',
-  'priority'    => 15,
+  'priority'    => 11,
   'active_callback' => array(
     array(
       'setting'       => 'ubik_header_format',
@@ -489,7 +416,7 @@ Kirki::add_field( 'ubik_config', array(
 	'label'       => esc_attr__( 'Background Image (Default)', 'ubik' ),
 	'section'     => 'ubik_image_header_general_options_section',
 	'default'     => '',
-	'priority'    => 15,
+	'priority'    => 11,
   'active_callback' => array(
     array(
       'setting'       => 'ubik_header_format',
@@ -505,7 +432,7 @@ Kirki::add_field( 'ubik_config', array(
   'label'	   		=> esc_html__( 'Background Image Position', 'ubik' ),
 	'section'     => 'ubik_image_header_general_options_section',
 	'default' 		=> 'center center',
-	'priority'    => 15,
+	'priority'    => 11,
 	'choices'     => array(
 		'top left' 				=> esc_html__( 'Top Left', 'ubik' ),
     'top center' 			=> esc_html__( 'Top Center', 'ubik' ),
@@ -522,26 +449,11 @@ Kirki::add_field( 'ubik_config', array(
       'setting'       => 'ubik_header_format',
       'operator'      => '==',
       'value'         => 'image',
-    ),
-  )
-) );
-
-Kirki::add_field( 'ubik_config', array(
-	'type'        => 'select',
-	'settings'    => 'ubik_image_header_bg_img_attachment',
-  'label'	   		=> esc_html__( 'Background Image Attachment', 'ubik' ),
-	'section'     => 'ubik_image_header_general_options_section',
-	'default' 		=> 'scroll',
-	'priority'    => 15,
-	'choices'     => array(
-		'scroll' 		=> esc_html__( 'Scroll', 'ubik' ),
-		'fixed' 		=> esc_html__( 'Fixed', 'ubik' ),
-  ),
-  'active_callback' => array(
-    array(
-      'setting'       => 'ubik_header_format',
-      'operator'      => '==',
-      'value'         => 'image',
+		),
+		array(
+      'setting'       => 'ubik_image_header_bg_img',
+      'operator'      => '!=',
+      'value'         => '',
     ),
   )
 ) );
@@ -551,8 +463,8 @@ Kirki::add_field( 'ubik_config', array(
 	'settings'    => 'ubik_image_header_bg_img_repeat',
   'label'	   		=> esc_html__( 'Background Image Repeat', 'ubik' ),
 	'section'     => 'ubik_image_header_general_options_section',
-	'default' 		=> 'no-repeat',
-	'priority'    => 15,
+	'default' 		=> 'repeat',
+	'priority'    => 11,
 	'choices'     => array(
 		'no-repeat' => esc_html__( 'No-repeat', 'ubik' ),
     'repeat' 		=> esc_html__( 'Repeat', 'ubik' ),
@@ -564,17 +476,47 @@ Kirki::add_field( 'ubik_config', array(
       'setting'       => 'ubik_header_format',
       'operator'      => '==',
       'value'         => 'image',
+		),
+		array(
+      'setting'       => 'ubik_image_header_bg_img',
+      'operator'      => '!=',
+      'value'         => '',
     ),
   )
 ) );
 
 Kirki::add_field( 'ubik_config', array(
-	'type'        => 'select',
+	'type'        => 'radio-buttonset',
+	'settings'    => 'ubik_image_header_bg_img_attachment',
+  'label'	   		=> esc_html__( 'Background Image Attachment', 'ubik' ),
+	'section'     => 'ubik_image_header_general_options_section',
+	'default' 		=> 'scroll',
+	'priority'    => 11,
+	'choices'     => array(
+		'scroll' 		=> esc_html__( 'Scroll', 'ubik' ),
+		'fixed' 		=> esc_html__( 'Fixed', 'ubik' ),
+  ),
+  'active_callback' => array(
+    array(
+      'setting'       => 'ubik_header_format',
+      'operator'      => '==',
+      'value'         => 'image',
+		),
+		array(
+      'setting'       => 'ubik_image_header_bg_img',
+      'operator'      => '!=',
+      'value'         => '',
+    ),
+  )
+) );
+
+Kirki::add_field( 'ubik_config', array(
+	'type'        => 'radio-buttonset',
 	'settings'    => 'ubik_image_header_bg_img_size',
   'label'	   		=> esc_html__( 'Background Image Size', 'ubik' ),
 	'section'     => 'ubik_image_header_general_options_section',
-	'default' 		=> 'cover',
-	'priority'    => 15,
+	'default' 		=> 'auto',
+	'priority'    => 11,
 	'choices'     => array(
 		'auto' 			=> esc_html__( 'Auto', 'ubik' ),
     'cover' 		=> esc_html__( 'Cover', 'ubik' ),
@@ -585,9 +527,196 @@ Kirki::add_field( 'ubik_config', array(
       'setting'       => 'ubik_header_format',
       'operator'      => '==',
       'value'         => 'image',
+		),
+		array(
+      'setting'       => 'ubik_image_header_bg_img',
+      'operator'      => '!=',
+      'value'         => '',
     ),
   )
 ) );
+
+function ubik_image_header_border_heading( $wp_customize ) {
+	
+	$wp_customize->add_setting( 'ubik_image_header_border_heading', array(
+    'sanitize_callback' 	=> 'wp_kses',
+	) );
+
+	$wp_customize->add_control( new Ubik_Customizer_Heading_Control( $wp_customize, 'ubik_image_header_border_heading', array(
+    'label'	   		        => esc_html__( 'Bottom Border', 'ubik' ),
+    'section'  				    => 'ubik_image_header_general_options_section',
+		'priority' 				    => 12,
+		'active_callback' 		=> 'ubik_header_format_is_image',
+	) ) );
+
+}
+add_action( 'customize_register', 'ubik_image_header_border_heading' );
+
+Kirki::add_field( 'ubik_config', array(
+	'type'              => 'select',
+	'settings'          => 'ubik_image_header_border_style',
+	'label'			        => esc_html__( 'Border Style', 'ubik' ),
+	'section'           => 'ubik_image_header_general_options_section',
+  'default'           => 'solid',
+  'priority' 				  => 12,
+  'choices'     			=> array(
+		'none' 		=> esc_attr__( 'None', 'ubik' ),
+		'solid' 	=> esc_attr__( 'Line', 'ubik' ),
+	),
+	'output' 						=> array(
+		array(
+			'element'  => '.image-header',
+			'property' => 'border-bottom-style',
+		),
+	),
+	'transport' 				=> 'auto',
+	'active_callback' 	=> 'ubik_header_format_is_image',
+) );
+
+Kirki::add_field( 'ubik_config', array(
+	'type'              => 'dimension',
+	'settings'          => 'ubik_image_header_border_width',
+	'label'       			=> esc_html__( 'Border Width', 'ubik' ),
+	'section'           => 'ubik_image_header_general_options_section',
+	'priority' 				  => 12,
+	'default'     			=> '1px',
+	'transport' 				=> 'auto',
+	'output' 						=> array(
+		array(
+			'element'  => '.image-header',
+			'property' => 'border-bottom-width',
+		),
+	),
+	'active_callback' => array(
+    array(
+      'setting'       => 'ubik_header_format',
+      'operator'      => '==',
+      'value'         => 'image',
+		),
+		array(
+      'setting'       => 'ubik_image_header_border_style',
+      'operator'      => '==',
+      'value'         => 'solid',
+    ),
+  ),
+) );
+
+function ubik_image_header_colors_heading( $wp_customize ) {
+	
+	$wp_customize->add_setting( 'ubik_image_header_colors_heading', array(
+    'sanitize_callback' 	=> 'ubik_sanitize_switch',
+    'default'     		    => 0,
+	) );
+
+	$wp_customize->add_control( new Ubik_Customizer_Toggle_Control_Heading_Control( $wp_customize, 'ubik_image_header_colors_heading', array(
+    'label'	   		        => esc_html__( 'Colors', 'ubik' ),
+    'section'  				    => 'ubik_image_header_general_options_section',
+		'priority' 				    => 13,
+		'active_callback'     => 'ubik_frontpage_header_format_is_image',
+	) ) );
+
+}
+add_action( 'customize_register', 'ubik_image_header_colors_heading' );
+
+Kirki::add_field( 'ubik_config', array(
+	'type'              => 'color',
+	'settings'          => 'ubik_image_header_border_color',
+	'label'				      => esc_html__( 'Border Color', 'ubik' ),
+	'section'           => 'ubik_image_header_general_options_section',
+  'default'           => '#e9e9e9',
+  'priority' 				  => 13,
+  'choices'     			=> array(
+		'alpha' => true,
+	),
+	'output' => array(
+		array(
+			'element'  => '#header.image-header',
+			'property' => 'border-color',
+		),
+	),
+	'transport' => 'auto',
+	'active_callback' => array(
+    array(
+      'setting'       => 'ubik_header_format',
+      'operator'      => '==',
+      'value'         => 'image',
+		),
+		array(
+      'setting'       => 'ubik_image_header_colors_heading',
+      'operator'      => '==',
+      'value'         => '1',
+    ),
+  ),
+) );
+
+function ubik_image_header_overlay_heading( $wp_customize ) {
+	
+	$wp_customize->add_setting( 'ubik_image_header_overlay_heading', array(
+    'sanitize_callback' 	=> 'wp_kses',
+	) );
+
+	$wp_customize->add_control( new Ubik_Customizer_Heading_Control( $wp_customize, 'ubik_image_header_overlay_heading', array(
+    'label'	   		        => esc_html__( 'Overlay', 'ubik' ),
+    'section'  				    => 'ubik_image_header_general_options_section',
+		'priority' 				    => 14,
+		'active_callback' 		=> 'ubik_header_format_is_image',
+	) ) );
+
+}
+add_action( 'customize_register', 'ubik_image_header_overlay_heading' );
+
+Kirki::add_field( 'ubik_config', array(
+	'type'        => 'select',
+	'settings'    => 'ubik_image_header_overlay_style',
+  'label'	   		=> esc_html__( 'Overlay Type', 'ubik' ),
+	'section'     => 'ubik_image_header_general_options_section',
+	'default' 		=> 'none',
+	'priority'    => 14,
+	'choices'     => array(
+		'none' 								=> esc_html__( 'None', 'ubik' ),
+		'color' 							=> esc_html__( 'Color', 'ubik' ),
+		'grad-tobottom' 			=> esc_html__( 'Gradient (to bottom)', 'ubik' ),
+  ),
+  'active_callback' => array(
+    array(
+      'setting'       => 'ubik_header_format',
+      'operator'      => '==',
+      'value'         => 'image',
+		),
+  )
+) );
+
+Kirki::add_field( 'ubik_config', array(
+	'type'              => 'color',
+	'settings'          => 'ubik_image_header_overlay_color',
+	'label'       			=> esc_html__( 'Overlay Color', 'ubik' ),
+	'section'           => 'ubik_image_header_general_options_section',
+  'default'           => 'rgba(0,0,0,0.5)',
+  'priority' 				  => 14,
+  'choices'     => array(
+		'alpha' => true,
+	),
+	'output' => array(
+		array(
+			'element'  => '.image-header__overlay',
+			'property' => 'background-color',
+		),
+	),
+	'transport' => 'auto',
+	'active_callback' => array(
+    array(
+      'setting'       => 'ubik_header_format',
+      'operator'      => '==',
+      'value'         => 'image',
+		),
+		array(
+      'setting'       => 'ubik_image_header_overlay_style',
+      'operator'      => '==',
+      'value'         => 'color',
+    ),
+  ),
+) );
+
 
 Kirki::add_section( 'ubik_menubar_section', array(
   'title'       => 'Menu Bar',

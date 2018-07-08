@@ -124,7 +124,7 @@ class UBIK_Init {
 	 * @since 1.0.0
 	 */
 	public static function helper_functions() {
-		require_once ( UBIK_INC_DIR .'helpers/helpers.php' );
+		require_once ( UBIK_INC_DIR .'helpers/common-functions.php' );
 		require_once ( UBIK_INC_DIR .'helpers/general-helpers.php' );
 		require_once ( UBIK_INC_DIR .'helpers/top-bar-helpers.php' );
 		require_once ( UBIK_INC_DIR .'helpers/mobile-helpers.php' );
