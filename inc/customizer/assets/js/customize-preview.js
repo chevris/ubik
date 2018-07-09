@@ -524,36 +524,6 @@
       }
     } );
   } );
-  // api( 'ubik_h_card_entry_height_tablet', function( value ) {
-  //   value.bind( function( to ) {
-  //     var $child = $( '.customizer-ubik_h_card_entry_height_tablet' );
-  //     if ( to ) {
-  //       var style = '<style class="customizer-ubik_h_card_entry_height_tablet">@media screen and (min-width: 40em) and (max-width: 63.9375em) {.h-card-entry { min-height: ' + to + 'px; }}</style>';
-  //       if ( $child.length ) {
-  //         $child.replaceWith( style );
-  //       } else {
-  //         $( 'head' ).append( style );
-  //       }
-  //     } else {
-  //       $child.remove();
-  //     }
-  //   } );
-  // } );
-  // api( 'ubik_h_card_entry_height_mobile', function( value ) {
-  //   value.bind( function( to ) {
-  //     var $child = $( '.customizer-ubik_h_card_entry_height_mobile' );
-  //     if ( to ) {
-  //       var style = '<style class="customizer-ubik_h_card_entry_height_mobile">@media screen and (max-width: 39.9375em) {.h-card-entry { min-height: ' + to + 'px; }}</style>';
-  //       if ( $child.length ) {
-  //         $child.replaceWith( style );
-  //       } else {
-  //         $( 'head' ).append( style );
-  //       }
-  //     } else {
-  //       $child.remove();
-  //     }
-  //   } );
-  // } );
 
   // horizontal cards custom height
   api( 'ubik_h_card_entry_custom_height_desktop', function( value ) {
@@ -571,36 +541,6 @@
       }
     } );
   } );
-  // api( 'ubik_h_card_entry_custom_height_tablet', function( value ) {
-  //   value.bind( function( to ) {
-  //     var $child = $( '.customizer-ubik_h_card_entry_custom_height_tablet' );
-  //     if ( to ) {
-  //       var style = '<style class="customizer-ubik_h_card_entry_custom_height_tablet">@media screen and (min-width: 40em) and (max-width: 63.9375em) {.h-card-entry { height: ' + to + 'px; }}</style>';
-  //       if ( $child.length ) {
-  //         $child.replaceWith( style );
-  //       } else {
-  //         $( 'head' ).append( style );
-  //       }
-  //     } else {
-  //       $child.remove();
-  //     }
-  //   } );
-  // } );
-  // api( 'ubik_h_card_entry_custom_height_mobile', function( value ) {
-  //   value.bind( function( to ) {
-  //     var $child = $( '.customizer-ubik_h_card_entry_custom_height_mobile' );
-  //     if ( to ) {
-  //       var style = '<style class="customizer-ubik_h_card_entry_custom_height_mobile">@media screen and (max-width: 39.9375em) {.h-card-entry { height: ' + to + 'px; }}</style>';
-  //       if ( $child.length ) {
-  //         $child.replaceWith( style );
-  //       } else {
-  //         $( 'head' ).append( style );
-  //       }
-  //     } else {
-  //       $child.remove();
-  //     }
-  //   } );
-  // } );
 
   // horizontal cards image width
   api( 'ubik_h_card_entry_image_width_desktop', function( value ) {
@@ -1370,20 +1310,6 @@
       }
     } );
   } );
-
-  // // Header content text
-  // api('ubik_header_content_text_content', function( value ) {
-  //   value.bind( function( newval ) {
-  //     $( '.header-content__text' ).text( newval );
-  //   });
-  // });
-
-  // // Front page header content text
-  // api('ubik_frontpage_header_content_text_content', function( value ) {
-  //   value.bind( function( newval ) {
-  //     $( '.frontpage-header-content__text' ).text( newval );
-  //   });
-  // });
 
   // Header content tagline font size
   api( 'ubik_header_content_site_tagline_font_size_desktop', function( value ) {
