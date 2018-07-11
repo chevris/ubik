@@ -1,5 +1,4 @@
 === Ubik ===
-Contributors: Téva
 Requires at least: WordPress 4.7
 Tested up to: WordPress 4.9
 Version: 1.0.0
@@ -17,7 +16,7 @@ To customize the Ubik theme you have to open the Customizer by accessing the App
 
 == License ==
 
-Ubik WordPress theme, Copyright (C) 2018 Téva
+Copyright (C) 2018, Ubik
 Ubik WordPress theme is licensed under the GPL3.
 
 Unless otherwise specified, all the theme files and scripts are licensed under GNU General Public License.
