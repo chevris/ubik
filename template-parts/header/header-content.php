@@ -103,11 +103,6 @@ $breadcrumb_args = array(
       <div class="header-content__breadcrumbs <?php echo esc_attr( ubik_header_content_breadcrumbs_classes() ); ?>">
 
         <?php
-        //if ( function_exists( 'ubik_breadcrumb_trail' ) ) {
-        //  ubik_breadcrumb_trail();
-        //} ?>
-
-        <?php
         if ( function_exists( 'breadcrumb_trail' ) ) {
           breadcrumb_trail( $breadcrumb_args );
         } ?>
@@ -144,17 +139,6 @@ $breadcrumb_args = array(
       <div class="header-content__text <?php echo esc_attr( ubik_header_content_text_classes() ); ?>">
 
         <?php get_template_part( 'template-parts/header/header-content-text' ); ?>
-
-      </div>
-
-    <?php }
-
-    // Links
-		if ( 'links' == $element ) { ?>
-      
-      <div class="header-content__links <?php echo esc_attr( ubik_header_content_links_classes() ); ?>">
-
-        <?php get_template_part( 'template-parts/header/header-content-links' ); ?>
 
       </div>
 

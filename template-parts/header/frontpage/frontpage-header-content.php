@@ -85,17 +85,6 @@ $elements = ubik_frontpage_header_content_elements(); ?>
 
     <?php }
 
-    // Links
-		if ( 'links' == $element ) { ?>
-      
-      <div class="frontpage-header-content__links <?php echo esc_attr( ubik_frontpage_header_content_links_classes() ); ?>">
-
-        <?php get_template_part( 'template-parts/header/frontpage/frontpage-header-content-links' ); ?>
-
-      </div>
-
-    <?php }
-
   endforeach; ?>
 
 </div>
