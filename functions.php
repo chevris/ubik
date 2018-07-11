@@ -21,7 +21,7 @@
 // Core Constants
 define( 'UBIK_THEME_DIR', get_template_directory() );
 define( 'UBIK_THEME_URI', get_template_directory_uri() );
-//remove_theme_mods();
+
 class UBIK_Init {
 
 	/**

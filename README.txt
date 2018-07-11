@@ -1,13 +1,13 @@
 === Ubik ===
-
 Contributors: Téva
-Tags: 
-Requires at least:      3.3.0
-Tested up to:           4.9
+Requires at least: WordPress 4.7
+Tested up to: WordPress 4.9
+Version: 1.0.0
+Tags: custom-background, custom-menu, featured-images, flexible-header,  three-columns, left-sidebar, right-sidebar, blog, custom-colors
 
 == Description ==
 
-Ubik is a multipurpose WordPress theme that can help you create an amazing website.
+Ubik is a multipurpose theme to build almost any type of website.
 
 == Documentation ==
 
