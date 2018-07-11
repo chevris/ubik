@@ -40,22 +40,16 @@
  * 		Sub-section : ubik_typography_headings_section
  * 			ubik_typography_headings_font_family
  * 			ubik_typography_headings_h1_options_heading
- * 			ubik_typography_headings_h1_general
  * 			ubik_typography_headings_h1_font_size_desktop
  * 			ubik_typography_headings_h2_options_heading
- * 			ubik_typography_headings_h2_general
  * 			ubik_typography_headings_h2_font_size_desktop
  * 			ubik_typography_headings_h3_options_heading
- * 			ubik_typography_headings_h3_general
  * 			ubik_typography_headings_h3_font_size_desktop
  * 			ubik_typography_headings_h4_options_heading
- * 			ubik_typography_headings_h4_general
  * 			ubik_typography_headings_h4_font_size_desktop
  * 			ubik_typography_headings_h5_options_heading
- * 			ubik_typography_headings_h5_general
  * 			ubik_typography_headings_h5_font_size_desktop
  * 			ubik_typography_headings_h6_options_heading
- * 			ubik_typography_headings_h6_general
  * 			ubik_typography_headings_h6_font_size_desktop
  * 
  *  Section : ubik_general_blog_section
@@ -883,24 +877,6 @@ Kirki::add_section( 'ubik_typography_headings_section', array(
   'priority'    => 160,
 ));
 
-Kirki::add_field( 'ubik_config', array(
-	'type'        => 'typography',
-	'settings'    => 'ubik_typography_headings_font_family',
-	'label'       => esc_attr__( 'Headings Font Family', 'ubik' ),
-	'section'     => 'ubik_typography_headings_section',
-	'default'     => array(
-		'font-family'    => 'inherit',
-		'variant'        => '',
-	),
-	'priority'    => 10,
-	'transport'   => 'auto',
-	'output'      => array(
-		array(
-			'element' 		=> 'h1, h2, h3, h4, h5, h6',
-		),
-	),
-) );
-
 function ubik_typography_headings_h1_options_heading( $wp_customize ) {
 
 	$wp_customize->add_setting( 'ubik_typography_headings_h1_options_heading', array(
@@ -915,26 +891,6 @@ function ubik_typography_headings_h1_options_heading( $wp_customize ) {
 
 }
 add_action( 'customize_register', 'ubik_typography_headings_h1_options_heading' );
-
-Kirki::add_field( 'ubik_config', array(
-	'type'        => 'typography',
-	'settings'    => 'ubik_typography_headings_h1_general',
-	'section'     => 'ubik_typography_headings_section',
-	'default'     => array(
-		// 'font-family'    => 'Open Sans',
-		'line-height'    	=> '1.4',
-		'letter-spacing' 	=> '0',
-		'text-transform' 	=> 'none',
-		'text-decoration' => 'none',
-	),
-	'priority'    => 11,
-	'transport'   => 'auto',
-	'output'      => array(
-		array(
-			'element' 		=> 'h1',
-		),
-	),
-) );
 
 function ubik_typography_headings_h1_font_size( $wp_customize ) {
 
@@ -990,26 +946,6 @@ function ubik_typography_headings_h2_options_heading( $wp_customize ) {
 }
 add_action( 'customize_register', 'ubik_typography_headings_h2_options_heading' );
 
-Kirki::add_field( 'ubik_config', array(
-	'type'        => 'typography',
-	'settings'    => 'ubik_typography_headings_h2_general',
-	'section'     => 'ubik_typography_headings_section',
-	'default'     => array(
-		// 'font-family'    => 'Open Sans',
-		'line-height'    => '1.4',
-		'letter-spacing' => '0',
-		'text-transform' => 'none',
-		'text-decoration' => 'none',
-	),
-	'priority'    => 13,
-	'transport'   => 'auto',
-	'output'      => array(
-		array(
-			'element' 		=> 'h2',
-		),
-	),
-) );
-
 function ubik_typography_headings_h2_font_size( $wp_customize ) {
 
   $wp_customize->add_setting( 'ubik_typography_headings_h2_font_size_desktop', array(
@@ -1063,26 +999,6 @@ function ubik_typography_headings_h3_options_heading( $wp_customize ) {
 
 }
 add_action( 'customize_register', 'ubik_typography_headings_h3_options_heading' );
-
-Kirki::add_field( 'ubik_config', array(
-	'type'        => 'typography',
-	'settings'    => 'ubik_typography_headings_h3_general',
-	'section'     => 'ubik_typography_headings_section',
-	'default'     => array(
-		// 'font-family'    => 'Open Sans',
-		'line-height'    => '1.4',
-		'letter-spacing' => '0',
-		'text-transform' => 'none',
-		'text-decoration' => 'none',
-	),
-	'priority'    => 15,
-	'transport'   => 'auto',
-	'output'      => array(
-		array(
-			'element' 		=> 'h3',
-		),
-	),
-) );
 
 function ubik_typography_headings_h3_font_size( $wp_customize ) {
 
@@ -1138,26 +1054,6 @@ function ubik_typography_headings_h4_options_heading( $wp_customize ) {
 }
 add_action( 'customize_register', 'ubik_typography_headings_h4_options_heading' );
 
-Kirki::add_field( 'ubik_config', array(
-	'type'        => 'typography',
-	'settings'    => 'ubik_typography_headings_h4_general',
-	'section'     => 'ubik_typography_headings_section',
-	'default'     => array(
-		// 'font-family'    => 'Open Sans',
-		'line-height'    => '1.4',
-		'letter-spacing' => '0',
-		'text-transform' => 'none',
-		'text-decoration' => 'none',
-	),
-	'priority'    => 17,
-	'transport'   => 'auto',
-	'output'      => array(
-		array(
-			'element' 		=> 'h4',
-		),
-	),
-) );
-
 function ubik_typography_headings_h4_font_size( $wp_customize ) {
 
   $wp_customize->add_setting( 'ubik_typography_headings_h4_font_size_desktop', array(
@@ -1212,26 +1108,6 @@ function ubik_typography_headings_h5_options_heading( $wp_customize ) {
 }
 add_action( 'customize_register', 'ubik_typography_headings_h5_options_heading' );
 
-Kirki::add_field( 'ubik_config', array(
-	'type'        => 'typography',
-	'settings'    => 'ubik_typography_headings_h5_general',
-	'section'     => 'ubik_typography_headings_section',
-	'default'     => array(
-		// 'font-family'    => 'Open Sans',
-		'line-height'    => '1.4',
-		'letter-spacing' => '0',
-		'text-transform' => 'none',
-		'text-decoration' => 'none',
-	),
-	'priority'    => 19,
-	'transport'   => 'auto',
-	'output'      => array(
-		array(
-			'element' 		=> 'h5',
-		),
-	),
-) );
-
 function ubik_typography_headings_h5_font_size( $wp_customize ) {
 
   $wp_customize->add_setting( 'ubik_typography_headings_h5_font_size_desktop', array(
@@ -1285,26 +1161,6 @@ function ubik_typography_headings_h6_options_heading( $wp_customize ) {
 
 }
 add_action( 'customize_register', 'ubik_typography_headings_h6_options_heading' );
-
-Kirki::add_field( 'ubik_config', array(
-	'type'        => 'typography',
-	'settings'    => 'ubik_typography_headings_h6_general',
-	'section'     => 'ubik_typography_headings_section',
-	'default'     => array(
-		// 'font-family'    => 'Open Sans',
-		'line-height'    => '1.4',
-		'letter-spacing' => '0',
-		'text-transform' => 'none',
-		'text-decoration' => 'none',
-	),
-	'priority'    => 21,
-	'transport'   => 'auto',
-	'output'      => array(
-		array(
-			'element' 		=> 'h6',
-		),
-	),
-) );
 
 function ubik_typography_headings_h6_font_size( $wp_customize ) {
 
