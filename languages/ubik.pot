@@ -3261,10 +3261,6 @@ msgstr ""
 msgid "Line"
 msgstr ""
 
-#: inc/customizer/settings/header.php:640
-msgid "Gradient (to bottom)"
-msgstr ""
-
 #: inc/customizer/settings/header.php:1624
 #: inc/customizer/settings/top-bar.php:789
 msgid "Icon: Hover"
@@ -3501,10 +3497,6 @@ msgstr ""
 
 #. Theme Name of the plugin/theme
 msgid "Ubik"
-msgstr ""
-
-#. Theme URI of the plugin/theme
-msgid "https://wordpress.org/themes/ubik/"
 msgstr ""
 
 #. Description of the plugin/theme

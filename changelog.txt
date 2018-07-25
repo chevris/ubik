@@ -1,0 +1,10 @@
+v1.0.1
+- Removed: Theme URI
+- Removed: Gradient option of header overlay style
+- Fixed: Top bar full width bug
+- Modified: Theme screenshot
+- Modified: license and attribution to some assets included in the theme
+- Added: Unminified css files
+
+v1.0.0
+- Initial release

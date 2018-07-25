@@ -179,10 +179,10 @@ if ( ! function_exists( 'ubik_top_bar_full_width' ) ) {
 	function ubik_top_bar_full_width() {
 
 	// Get setting from customizer
-	$full_width = get_theme_mod( 'ubik_top_bar_full_width', false );
+	$full_width = get_theme_mod( 'ubik_top_bar_full_width', true );
 	
 	// Sanitize style to make sure it isn't empty
-	$full_width = $full_width ?  $full_width : false;
+	$full_width = $full_width ?  $full_width : true;
 
 	// Apply filters and return
 	return apply_filters( 'ubik_top_bar_full_width_filter', $full_width );

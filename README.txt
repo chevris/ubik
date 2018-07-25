@@ -16,8 +16,15 @@ To customize the Ubik theme you have to open the Customizer by accessing the App
 
 == License ==
 
-Copyright (C) 2018, Ubik
-Ubik WordPress theme is licensed under the GPL3.
+Ubik is licensed under the GNU General Public License v3 or later
+More details here: http://www.gnu.org/licenses/gpl-3.0.html
+
+Screenshot image :
+License: CC0 Public Domain
+Source: https://pixabay.com/fr/carri%C3%A8re-papier-origami-1738216/
+Source: https://pixabay.com/fr/cyber-caf%C3%A9-l-architecture-b%C3%A2timent-3537801/
+Source: https://pixabay.com/fr/vw-camper-volkswagen-vw-voiture-336606/
+Source: https://pixabay.com/fr/l-architecture-piste-en-bois-3552162/
 
 Unless otherwise specified, all the theme files and scripts are licensed under GNU General Public License.
 

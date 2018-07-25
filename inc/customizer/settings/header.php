@@ -637,7 +637,6 @@ Kirki::add_field( 'ubik_config', array(
 	'choices'     => array(
 		'none' 								=> esc_html__( 'None', 'ubik' ),
 		'color' 							=> esc_html__( 'Color', 'ubik' ),
-		'grad-tobottom' 			=> esc_html__( 'Gradient (to bottom)', 'ubik' ),
   ),
   'active_callback' => array(
     array(

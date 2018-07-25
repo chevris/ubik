@@ -244,7 +244,7 @@ class UBIK_Init {
 		add_theme_support( 'customize-selective-refresh-widgets' );
 		 
 		// Add editor style
-		add_editor_style( 'assets/dist/css/editor-style.css' );
+		add_editor_style( 'assets/dist/css/editor-style.min.css' );
 
 	}
 
@@ -301,7 +301,7 @@ class UBIK_Init {
 		wp_enqueue_script('fontawesome-all','https://use.fontawesome.com/releases/v5.0.13/js/all.js',array(),UBIK_THEME_VERSION,false);
 
 		// Main style file
-		wp_enqueue_style( 'ubik-theme-style', UBIK_CSS_DIR_URI .'style.css', false, UBIK_THEME_VERSION );
+		wp_enqueue_style( 'ubik-theme-style', UBIK_CSS_DIR_URI .'style.min.css', false, UBIK_THEME_VERSION );
 
 	}
 
