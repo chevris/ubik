@@ -109,8 +109,8 @@ class UBIK_Init {
 		define( 'UBIK_THEME_VERSION', $version );
 
 		// Javascript and CSS Paths
-		define( 'UBIK_JS_DIR_URI', UBIK_THEME_URI .'/assets/dist/js/' );
-		define( 'UBIK_CSS_DIR_URI', UBIK_THEME_URI .'/assets/dist/css/' );
+		define( 'UBIK_JS_DIR_URI', UBIK_THEME_URI .'/assets/js/' );
+		define( 'UBIK_CSS_DIR_URI', UBIK_THEME_URI .'/assets/css/' );
 
 		// Include Paths
 		define( 'UBIK_INC_DIR', UBIK_THEME_DIR .'/inc/' );
@@ -244,7 +244,7 @@ class UBIK_Init {
 		add_theme_support( 'customize-selective-refresh-widgets' );
 		 
 		// Add editor style
-		add_editor_style( 'assets/dist/css/editor-style.min.css' );
+		add_editor_style( 'assets/css/editor-style.min.css' );
 
 	}
 
@@ -300,6 +300,9 @@ class UBIK_Init {
 		// Load font awesome
 		wp_enqueue_script('fontawesome-all','https://use.fontawesome.com/releases/v5.0.13/js/all.js',array(),UBIK_THEME_VERSION,false);
 
+		// Foundation framework
+		wp_enqueue_style( 'ubik-foundation', UBIK_CSS_DIR_URI .'foundation.min.css' );
+
 		// Main style file
 		wp_enqueue_style( 'ubik-theme-style', UBIK_CSS_DIR_URI .'style.min.css', false, UBIK_THEME_VERSION );
 
@@ -319,10 +322,9 @@ class UBIK_Init {
 
 		// Load foundation js and custom foundation js scripts
 		wp_enqueue_script( 'foundation-js', UBIK_JS_DIR_URI .'foundation.min.js', array( 'jquery' ), '6.4.2', true );
-		// wp_enqueue_script( 'foundation-scripts-js', UBIK_JS_DIR_URI .'foundation/foundation-scripts.js', array( 'jquery' ), '1.0', true );
 
 		// Load js scripts
-		wp_enqueue_script( 'ubik-all-js', UBIK_JS_DIR_URI .'all.js', array( 'jquery' ), UBIK_THEME_VERSION, true );
+		wp_enqueue_script( 'ubik-all-js', UBIK_JS_DIR_URI .'all.min.js', array( 'jquery' ), UBIK_THEME_VERSION, true );
 
 	}
 
@@ -345,7 +347,7 @@ class UBIK_Init {
 	 * @since 1.0.0
 	 */
 	public static function html5_shiv() {
-		wp_enqueue_script( 'html5shiv', UBIK_JS_DIR_URI . '/html5.min.js', array(), '3.7.3', false );
+		wp_enqueue_script( 'html5shiv', UBIK_JS_DIR_URI . 'html5.min.js', array(), '3.7.3', false );
 		wp_script_add_data( 'html5shiv', 'conditional', 'lt IE 9' );
 	}
 

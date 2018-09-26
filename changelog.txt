@@ -1,3 +1,7 @@
+v1.0.2
+- Modified: Unminified files moved in assets
+- Added: missing credits
+
 v1.0.1
 - Removed: Theme URI
 - Removed: Gradient option of header overlay style
