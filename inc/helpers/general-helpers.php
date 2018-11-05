@@ -61,9 +61,6 @@
 
  # ubik_scroll_top_deactivate()
 
-
- # ubik_general_css()
-
  /*-------------------------------------------------------------------------------*/
  /* [ Fonctions ]
  /*-------------------------------------------------------------------------------*/
@@ -1320,7 +1317,7 @@ if ( ! function_exists( 'ubik_single_elements' ) ) {
 	function ubik_single_elements() {
 
 		// Default array
-		$array = array( 'featured_image', 'title', 'meta', 'content', 'tags', 'post_nav' );
+		$array = array( 'featured_image', 'meta', 'content', 'tags', 'single_comments', 'post_nav' );
 			
 		// Get array from Customizer
 		$array = get_theme_mod( 'ubik_single_elements', $array );

@@ -24,9 +24,9 @@ if ( ! class_exists( 'Ubik_Customizer' ) ) :
 		public function __construct() {
 
 			add_filter( 'kirki/config', 							array( $this, 'kirki_config' ) );
+			add_action( 'customize_register',					array( $this, 'sanitization_callbacks' ) );
 			add_action( 'after_setup_theme',					array( $this, 'register_options' ) );
 			add_action( 'customize_register',					array( $this, 'custom_controls' ) );
-			add_action( 'customize_register',					array( $this, 'sanitization_callbacks' ) );
 			add_action( 'customize_register',					array( $this, 'core_modules' ), 11 );
 			add_action( 'customize_preview_init', 				array( $this, 'customize_preview_init' ) );
 			add_action( 'customize_controls_enqueue_scripts', 	array( $this, 'custom_customize_enqueue' ), 7 );

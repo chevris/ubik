@@ -26,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 1.0.0
  */
- function ubik_sanitize_number( $val ) {
+function ubik_sanitize_number( $val ) {
 	return is_numeric( $val ) ? $val : 0;
 }
 

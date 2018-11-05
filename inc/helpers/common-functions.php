@@ -18,7 +18,6 @@
 		 - ubik_get_attachment_data_from_url()
 		 - ubik_excerpt()
 		 - ubik_page_title()
-		 - ubik_pagination()
 		 - ubik_time()
 	# Other
 		- ubik_minify_css()
@@ -408,48 +407,6 @@ if ( ! function_exists( 'ubik_page_title' ) ) {
     return apply_filters( 'ubik_page_title_filter', $title );
     
   }
-
-}
-
-/**
- * Custom Pagination
- *
- * @since	1.0.0
- * @link	https://codex.wordpress.org/Function_Reference/paginate_links
- */
-if ( ! function_exists( 'ubik_pagination') ) {
-
-	function ubik_pagination($args = [], $class = 'pagination') {
-
-		// Arrows with RTL support
-		$prev_arrow = is_rtl() ? 'fa fa-angle-right' : 'fa fa-angle-left';
-		$next_arrow = is_rtl() ? 'fa fa-angle-left' : 'fa fa-angle-right';
-
-		if ($GLOBALS['wp_query']->max_num_pages <= 1) return;
-	
-		$args = wp_parse_args( $args, [
-				'mid_size'            => 2,
-				'type'      					=> 'list',
-				'prev_next'         	=> true,
-				'prev_text' 					=> '<i class="'. $prev_arrow .'"></i>',
-				'next_text' 					=> '<i class="'. $next_arrow .'"></i>',
-				'screen_reader_text' 	=> __('Posts navigation', 'ubik'),
-		]);
-	
-		$links     = wp_kses_post( paginate_links($args) );
-		$next_link = get_previous_posts_link($args['next_text']);
-		$prev_link = get_next_posts_link($args['prev_text']);
-		$template  = apply_filters( 'ubik_pagination_markup_template', '
-		<nav class="navigation %1$s" role="navigation">
-				<h2 class="screen-reader-text">%2$s</h2>
-				<div class="page-numbers-wrap">
-					%4$s
-				</div>
-		</nav>', $args, $class);
-	
-		echo sprintf($template, $class, $args['screen_reader_text'], $prev_link, $links, $next_link);
-	
-	}
 
 }
 

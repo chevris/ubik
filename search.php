@@ -22,8 +22,14 @@ get_header(); ?>
       <?php endwhile; ?>
 
       <?php
-      // Display post pagination
-      ubik_pagination(); ?>
+			// Display post pagination
+			$prev_arrow = is_rtl() ? 'fa fa-angle-right' : 'fa fa-angle-left';
+			$next_arrow = is_rtl() ? 'fa fa-angle-left' : 'fa fa-angle-right';
+			the_posts_pagination( array(
+				'prev_text' => '<i class="' . $prev_arrow . '"></i>',
+				'next_text' => '<i class="' . $next_arrow . '"></i>',
+			) );
+			?>
 
     <?php else :
 

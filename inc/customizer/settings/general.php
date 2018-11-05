@@ -6272,10 +6272,10 @@ Kirki::add_field( 'ubik_config', array(
 	'priority'        => 10,
 	'default'         => array(
     'featured_image',
-    'title',
     'meta',
     'content',
 		'tags',
+		'single_comments',
 		'post_nav',
 	),
 	'choices'         => array(

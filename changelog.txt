@@ -1,3 +1,9 @@
+v1.0.3
+- Modified: Show comments template in single posts
+- Modified: Use of the_posts_navigation instead of custom function
+- Added: Missing translated string to header-content-nav.php
+- Added: Missing esc_attr() in hooks.php functions
+
 v1.0.2
 - Modified: Unminified files moved in assets
 - Added: missing credits
