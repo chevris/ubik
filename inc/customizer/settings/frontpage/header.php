@@ -18,9 +18,7 @@
  *      [if : ubik_frontpage_header_format == image]
  *      Sub-section : ubik_frontpage_image_header_general_options_section
  *    
- *        ubik_frontpage_image_header_height_desktop
- *        ubik_frontpage_image_header_height_tablet
- *        ubik_frontpage_image_header_height_mobile
+ *        ubik_frontpage_image_header_height
  * 				ubik_frontpage_image_header_bg_heading
  * 				ubik_frontpage_image_header_bg_color
  * 				ubik_core_header_image_controls
@@ -265,45 +263,28 @@ Kirki::add_section( 'ubik_frontpage_image_header_general_options_section', array
   'priority'    => 160,
 ));
 
-function ubik_frontpage_image_header_height( $wp_customize ) {
-
-  $wp_customize->add_setting( 'ubik_frontpage_image_header_height_desktop', array(
-    'transport' 					=> 'postMessage',
-    'default'           	=> '300',
-    'sanitize_callback' 	=> 'ubik_sanitize_number',
-  ) );
-
-  $wp_customize->add_setting( 'ubik_frontpage_image_header_height_tablet', array(
-		'transport' 					=> 'postMessage',
-		'default'           	=> '250',
-    'sanitize_callback' 	=> 'ubik_sanitize_number',
-  ) );
-
-  $wp_customize->add_setting( 'ubik_frontpage_image_header_height_mobile', array(
-		'transport' 					=> 'postMessage',
-		'default'           	=> '200',
-    'sanitize_callback' 	=> 'ubik_sanitize_number',
-  ) );
-
-  $wp_customize->add_control( new Ubik_Customizer_Responsive_Slider_Control( $wp_customize, 'ubik_frontpage_image_header_height_desktop', array(
-    'label' 						  => esc_html__( 'Min Height (px)', 'ubik' ),
-    'section'  					  => 'ubik_frontpage_image_header_general_options_section',
-    'settings' 					  => array(
-        'desktop' 	=> 'ubik_frontpage_image_header_height_desktop',
-        'tablet' 		=> 'ubik_frontpage_image_header_height_tablet',
-        'mobile' 		=> 'ubik_frontpage_image_header_height_mobile',
-      ),
-    'priority' 						=> 10,
-    'input_attrs' 			  => array(
-          'min'   	=> '0',
-          'max'   	=> '1000',
-          'step'  	=> '1',
-      ),
-    'active_callback' 	=> 'ubik_frontpage_header_format_is_image',
-  ) ) );
-
-}
-add_action( 'customize_register', 'ubik_frontpage_image_header_height' );
+Kirki::add_field( 'ubik_config', array(
+	'type'            => 'slider',
+	'settings'        => 'ubik_frontpage_image_header_height',
+	'label'           => esc_html__( 'Min Height (vh)', 'ubik' ),
+	'section'         => 'ubik_frontpage_image_header_general_options_section',
+	'default'         => 30,
+	'choices'         => array(
+		'min'   => '0',
+    'max'		=> '100',
+    'step'  => '1',
+	),
+	'priority'    		=> 10,
+	'output' => array(
+		array(
+			'element'  				=> '.frontpage-image-header',
+			'property' 				=> 'min-height',
+			'units'						=> 'vh',
+		),
+	),
+  'transport'       => 'auto',
+  'active_callback' => 'ubik_frontpage_header_format_is_image',
+) );
 
 function ubik_frontpage_image_header_bg_heading( $wp_customize ) {
 	

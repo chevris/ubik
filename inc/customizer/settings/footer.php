@@ -15,9 +15,7 @@
  *    [if : ubik_footer_activate == 1]
  *    Sub-section : ubik_footer_general_section
  * 
- *      ubik_footer_height_desktop
- * 			ubik_footer_height_tablet
- * 			ubik_footer_height_mobile
+ *      ubik_footer_height
  *      ubik_footer_direction
  *      ubik_footer_position
  * 			ubik_footer_full_width
@@ -47,9 +45,7 @@
  * 				[if : logo in ubik_footer_elements]
  *      	ubik_footer_logo_options_heading
  * 				ubik_footer_logo_device_visibility
- *      	ubik_footer_logo_height_desktop
- * 				ubik_footer_logo_height_tablet
- * 				ubik_footer_logo_height_mobile
+ *      	ubik_footer_logo_height
  * 				ubik_footer_logo_spacing
  * 				[if : nav in ubik_footer_elements]
  *      	ubik_footer_nav_options_heading
@@ -94,43 +90,28 @@ Kirki::add_section( 'ubik_footer_general_section', array(
   'priority'        => 160,
 ));
 
-function ubik_footer_height( $wp_customize ) {
-
-  $wp_customize->add_setting( 'ubik_footer_height_desktop', array(
-    'transport' 					=> 'postMessage',
-    'default'           	=> '40',
-    'sanitize_callback' 	=> 'ubik_sanitize_number',
-  ) );
-
-  $wp_customize->add_setting( 'ubik_footer_height_tablet', array(
-    'transport' 					=> 'postMessage',
-    'sanitize_callback' 	=> 'ubik_sanitize_number_blank',
-  ) );
-
-  $wp_customize->add_setting( 'ubik_footer_height_mobile', array(
-    'transport' 					=> 'postMessage',
-    'sanitize_callback' 	=> 'ubik_sanitize_number_blank',
-  ) );
-
-  $wp_customize->add_control( new Ubik_Customizer_Responsive_Slider_Control( $wp_customize, 'ubik_footer_height_desktop', array(
-    'label' 						=> esc_html__( 'Footer Height (px)', 'ubik' ),
-    'section'  					=> 'ubik_footer_general_section',
-    'settings' 					=> array(
-        'desktop' 	=> 'ubik_footer_height_desktop',
-        'tablet' 		=> 'ubik_footer_height_tablet',
-        'mobile' 		=> 'ubik_footer_height_mobile',
-      ),
-    'priority' 					=> 11,
-    'input_attrs' 			=> array(
-					'min'			=> '',
-          'max'   	=> '500',
-          'step'  	=> '1',
-      ),
-    'active_callback'   => 'ubik_footer_is_activated',
-  ) ) );
-
-}
-add_action( 'customize_register', 'ubik_footer_height' );
+Kirki::add_field( 'ubik_config', array(
+	'type'            => 'slider',
+	'settings'        => 'ubik_footer_height',
+	'label'           => esc_html__( 'Footer Height (px)', 'ubik' ),
+	'section'         => 'ubik_footer_general_section',
+	'default'         => '40',
+	'choices'         => array(
+		'min'   => '0',
+    'max'		=> '500',
+    'step'  => '1',
+	),
+	'priority'    		=> 10,
+	'output' => array(
+		array(
+			'element'  				=> '.site-footer',
+			'property' 				=> 'height',
+			'units'						=> 'px',
+		),
+	),
+  'transport'       => 'auto',
+  'active_callback' => 'ubik_footer_is_activated',
+) );
 
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'radio-buttonset',
@@ -682,43 +663,28 @@ Kirki::add_field( 'ubik_config', array(
   ),
 ) );
 
-function ubik_footer_logo_height( $wp_customize ) {
-
-  $wp_customize->add_setting( 'ubik_footer_logo_height_desktop', array(
-    'transport' 					=> 'postMessage',
-    'default'           	=> '30',
-    'sanitize_callback' 	=> 'ubik_sanitize_number',
-  ) );
-
-  $wp_customize->add_setting( 'ubik_footer_logo_height_tablet', array(
-    'transport' 					=> 'postMessage',
-    'sanitize_callback' 	=> 'ubik_sanitize_number_blank',
-  ) );
-
-  $wp_customize->add_setting( 'ubik_footer_logo_height_mobile', array(
-    'transport' 					=> 'postMessage',
-    'sanitize_callback' 	=> 'ubik_sanitize_number_blank',
-  ) );
-
-  $wp_customize->add_control( new Ubik_Customizer_Responsive_Slider_Control( $wp_customize, 'ubik_footer_logo_height_desktop', array(
-    'label' 						=> esc_html__( 'Footer Logo Max Height (px)', 'ubik' ),
-    'section'  					=> 'ubik_footer_elements_section',
-    'settings' 					=> array(
-        'desktop' 	=> 'ubik_footer_logo_height_desktop',
-        'tablet' 		=> 'ubik_footer_logo_height_tablet',
-        'mobile' 		=> 'ubik_footer_logo_height_mobile',
-      ),
-    'priority' 					=> 15,
-    'input_attrs' 			=> array(
-					'min'			=> '',
-          'max'   	=> '200',
-          'step'  	=> '1',
-      ),
-      'active_callback' => 'ubik_logo_in_ubik_footer_elements',
-  ) ) );
-
-}
-add_action( 'customize_register', 'ubik_footer_logo_height' );
+Kirki::add_field( 'ubik_config', array(
+	'type'            => 'slider',
+	'settings'        => 'ubik_footer_logo_height',
+	'label'           => esc_html__( 'Footer Logo Max Height (px)', 'ubik' ),
+	'section'         => 'ubik_footer_elements_section',
+	'default'         => '30',
+	'choices'         => array(
+		'min'   => '0',
+    'max'		=> '200',
+    'step'  => '1',
+	),
+	'priority'    		=> 15,
+	'output' => array(
+		array(
+			'element'  				=> '.footer-logo .custom-logo',
+			'property' 				=> 'max-height',
+			'units'						=> 'px',
+		),
+	),
+  'transport'       => 'auto',
+  'active_callback' => 'ubik_logo_in_ubik_footer_elements',
+) );
 
 Kirki::add_field( 'ubik_config', array(
 	'type'        		=> 'spacing',

@@ -641,9 +641,6 @@ if ( ! function_exists( 'ubik_header_css' ) ) {
 			if ( 'image' == $frontpage_header_format ) {
 
 				// Front page image-header vars
-				$frontpage_image_header_height_desktop	= get_theme_mod( 'ubik_frontpage_image_header_height_desktop', '300' );
-				$frontpage_image_header_height_tablet	= get_theme_mod( 'ubik_frontpage_image_header_height_tablet','250' );
-				$frontpage_image_header_height_mobile	= get_theme_mod( 'ubik_frontpage_image_header_height_mobile', '200' );
 				$frontpage_bg_img = get_header_image();
 				$frontpage_bg_img_position = get_theme_mod( 'ubik_frontpage_image_header_bg_img_position', 'center center' );
 				$frontpage_bg_img_attachment = get_theme_mod( 'ubik_frontpage_image_header_bg_img_attachment', 'scroll' );
@@ -661,17 +658,6 @@ if ( ! function_exists( 'ubik_header_css' ) ) {
 				$frontpage_content_text_font_size_desktop	= get_theme_mod( 'ubik_frontpage_header_content_text_font_size_desktop', '16' );
 				$frontpage_content_text_font_size_tablet	= get_theme_mod( 'ubik_frontpage_header_content_text_font_size_tablet' );
 				$frontpage_content_text_font_size_mobile	= get_theme_mod( 'ubik_frontpage_header_content_text_font_size_mobile' );
-
-				// Front page image-header height
-				if ( ! empty( $frontpage_image_header_height_desktop ) ) {
-					$css .= '.frontpage-image-header{min-height:'. esc_attr( $frontpage_image_header_height_desktop ) .'px;}';
-				}
-				if ( ! empty( $frontpage_image_header_height_tablet ) ) {
-					$css .= '@media screen and (min-width: 40em) and (max-width: 63.9375em) {.frontpage-image-header{min-height:'. esc_attr( $frontpage_image_header_height_tablet ) .'px;}}';
-				}
-				if ( ! empty( $frontpage_image_header_height_mobile ) ) {
-					$css .= '@media screen and (max-width: 39.9375em) {.frontpage-image-header{min-height:'. esc_attr( $frontpage_image_header_height_mobile ) .'px;}}';
-				}
 
 				// Front page image-header background image
 				if ( ! empty( $frontpage_bg_img ) ) {
@@ -796,10 +782,6 @@ if ( ! function_exists( 'ubik_header_css' ) ) {
 			if ( 'image' == $header_format ) {
 
 				// vars
-				$image_header_height_desktop	= get_theme_mod( 'ubik_image_header_height_desktop', '300' );
-				$image_header_height_tablet	= get_theme_mod( 'ubik_image_header_height_tablet', '250' );
-				$image_header_height_mobile	= get_theme_mod( 'ubik_image_header_height_mobile', '200' );
-
 				if ( ( is_singular( 'page' ) || ( is_home() && ! is_front_page() ) )
 						 && has_post_thumbnail( get_queried_object_id() ) 
 						 && true == get_theme_mod( 'ubik_image_header_page_featured_img_bg', false ) ) {
@@ -839,17 +821,6 @@ if ( ! function_exists( 'ubik_header_css' ) ) {
 				$content_text_font_size_desktop	= get_theme_mod( 'ubik_header_content_text_font_size_desktop', '16' );
 				$content_text_font_size_tablet	= get_theme_mod( 'ubik_header_content_text_font_size_tablet' );
 				$content_text_font_size_mobile	= get_theme_mod( 'ubik_header_content_text_font_size_mobile' );
-
-				//Image-header height
-				if ( ! empty( $image_header_height_desktop ) ) {
-					$css .= '.image-header{min-height:'. esc_attr( $image_header_height_desktop ) .'px;}';
-				}
-				if ( ! empty( $image_header_height_tablet ) ) {
-					$css .= '@media screen and (min-width: 40em) and (max-width: 63.9375em) {.image-header{min-height:'. esc_attr( $image_header_height_tablet ) .'px;}}';
-				}
-				if ( ! empty( $image_header_height_mobile ) ) {
-					$css .= '@media screen and (max-width: 39.9375em) {.image-header{min-height:'. esc_attr( $image_header_height_mobile ) .'px;}}';
-				}
 
 				// Image-header border width
 				if ( ! empty( $image_header_border_width ) ) {
@@ -1283,66 +1254,14 @@ if ( ! function_exists( 'ubik_footer_css' ) ) {
 		if ( ubik_frontpage_footer_display() ) {
 
 			// vars
-			$frontpage_footer_height_desktop	= get_theme_mod( 'ubik_frontpage_footer_height_desktop', '40' );
-			$frontpage_footer_height_tablet	= get_theme_mod( 'ubik_frontpage_footer_height_tablet' );
-			$frontpage_footer_height_mobile	= get_theme_mod( 'ubik_frontpage_footer_height_mobile' );
-			$frontpage_footer_logo_height_desktop	= get_theme_mod( 'ubik_frontpage_footer_logo_height_desktop', '30' );
-			$frontpage_footer_logo_height_tablet	= get_theme_mod( 'ubik_frontpage_footer_logo_height_tablet' );
-			$frontpage_footer_logo_height_mobile	= get_theme_mod( 'ubik_frontpage_footer_logo_height_mobile' );
-
-			// Front page footer height
-			if ( ! empty( $frontpage_footer_height_desktop ) ) {
-				$css .= '.frontpage-footer{height:'. esc_attr( $frontpage_footer_height_desktop ) .'px;}';
-			}
-			if ( ! empty( $frontpage_footer_height_tablet ) ) {
-				$css .= '@media screen and (max-width: 63.9375em) {.frontpage-footer{height:'. esc_attr( $frontpage_footer_height_tablet ) .'px;}}';
-			}
-			if ( ! empty( $frontpage_footer_height_mobile ) ) {
-				$css .= '@media screen and (max-width: 39.9375em) {.frontpage-footer{height:'. esc_attr( $frontpage_footer_height_mobile ) .'px;}}';
-			}
 
 			// Front page footer logo max height
-			if ( ! empty( $frontpage_footer_logo_height_desktop ) ) {
-				$css .= '.frontpage-footer-logo .custom-logo{max-height:'. esc_attr( $frontpage_footer_logo_height_desktop ) .'px;}';
-			}
-			if ( ! empty( $frontpage_footer_logo_height_tablet ) ) {
-				$css .= '@media screen (max-width: 63.9375em) {.frontpage-footer-logo .custom-logo{max-height:'. esc_attr( $frontpage_footer_logo_height_tablet ) .'px;}}';
-			}
-			if ( ! empty( $frontpage_footer_logo_height_mobile ) ) {
-				$css .= '@media screen and (max-width: 39.9375em) {.frontpage-footer-logo .custom-logo{max-height:'. esc_attr( $frontpage_footer_logo_height_mobile ) .'px;}}';
-      }
 
 		} elseif ( ubik_footer_display() ) {
 
 			// vars
-			$footer_height_desktop	= get_theme_mod( 'ubik_footer_height_desktop', '40' );
-			$footer_height_tablet	= get_theme_mod( 'ubik_footer_height_tablet' );
-			$footer_height_mobile	= get_theme_mod( 'ubik_footer_height_mobile' );
-			$footer_logo_height_desktop	= get_theme_mod( 'ubik_footer_logo_height_desktop', '30' );
-			$footer_logo_height_tablet	= get_theme_mod( 'ubik_footer_logo_height_tablet' );
-			$footer_logo_height_mobile	= get_theme_mod( 'ubik_footer_logo_height_mobile' );
-
-			// footer height
-			if ( ! empty( $footer_height_desktop ) ) {
-				$css .= '.site-footer{height:'. esc_attr( $footer_height_desktop ) .'px;}';
-			}
-			if ( ! empty( $footer_height_tablet ) ) {
-				$css .= '@media screen and (max-width: 63.9375em) {.site-footer{height:'. esc_attr( $footer_height_tablet ) .'px;}}';
-			}
-			if ( ! empty( $footer_height_mobile ) ) {
-				$css .= '@media screen and (max-width: 39.9375em) {.site-footer{height:'. esc_attr( $footer_height_mobile ) .'px;}}';
-			}
 			
 			// footer logo max height
-			if ( ! empty( $footer_logo_height_desktop ) ) {
-				$css .= '.footer-logo .custom-logo{max-height:'. esc_attr( $footer_logo_height_desktop ) .'px;}';
-			}
-			if ( ! empty( $footer_logo_height_tablet ) ) {
-				$css .= '@media screen and (max-width: 63.9375em) {.footer-logo .custom-logo{max-height:'. esc_attr( $footer_logo_height_tablet ) .'px;}}';
-			}
-			if ( ! empty( $footer_logo_height_mobile ) ) {
-				$css .= '@media screen and (max-width: 39.9375em) {.footer-logo .custom-logo{max-height:'. esc_attr( $footer_logo_height_mobile ) .'px;}}';
-      }
       
     }
 

@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 } 
 
-$text = get_theme_mod( 'ubik_frontpage_footer_text', '' );
+$text = get_theme_mod( 'ubik_frontpage_footer_text', '<span>Ubik Theme</span>' );
 ?>
 
 <?php

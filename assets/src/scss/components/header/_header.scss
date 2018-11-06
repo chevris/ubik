@@ -5,12 +5,6 @@
   background-color: $white;
   border-bottom: 1px solid $global-border-color;
   min-height: 300px;
-  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-    min-height: 250px;
-  }
-  @media screen and (max-width: 39.9375em) {
-    min-height: 200px;
-  }
 }
 
 .image-header__menu-bar-wrap {

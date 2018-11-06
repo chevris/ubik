@@ -45,7 +45,7 @@ if ( has_nav_menu( 'header_content_nav' ) ) :
 <?php elseif ( is_customize_preview() ) : ?>
 
 	<span style="font-style:italic;font-size:14px;">
-		<?php echo esc_html__( 'Add a menu to Header Content location', 'ubik' ); ?>
+		<?php echo __( 'Add a menu to Header Content location', 'ubik' ); ?>
 	</span>
 
 <?php endif; ?>
