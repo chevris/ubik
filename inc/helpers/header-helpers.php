@@ -618,7 +618,7 @@ if ( ! function_exists( 'ubik_menubar_left_area_elements' ) ) {
 	function ubik_menubar_left_area_elements() {
 
 		// Default array
-		$array = array( 'site-logo' );
+		$array = array();
 			
 		// Get array from Customizer
 		$array = get_theme_mod( 'ubik_menubar_left_area_elements', $array );

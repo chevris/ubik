@@ -141,7 +141,7 @@ if ( ! function_exists( 'ubik_blog_classes' ) ) {
 			$classes[] = 'medium-up-' . $h_tablet_col;
 
 			// desktop device columns
-			$h_desktop_col = get_theme_mod( 'ubik_h_card_entry_columns_desktop','2' );
+			$h_desktop_col = get_theme_mod( 'ubik_h_card_entry_columns_desktop','1' );
 			$classes[] = 'large-up-' . $h_desktop_col;
 
 		}

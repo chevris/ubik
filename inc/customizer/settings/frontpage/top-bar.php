@@ -51,7 +51,7 @@
  * 					ubik_frontpage_top_bar_text_links_hover_color
  *				ubik_frontpage_top_bar_text_typography_heading
  *					[if : ubik_frontpage_top_bar_text_typography_heading = true]
- *					ubik_frontpage_top_bar_text_font_size_desktop
+ *					ubik_frontpage_top_bar_text_font_size
  *					ubik_frontpage_top_bar_text_letter_spacing
  *					ubik_frontpage_top_bar_text_text_transform
  *      	ubik_frontpage_top_bar_search_options_heading
@@ -573,43 +573,39 @@ function ubik_frontpage_top_bar_text_typography_heading( $wp_customize ) {
 }
 add_action( 'customize_register', 'ubik_frontpage_top_bar_text_typography_heading' );
 
-function ubik_frontpage_top_bar_text_font_size( $wp_customize ) {
-
-  $wp_customize->add_setting( 'ubik_frontpage_top_bar_text_font_size_desktop', array(
-		'transport' 					=> 'postMessage',
-		'default'     		    => '16',
-    'sanitize_callback' 	=> 'ubik_sanitize_number',
-  ) );
-
-  $wp_customize->add_setting( 'ubik_frontpage_top_bar_text_font_size_tablet', array(
-		'transport' 					=> 'postMessage',
-    'sanitize_callback' 	=> 'ubik_sanitize_number_blank',
-  ) );
-
-  $wp_customize->add_setting( 'ubik_frontpage_top_bar_text_font_size_mobile', array(
-		'transport' 					=> 'postMessage',
-    'sanitize_callback' 	=> 'ubik_sanitize_number_blank',
-  ) );
-
-  $wp_customize->add_control( new Ubik_Customizer_Responsive_Slider_Control( $wp_customize, 'ubik_frontpage_top_bar_text_font_size_desktop', array(
-    'label' 						=> esc_html__( 'Font size (px)', 'ubik' ),
-    'section'  					=> 'ubik_frontpage_top_bar_content_section',
-    'settings' 					=> array(
-        'desktop' 	=> 'ubik_frontpage_top_bar_text_font_size_desktop',
-        'tablet' 		=> 'ubik_frontpage_top_bar_text_font_size_tablet',
-        'mobile' 		=> 'ubik_frontpage_top_bar_text_font_size_mobile',
-      ),
-    'priority' 					=> 14,
-    'input_attrs' 			=> array(
-					'min'			=> '',
-          'max'   	=> '200',
-          'step'  	=> '1',
-			),
-		'active_callback' 		=> 'ubik_frontpage_top_bar_is_activated_and_text_typo_on',
-  ) ) );
-
-}
-add_action( 'customize_register', 'ubik_frontpage_top_bar_text_font_size' );
+Kirki::add_field( 'ubik_config', array(
+	'type'            => 'slider',
+	'settings'        => 'ubik_frontpage_top_bar_text_font_size',
+	'label'           => esc_html__( 'Font size (px)', 'ubik' ),
+	'section'         => 'ubik_frontpage_top_bar_content_section',
+	'default'         => 14,
+	'choices'         => array(
+		'min'   => '0',
+    'max'		=> '100',
+    'step'  => '1',
+	),
+	'priority'    		=> 14,
+	'output' => array(
+		array(
+			'element'  				=> '.frontpage-top-bar-text, .frontpage-top-bar-text p',
+			'property' 				=> 'font-size',
+			'units'						=> 'px',
+		),
+	),
+  'transport'       => 'auto',
+	'active_callback' => array(
+		array(
+			'setting'       => 'ubik_frontpage_top_bar_activate',
+			'operator'      => '==',
+			'value'         => '1',
+		),
+		array(
+			'setting'       => 'ubik_frontpage_top_bar_text_typography_heading',
+			'operator'      => '==',
+			'value'         => '1',
+		),
+	),
+) );
 
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',

@@ -14,20 +14,32 @@
 li.customize-control-ubik-toggle-control-heading + li {
 	margin-top: -12px;
 }
-#customize-control-ubik_header_content_text_font_size_desktop .customize-control-title,
-#customize-control-ubik_header_content_nav_font_size_desktop .customize-control-title,
-#customize-control-ubik_header_content_breadcrumbs_font_size_desktop .customize-control-title,
-#customize-control-ubik_header_content_page_title_font_size_desktop .customize-control-title,
-#customize-control-ubik_header_content_site_tagline_font_size_desktop .customize-control-title,
-#customize-control-ubik_classic_entry_title_typography_font_size_desktop .customize-control-title,
-#customize-control-ubik_classic_entry_meta_typography_font_size_desktop .customize-control-title,
-#customize-control-ubik_card_entry_title_typography_font_size_desktop .customize-control-title,
-#customize-control-ubik_card_entry_meta_typography_font_size_desktop .customize-control-title,
-#customize-control-ubik_h_card_entry_title_typography_font_size_desktop .customize-control-title,
-#customize-control-ubik_h_card_entry_meta_typography_font_size_desktop .customize-control-title,
-#customize-control-ubik_h_card_entry_image_title_typography_font_size_desktop .customize-control-title,
-#customize-control-ubik_single_title_typography_font_size_desktop .customize-control-title,
-#customize-control-ubik_single_meta_typography_font_size_desktop .customize-control-title {
+#customize-control-ubik_header_content_text_font_size .customize-control-title,
+#customize-control-ubik_frontpage_header_content_text_font_size .customize-control-title,
+#customize-control-ubik_header_content_nav_font_size .customize-control-title,
+#customize-control-ubik_frontpage_header_content_nav_font_size .customize-control-title,
+#customize-control-ubik_header_content_breadcrumbs_font_size .customize-control-title,
+#customize-control-ubik_header_content_page_title_font_size .customize-control-title,
+#customize-control-ubik_frontpage_header_content_page_title_font_size .customize-control-title,
+#customize-control-ubik_header_content_site_tagline_font_size .customize-control-title,
+#customize-control-ubik_frontpage_header_content_site_tagline_font_size .customize-control-title,
+#customize-control-ubik_classic_entry_title_typography_font_size .customize-control-title,
+#customize-control-ubik_classic_entry_meta_typography_font_size .customize-control-title,
+#customize-control-ubik_card_entry_title_typography_font_size .customize-control-title,
+#customize-control-ubik_card_entry_meta_typography_font_size .customize-control-title,
+#customize-control-ubik_h_card_entry_title_typography_font_size .customize-control-title,
+#customize-control-ubik_h_card_entry_meta_typography_font_size .customize-control-title,
+#customize-control-ubik_h_card_entry_image_title_typography_font_size .customize-control-title,
+#customize-control-ubik_single_title_typography_font_size .customize-control-title,
+#customize-control-ubik_single_meta_typography_font_size .customize-control-title,
+#customize-control-ubik_top_bar_text_font_size .customize-control-title,
+#customize-control-ubik_frontpage_top_bar_text_font_size .customize-control-title,
+#customize-control-ubik_classic_vertical_bar_nav_typography_font_size .customize-control-title,
+#customize-control-ubik_frontpage_classic_vertical_bar_nav_typography_font_size .customize-control-title,
+#customize-control-ubik_classic_vertical_bar_text_font_size .customize-control-title,
+#customize-control-ubik_frontpage_classic_vertical_bar_text_font_size .customize-control-title,
+#customize-control-ubik_classic_vertical_bar_footer_text_font_size_desktop .customize-control-title,
+#customize-control-ubik_frontpage_classic_vertical_bar_footer_text_font_size_desktop .customize-control-title {
 	font-weight: normal;
 }
 
