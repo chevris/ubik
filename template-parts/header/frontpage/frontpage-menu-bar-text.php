@@ -20,7 +20,7 @@ if ( $frontpage_menu_bar_text  || is_customize_preview() ) : ?>
 
   <div class="frontpage-menu-bar-text <?php echo esc_attr( ubik_frontpage_menubar_text_classes() ); ?>">
 
-    <?php echo do_shortcode( $frontpage_menu_bar_text ); ?>
+		<?php echo do_shortcode( wp_kses_post( $frontpage_menu_bar_text ) ); ?>
 
   </div>
 

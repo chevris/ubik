@@ -19,7 +19,7 @@ if ( $footer_text  || is_customize_preview() ) : ?>
 
   <div class="classic-vertical-bar-footer-text <?php echo esc_attr( ubik_classic_vertical_bar_footer_text_classes() ); ?>">
 
-    <?php echo do_shortcode( $footer_text ); ?>
+    <?php echo do_shortcode( wp_kses_post( $footer_text ) ); ?>
 
   </div>
 

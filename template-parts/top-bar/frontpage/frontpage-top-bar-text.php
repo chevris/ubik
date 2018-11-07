@@ -19,7 +19,7 @@ if ( $top_bar_text  || is_customize_preview() ) : ?>
 
   <div class="frontpage-top-bar-text <?php echo esc_attr( ubik_frontpage_top_bar_text_classes() ); ?>">
 
-    <?php echo do_shortcode( $top_bar_text ); ?>
+    <?php echo do_shortcode( wp_kses_post( $top_bar_text ) ); ?>
 
   </div>
 

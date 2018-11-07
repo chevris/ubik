@@ -3,6 +3,9 @@ v1.0.3
 - Modified: Use of the_posts_navigation instead of custom function
 - Added: Missing translated string to header-content-nav.php
 - Added: Missing esc_attr() in hooks.php functions
+- Modified: esc_html in format.php
+- Added: wp_kses_post with do_shortcode
+- Modified: Sanitize callbacks
 
 v1.0.2
 - Modified: Unminified files moved in assets

@@ -19,7 +19,7 @@ if ( $text  || is_customize_preview() ) : ?>
 
   <div class="classic-vertical-bar-text <?php echo esc_attr( ubik_classic_vertical_bar_text_classes() ); ?>">
 
-    <?php echo do_shortcode( $text ); ?>
+    <?php echo do_shortcode( wp_kses_post( $text ) ); ?>
 
   </div>
 

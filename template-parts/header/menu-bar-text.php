@@ -20,7 +20,7 @@ if ( $menu_bar_text  || is_customize_preview() ) : ?>
 
   <div class="menu-bar-text <?php echo esc_attr( ubik_menubar_text_classes() ); ?>">
 
-    <?php echo do_shortcode( $menu_bar_text ); ?>
+		<?php echo do_shortcode( wp_kses_post( $menu_bar_text ) ); ?>
 
   </div>
 

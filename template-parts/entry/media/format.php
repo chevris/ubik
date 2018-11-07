@@ -70,7 +70,7 @@ if ( ubik_get_schema_markup( 'image' ) ) {
 // Caption
 if ( $caption ) { ?>
 	<div class="img-caption">
-		<?php echo esc_attr( $caption ); ?>
+		<?php echo esc_html( $caption ); ?>
 	</div>
 <?php
 }

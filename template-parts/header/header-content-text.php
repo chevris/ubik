@@ -17,6 +17,6 @@ $header_content_text = get_theme_mod( 'ubik_header_content_text_content', '' );
 // Check if there is content
 if ( $header_content_text  || is_customize_preview() ) : ?>
 
-  <?php echo do_shortcode( $header_content_text ); ?>
+	<?php echo do_shortcode( wp_kses_post( $header_content_text ) ); ?>
 
 <?php endif; ?>
