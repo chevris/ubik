@@ -69,8 +69,8 @@ Kirki::add_field( 'ubik_config', array(
 	'default'     => '0',
   'priority'    => 10,
   'choices'     => array(
-		'on'  => esc_attr__( 'Enable', 'ubik' ),
-		'off' => esc_attr__( 'Disable', 'ubik' ),
+		'on'  => esc_html__( 'Enable', 'ubik' ),
+		'off' => esc_html__( 'Disable', 'ubik' ),
 	),
 ) );
 
@@ -121,7 +121,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_frontpage_sidebar_width',
-	'label'           => esc_attr__( 'Sidebar Width (%)', 'ubik' ),
+	'label'           => esc_html__( 'Sidebar Width (%)', 'ubik' ),
 	'section'         => 'ubik_frontpage_sidebar_general_section',
 	'priority' 				=> 10,
 	'default'         => 25,
@@ -161,7 +161,7 @@ add_action( 'customize_register', 'ubik_frontpage_sidebar_color_heading' );
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'color',
 	'settings'          => 'ubik_frontpage_sidebar_border_color',
-	'description'				=> 'Border',
+	'description'				=> esc_html__( 'Border', 'ubik' ),
 	'section'           => 'ubik_frontpage_sidebar_general_section',
   'default'           => '#e9e9e9',
   'priority' 				  => 11,
@@ -206,8 +206,8 @@ Kirki::add_field( 'ubik_config', array(
 		'bottom' 	=> '40px',
 	),
   'choices'     			=> array(
-		'top' 		=> esc_attr__( 'Top', 'ubik' ),
-    'bottom' 	=> esc_attr__( 'Bottom', 'ubik' ),
+		'top' 		=> esc_html__( 'Top', 'ubik' ),
+    'bottom' 	=> esc_html__( 'Bottom', 'ubik' ),
 	),
 	'output' => array(
 		array(
@@ -234,7 +234,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'        		=> 'spacing',
 	'settings'    		=> 'ubik_frontpage_sidebar_widgets_padding',
-	'label'       		=> esc_attr__( 'Widgets Padding', 'ubik' ),
+	'label'       		=> esc_html__( 'Widgets Padding', 'ubik' ),
 	'section'     		=> 'ubik_frontpage_sidebar_widgets_section',
 	'default'     		=> array(
 		'top'    => '0px',
@@ -262,7 +262,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'        		=> 'dimension',
 	'settings'    		=> 'ubik_frontpage_sidebar_widgets_title_margin_bottom',
-	'label'       		=> esc_attr__( 'Title Margin Bottom', 'ubik' ),
+	'label'       		=> esc_html__( 'Title Margin Bottom', 'ubik' ),
 	'section'     		=> 'ubik_frontpage_sidebar_widgets_section',
 	'default'     		=> '10px',
 	'priority'    		=> 10,
@@ -302,7 +302,7 @@ add_action( 'customize_register', 'ubik_frontpage_sidebar_widgets_border_heading
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'dimensions',
 	'settings'          => 'ubik_frontpage_sidebar_widgets_border_width_radius',
-	'description'				=> 'Widgets Border Width and Border Radius',
+	'description'				=> esc_html__( 'Widgets Border Width and Border Radius', 'ubik' ),
 	'section'           => 'ubik_frontpage_sidebar_widgets_section',
 	'priority' 				  => 11,
 	'default'     			=> array(
@@ -310,8 +310,8 @@ Kirki::add_field( 'ubik_config', array(
 		'border-radius' 				=> '3px',
 	),
   'choices'     			=> array(
-		'border-width' 					=> esc_attr__( 'Border Width', 'ubik' ),
-    'border-radius' 				=> esc_attr__( 'Border Radius', 'ubik' ),
+		'border-width' 					=> esc_html__( 'Border Width', 'ubik' ),
+    'border-radius' 				=> esc_html__( 'Border Radius', 'ubik' ),
 	),
 	'output' => array(
 		array(
@@ -343,14 +343,14 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'dimensions',
 	'settings'          => 'ubik_frontpage_sidebar_widgets_list_items_border_width',
-	'description'				=> 'List Items Border Width',
+	'description'				=> esc_html__( 'List Items Border Width', 'ubik' ),
 	'section'           => 'ubik_frontpage_sidebar_widgets_section',
 	'priority' 				  => 11,
 	'default'     			=> array(
 		'border-width'  				=> '1px',
 	),
   'choices'     			=> array(
-		'border-width' 					=> esc_attr__( 'Border Width', 'ubik' ),
+		'border-width' 					=> esc_html__( 'Border Width', 'ubik' ),
 	),
 	'output' => array(
 		array(
@@ -394,7 +394,7 @@ add_action( 'customize_register', 'ubik_frontpage_sidebar_widgets_color_heading'
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'color',
 	'settings'          => 'ubik_frontpage_sidebar_widgets_bg_color',
-	'description'				=> 'Background',
+	'description'				=> esc_html__( 'Background', 'ubik' ),
 	'section'           => 'ubik_frontpage_sidebar_widgets_section',
   'default'           => '#fefefe',
   'priority' 				  => 12,
@@ -425,7 +425,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'color',
 	'settings'          => 'ubik_frontpage_sidebar_widgets_border_color',
-	'description'				=> 'Widgets Border',
+	'description'				=> esc_html__( 'Widgets Border', 'ubik' ),
 	'section'           => 'ubik_frontpage_sidebar_widgets_section',
   'default'           => '#e9e9e9',
   'priority' 				  => 12,
@@ -456,7 +456,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'color',
 	'settings'          => 'ubik_frontpage_sidebar_widgets_list_items_border_color',
-	'description'				=> 'List Items Border',
+	'description'				=> esc_html__( 'List Items Border', 'ubik' ),
 	'section'           => 'ubik_frontpage_sidebar_widgets_section',
   'default'           => '#e9e9e9',
   'priority' 				  => 12,
@@ -504,7 +504,7 @@ add_action( 'customize_register', 'ubik_frontpage_sidebar_widgets_typography_hea
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_frontpage_sidebar_widgets_title_font_size',
-	'description'     => esc_attr__( 'Widgets Title: Font Size (px)', 'ubik' ),
+	'description'     => esc_html__( 'Widgets Title: Font Size (px)', 'ubik' ),
 	'section'         => 'ubik_frontpage_sidebar_widgets_section',
 	'default'         => '13',
 	'choices'         => array(
@@ -538,7 +538,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_frontpage_sidebar_widgets_title_letter_spacing',
-	'description'     => esc_attr__( 'Widgets Title: Letter Spacing (px)', 'ubik' ),
+	'description'     => esc_html__( 'Widgets Title: Letter Spacing (px)', 'ubik' ),
 	'section'         => 'ubik_frontpage_sidebar_widgets_section',
 	'default'         => '1',
 	'choices'         => array(
@@ -572,7 +572,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'select',
 	'settings'        => 'ubik_frontpage_sidebar_widgets_title_text_transform',
-	'description'     => esc_attr__( 'Widgets Title: Text Transform', 'ubik' ),
+	'description'     => esc_html__( 'Widgets Title: Text Transform', 'ubik' ),
 	'section'         => 'ubik_frontpage_sidebar_widgets_section',
 	'default'         => 'uppercase',
 	'choices'         => array(
@@ -607,7 +607,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'select',
 	'settings'        => 'ubik_frontpage_sidebar_widgets_title_text_align',
-	'description'     => esc_attr__( 'Widgets Title: Text Align', 'ubik' ),
+	'description'     => esc_html__( 'Widgets Title: Text Align', 'ubik' ),
 	'section'         => 'ubik_frontpage_sidebar_widgets_section',
 	'default'         => 'left',
 	'choices'         => array(
@@ -640,7 +640,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_frontpage_sidebar_widgets_items_font_size',
-	'description'     => esc_attr__( 'Widgets Items: Font Size (px)', 'ubik' ),
+	'description'     => esc_html__( 'Widgets Items: Font Size (px)', 'ubik' ),
 	'section'         => 'ubik_frontpage_sidebar_widgets_section',
 	'default'         => '14',
 	'choices'         => array(
@@ -674,7 +674,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'select',
 	'settings'        => 'ubik_frontpage_sidebar_widgets_items_text_align',
-	'description'     => esc_attr__( 'Widgets Items: Text Align', 'ubik' ),
+	'description'     => esc_html__( 'Widgets Items: Text Align', 'ubik' ),
 	'section'         => 'ubik_frontpage_sidebar_widgets_section',
 	'default'         => 'left',
 	'choices'         => array(

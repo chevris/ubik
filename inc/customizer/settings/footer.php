@@ -79,8 +79,8 @@ Kirki::add_field( 'ubik_config', array(
 	'default'     => 1,
   'priority'    => 10,
   'choices'     => array(
-		'on'  => esc_attr__( 'Enable', 'ubik' ),
-		'off' => esc_attr__( 'Disable', 'ubik' ),
+		'on'  => esc_html__( 'Enable', 'ubik' ),
+		'off' => esc_html__( 'Disable', 'ubik' ),
 	),
 ) );
 
@@ -331,7 +331,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'        		=> 'spacing',
 	'settings'    		=> 'ubik_footer_text_spacing',
-	'label'       		=> esc_attr__( 'Spacing', 'ubik' ),
+	'label'       		=> esc_html__( 'Spacing', 'ubik' ),
 	'section'     		=> 'ubik_footer_elements_section',
 	'default'     		=> array(
 		'top'    => '0px',
@@ -381,7 +381,7 @@ add_action( 'customize_register', 'ubik_footer_text_color_heading' );
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'color',
 	'settings'          => 'ubik_footer_text_color',
-	'description'				=> 'Text',
+	'description'				=> esc_html__( 'Text', 'ubik' ),
 	'section'           => 'ubik_footer_elements_section',
   'default'           => '#929292',
   'priority' 				  => 12,
@@ -417,7 +417,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'color',
 	'settings'          => 'ubik_footer_text_links_color',
-	'description'				=> 'Links',
+	'description'				=> esc_html__( 'Links', 'ubik' ),
 	'section'           => 'ubik_footer_elements_section',
   'default'           => '#333333',
   'priority' 				  => 12,
@@ -453,7 +453,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'color',
 	'settings'          => 'ubik_footer_text_links_hover_color',
-	'description'				=> 'Links: Hover',
+	'description'				=> esc_html__( 'Links: Hover', 'ubik' ),
 	'section'           => 'ubik_footer_elements_section',
   'default'           => '#1779ba',
   'priority' 				  => 12,
@@ -506,7 +506,7 @@ add_action( 'customize_register', 'ubik_footer_text_typography_heading' );
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_footer_text_typography_font_size',
-	'description'     => esc_attr__( 'Font Size (px)', 'ubik' ),
+	'description'     => esc_html__( 'Font Size (px)', 'ubik' ),
 	'section'         => 'ubik_footer_elements_section',
 	'default'         => '16',
 	'choices'         => array(
@@ -545,7 +545,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_footer_text_typography_letter_spacing',
-	'description'     => esc_attr__( 'Letter Spacing (px)', 'ubik' ),
+	'description'     => esc_html__( 'Letter Spacing (px)', 'ubik' ),
 	'section'         => 'ubik_footer_elements_section',
 	'default'         => '0',
 	'choices'         => array(
@@ -584,7 +584,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'select',
 	'settings'        => 'ubik_footer_text_typography_text_transform',
-	'description'     => esc_attr__( 'Text Transform', 'ubik' ),
+	'description'     => esc_html__( 'Text Transform', 'ubik' ),
 	'section'         => 'ubik_footer_elements_section',
 	'default'         => 'none',
 	'choices'         => array(
@@ -689,7 +689,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'        		=> 'spacing',
 	'settings'    		=> 'ubik_footer_logo_spacing',
-	'label'       		=> esc_attr__( 'Spacing', 'ubik' ),
+	'label'       		=> esc_html__( 'Spacing', 'ubik' ),
 	'section'     		=> 'ubik_footer_elements_section',
 	'default'     		=> array(
 		'top'    => '0px',
@@ -764,7 +764,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'        		=> 'spacing',
 	'settings'    		=> 'ubik_footer_nav_spacing',
-	'label'       		=> esc_attr__( 'Menu Spacing', 'ubik' ),
+	'label'       		=> esc_html__( 'Menu Spacing', 'ubik' ),
 	'section'     		=> 'ubik_footer_elements_section',
 	'default'     		=> array(
 		'top'    => '0px',
@@ -797,7 +797,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_footer_nav_items_spacing',
-	'label'           => esc_attr__( 'Menu Items Spacing (Left/Right)', 'ubik' ),
+	'label'           => esc_html__( 'Menu Items Spacing (Left/Right)', 'ubik' ),
 	'section'         => 'ubik_footer_elements_section',
 	'default'         => 0,
 	'choices'         => array(
@@ -853,7 +853,7 @@ add_action( 'customize_register', 'ubik_footer_nav_color_heading' );
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'color',
 	'settings'          => 'ubik_footer_nav_items_color',
-	'description'				=> 'Links',
+	'description'				=> esc_html__( 'Links', 'ubik' ),
 	'section'           => 'ubik_footer_elements_section',
   'default'           => '#fefefe',
   'priority' 				  => 17,
@@ -889,7 +889,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'color',
 	'settings'          => 'ubik_footer_nav_items_hover_color',
-	'description'				=> 'Links: Hover',
+	'description'				=> esc_html__( 'Links: Hover', 'ubik' ),
 	'section'           => 'ubik_footer_elements_section',
   'default'           => '#1779ba',
   'priority' 				  => 17,
@@ -942,7 +942,7 @@ add_action( 'customize_register', 'ubik_footer_nav_typography_heading' );
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_footer_nav_typography_font_size',
-	'description'     => esc_attr__( 'Font Size (px)', 'ubik' ),
+	'description'     => esc_html__( 'Font Size (px)', 'ubik' ),
 	'section'         => 'ubik_footer_elements_section',
 	'default'         => '16',
 	'choices'         => array(
@@ -981,7 +981,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_footer_nav_typography_letter_spacing',
-	'description'     => esc_attr__( 'Letter Spacing (px)', 'ubik' ),
+	'description'     => esc_html__( 'Letter Spacing (px)', 'ubik' ),
 	'section'         => 'ubik_footer_elements_section',
 	'default'         => '0',
 	'choices'         => array(
@@ -1020,7 +1020,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'select',
 	'settings'        => 'ubik_footer_nav_typography_text_transform',
-	'description'     => esc_attr__( 'Text Transform', 'ubik' ),
+	'description'     => esc_html__( 'Text Transform', 'ubik' ),
 	'section'         => 'ubik_footer_elements_section',
 	'default'         => 'none',
 	'choices'         => array(

@@ -45,3 +45,34 @@ The exceptions to this license are as follows:
 
 * Breadcrumb Trail by Justin Tadlock - https://themehybrid.com/plugins/breadcrumb-trail
 	License - [GPL2] (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
+
+== Changelog ==
+
+= Version 1.0.4 =
+* Fixed: Date display bug
+* Modified: Use esc_html() in settings files.
+* Revised readme.txt.
+
+= Version 1.0.3 =
+* Modified: Show comments template in single posts
+* Modified: Use of the_posts_navigation instead of custom function
+* Added: Missing translated string to header-content-nav.php
+* Added: Missing esc_attr() in hooks.php functions
+* Modified: esc_html in format.php
+* Added: wp_kses_post with do_shortcode
+* Modified: Sanitize callbacks
+
+= Version 1.0.2 =
+* Modified: Unminified files moved in assets
+* Added: missing credits
+
+= Version 1.0.1 =
+* Removed: Theme URI
+* Removed: Gradient option of header overlay style
+* Fixed: Top bar full width bug
+* Modified: Theme screenshot
+* Modified: license and attribution to some assets included in the theme
+* Added: Unminified css files
+
+= Version 1.0.0 =
+* Initial release

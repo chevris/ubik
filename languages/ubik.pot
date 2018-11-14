@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v3.0 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Ubik 1.0.3\n"
+"Project-Id-Version: Ubik 1.0.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/ubik\n"
-"POT-Creation-Date: 2018-11-07 21:44:52+00:00\n"
+"POT-Creation-Date: 2018-11-14 13:53:10+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1389,6 +1389,7 @@ msgstr ""
 #: inc/customizer/settings/frontpage/footer.php:228
 #: inc/customizer/settings/frontpage/header.php:293
 #: inc/customizer/settings/frontpage/header.php:1847
+#: inc/customizer/settings/frontpage/sidebar.php:397
 #: inc/customizer/settings/frontpage/vertical-bar.php:323
 #: inc/customizer/settings/frontpage/vertical-bar.php:598
 #: inc/customizer/settings/general.php:2187
@@ -1407,6 +1408,7 @@ msgstr ""
 #: inc/customizer/settings/mobile.php:737
 #: inc/customizer/settings/mobile.php:943
 #: inc/customizer/settings/mobile.php:1156
+#: inc/customizer/settings/sidebar.php:386
 #: inc/customizer/settings/top-bar.php:175
 #: inc/customizer/settings/vertical-bar.php:305
 #: inc/customizer/settings/vertical-bar.php:579
@@ -1668,6 +1670,84 @@ msgstr ""
 #: inc/customizer/settings/vertical-bar.php:1451
 #: inc/customizer/settings/vertical-bar.php:1797
 msgid "Content"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:384
+#: inc/customizer/settings/frontpage/footer.php:402
+#: inc/customizer/settings/frontpage/header.php:1355
+#: inc/customizer/settings/frontpage/header.php:1888
+#: inc/customizer/settings/frontpage/header.php:2515
+#: inc/customizer/settings/frontpage/header.php:2792
+#: inc/customizer/settings/frontpage/header.php:3928
+#: inc/customizer/settings/frontpage/top-bar.php:469
+#: inc/customizer/settings/frontpage/vertical-bar.php:1542
+#: inc/customizer/settings/frontpage/vertical-bar.php:1888
+#: inc/customizer/settings/general.php:2259
+#: inc/customizer/settings/general.php:3818
+#: inc/customizer/settings/general.php:5449
+#: inc/customizer/settings/general.php:6595
+#: inc/customizer/settings/header.php:1255
+#: inc/customizer/settings/header.php:1733
+#: inc/customizer/settings/header.php:2409
+#: inc/customizer/settings/header.php:2666
+#: inc/customizer/settings/header.php:2924
+#: inc/customizer/settings/header.php:3960
+#: inc/customizer/settings/top-bar.php:458
+#: inc/customizer/settings/vertical-bar.php:1523
+#: inc/customizer/settings/vertical-bar.php:1869
+msgid "Text"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:420
+#: inc/customizer/settings/footer.php:856
+#: inc/customizer/settings/frontpage/footer.php:438
+#: inc/customizer/settings/frontpage/footer.php:874
+#: inc/customizer/settings/frontpage/header.php:1391
+#: inc/customizer/settings/frontpage/header.php:2150
+#: inc/customizer/settings/frontpage/header.php:3097
+#: inc/customizer/settings/frontpage/header.php:3969
+#: inc/customizer/settings/frontpage/top-bar.php:500
+#: inc/customizer/settings/frontpage/top-bar.php:924
+#: inc/customizer/settings/frontpage/top-bar.php:960
+#: inc/customizer/settings/frontpage/vertical-bar.php:779
+#: inc/customizer/settings/frontpage/vertical-bar.php:1578
+#: inc/customizer/settings/frontpage/vertical-bar.php:1924
+#: inc/customizer/settings/general.php:6626
+#: inc/customizer/settings/header.php:1286
+#: inc/customizer/settings/header.php:1975
+#: inc/customizer/settings/header.php:2960
+#: inc/customizer/settings/header.php:3281
+#: inc/customizer/settings/header.php:3996
+#: inc/customizer/settings/mobile.php:902
+#: inc/customizer/settings/top-bar.php:489
+#: inc/customizer/settings/top-bar.php:913
+#: inc/customizer/settings/vertical-bar.php:760
+#: inc/customizer/settings/vertical-bar.php:1559
+#: inc/customizer/settings/vertical-bar.php:1905
+msgid "Links"
+msgstr ""
+
+#: inc/customizer/settings/footer.php:456
+#: inc/customizer/settings/footer.php:892
+#: inc/customizer/settings/frontpage/footer.php:474
+#: inc/customizer/settings/frontpage/footer.php:910
+#: inc/customizer/settings/frontpage/header.php:3153
+#: inc/customizer/settings/frontpage/header.php:4010
+#: inc/customizer/settings/frontpage/vertical-bar.php:830
+#: inc/customizer/settings/frontpage/vertical-bar.php:1614
+#: inc/customizer/settings/frontpage/vertical-bar.php:1960
+#: inc/customizer/settings/general.php:1710
+#: inc/customizer/settings/general.php:3102
+#: inc/customizer/settings/general.php:4729
+#: inc/customizer/settings/general.php:6389
+#: inc/customizer/settings/header.php:2996
+#: inc/customizer/settings/header.php:3332
+#: inc/customizer/settings/header.php:4032
+#: inc/customizer/settings/top-bar.php:949
+#: inc/customizer/settings/vertical-bar.php:811
+#: inc/customizer/settings/vertical-bar.php:1595
+#: inc/customizer/settings/vertical-bar.php:1941
+msgid "Links: Hover"
 msgstr ""
 
 #: inc/customizer/settings/footer.php:497
@@ -2148,30 +2228,6 @@ msgstr ""
 msgid "Hover Effect"
 msgstr ""
 
-#: inc/customizer/settings/frontpage/header.php:1355
-#: inc/customizer/settings/frontpage/header.php:1888
-#: inc/customizer/settings/frontpage/top-bar.php:469
-#: inc/customizer/settings/general.php:2259
-#: inc/customizer/settings/general.php:3818
-#: inc/customizer/settings/general.php:5449
-#: inc/customizer/settings/general.php:6595
-#: inc/customizer/settings/header.php:1255
-#: inc/customizer/settings/header.php:1733
-#: inc/customizer/settings/top-bar.php:458
-msgid "Text"
-msgstr ""
-
-#: inc/customizer/settings/frontpage/header.php:1391
-#: inc/customizer/settings/frontpage/header.php:2150
-#: inc/customizer/settings/frontpage/top-bar.php:500
-#: inc/customizer/settings/general.php:6626
-#: inc/customizer/settings/header.php:1286
-#: inc/customizer/settings/header.php:1975
-#: inc/customizer/settings/top-bar.php:489
-#: inc/customizer/settings/top-bar.php:913
-msgid "Links"
-msgstr ""
-
 #: inc/customizer/settings/frontpage/header.php:1427
 #: inc/customizer/settings/frontpage/header.php:2201
 #: inc/customizer/settings/frontpage/top-bar.php:531
@@ -2227,6 +2283,7 @@ msgid "Icon - Replace"
 msgstr ""
 
 #: inc/customizer/settings/frontpage/header.php:1683
+#: inc/customizer/settings/frontpage/top-bar.php:765
 #: inc/customizer/settings/general.php:6902
 #: inc/customizer/settings/header.php:1553
 #: inc/customizer/settings/mobile.php:356
@@ -2241,9 +2298,11 @@ msgstr ""
 
 #: inc/customizer/settings/frontpage/header.php:1765
 #: inc/customizer/settings/frontpage/header.php:3453
+#: inc/customizer/settings/frontpage/vertical-bar.php:1264
 #: inc/customizer/settings/header.php:1625
 #: inc/customizer/settings/header.php:3612
 #: inc/customizer/settings/mobile.php:1182
+#: inc/customizer/settings/vertical-bar.php:1245
 msgid "Form Border"
 msgstr ""
 
@@ -2257,7 +2316,10 @@ msgid "Search Button Background test"
 msgstr ""
 
 #: inc/customizer/settings/frontpage/header.php:1970
+#: inc/customizer/settings/frontpage/vertical-bar.php:1184
 #: inc/customizer/settings/header.php:1805
+#: inc/customizer/settings/mobile.php:1312
+#: inc/customizer/settings/vertical-bar.php:1165
 msgid "Search Icon"
 msgstr ""
 
@@ -2436,6 +2498,7 @@ msgstr ""
 #: inc/customizer/settings/frontpage/header.php:3535
 #: inc/customizer/settings/frontpage/vertical-bar.php:1336
 #: inc/customizer/settings/header.php:3684
+#: inc/customizer/settings/mobile.php:1234
 #: inc/customizer/settings/vertical-bar.php:1317
 msgid "Form Background"
 msgstr ""
@@ -2488,6 +2551,19 @@ msgstr ""
 msgid "Sidebar Width (%)"
 msgstr ""
 
+#: inc/customizer/settings/frontpage/sidebar.php:164
+#: inc/customizer/settings/frontpage/vertical-bar.php:400
+#: inc/customizer/settings/general.php:1131
+#: inc/customizer/settings/general.php:2115
+#: inc/customizer/settings/general.php:2459
+#: inc/customizer/settings/general.php:3674
+#: inc/customizer/settings/general.php:4073
+#: inc/customizer/settings/general.php:5305
+#: inc/customizer/settings/sidebar.php:152
+#: inc/customizer/settings/vertical-bar.php:382
+msgid "Border"
+msgstr ""
+
 #: inc/customizer/settings/frontpage/sidebar.php:237
 #: inc/customizer/settings/sidebar.php:226
 msgid "Widgets Padding"
@@ -2501,6 +2577,11 @@ msgstr ""
 #: inc/customizer/settings/frontpage/sidebar.php:293
 #: inc/customizer/settings/sidebar.php:282
 msgid "Borders"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/sidebar.php:305
+#: inc/customizer/settings/sidebar.php:294
+msgid "Widgets Border Width and Border Radius"
 msgstr ""
 
 #: inc/customizer/settings/frontpage/sidebar.php:313
@@ -2519,6 +2600,21 @@ msgstr ""
 #: inc/customizer/settings/general.php:6995
 #: inc/customizer/settings/sidebar.php:303
 msgid "Border Radius"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/sidebar.php:346
+#: inc/customizer/settings/sidebar.php:335
+msgid "List Items Border Width"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/sidebar.php:428
+#: inc/customizer/settings/sidebar.php:417
+msgid "Widgets Border"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/sidebar.php:459
+#: inc/customizer/settings/sidebar.php:448
+msgid "List Items Border"
 msgstr ""
 
 #: inc/customizer/settings/frontpage/sidebar.php:507
@@ -2630,6 +2726,12 @@ msgstr ""
 msgid "Max Height (px)"
 msgstr ""
 
+#: inc/customizer/settings/frontpage/top-bar.php:796
+#: inc/customizer/settings/header.php:1589
+#: inc/customizer/settings/top-bar.php:785
+msgid "Icon: Hover"
+msgstr ""
+
 #: inc/customizer/settings/frontpage/vertical-bar.php:137
 msgid "Activate a specific vertical bar for the front page"
 msgstr ""
@@ -2672,16 +2774,6 @@ msgstr ""
 #: inc/customizer/settings/frontpage/vertical-bar.php:359
 #: inc/customizer/settings/vertical-bar.php:341
 msgid "Footer: Background"
-msgstr ""
-
-#: inc/customizer/settings/frontpage/vertical-bar.php:400
-#: inc/customizer/settings/general.php:2115
-#: inc/customizer/settings/general.php:2459
-#: inc/customizer/settings/general.php:3674
-#: inc/customizer/settings/general.php:4073
-#: inc/customizer/settings/general.php:5305
-#: inc/customizer/settings/vertical-bar.php:382
-msgid "Border"
 msgstr ""
 
 #: inc/customizer/settings/frontpage/vertical-bar.php:447
@@ -2759,9 +2851,20 @@ msgstr ""
 msgid "Menu Items Spacing (Top/Bottom)"
 msgstr ""
 
+#: inc/customizer/settings/frontpage/vertical-bar.php:866
+#: inc/customizer/settings/mobile.php:969
+#: inc/customizer/settings/vertical-bar.php:847
+msgid "Drilldown Sub Menu Background"
+msgstr ""
+
 #: inc/customizer/settings/frontpage/vertical-bar.php:1098
 #: inc/customizer/settings/vertical-bar.php:1079
 msgid "Search Style - Tablet only"
+msgstr ""
+
+#: inc/customizer/settings/frontpage/vertical-bar.php:1224
+#: inc/customizer/settings/vertical-bar.php:1205
+msgid "Search Icon: Hover"
 msgstr ""
 
 #: inc/customizer/settings/frontpage/vertical-bar.php:1408
@@ -3000,14 +3103,6 @@ msgstr ""
 #: inc/customizer/settings/general.php:4693
 #: inc/customizer/settings/general.php:6358
 msgid "Items"
-msgstr ""
-
-#: inc/customizer/settings/general.php:1710
-#: inc/customizer/settings/general.php:3102
-#: inc/customizer/settings/general.php:4729
-#: inc/customizer/settings/general.php:6389
-#: inc/customizer/settings/top-bar.php:949
-msgid "Links: Hover"
 msgstr ""
 
 #: inc/customizer/settings/general.php:1885
@@ -3265,11 +3360,6 @@ msgstr ""
 msgid "Line"
 msgstr ""
 
-#: inc/customizer/settings/header.php:1589
-#: inc/customizer/settings/top-bar.php:785
-msgid "Icon: Hover"
-msgstr ""
-
 #: inc/customizer/settings/header.php:2137
 #: inc/customizer/settings/header.php:2540
 #: inc/customizer/settings/header.php:2798
@@ -3361,6 +3451,10 @@ msgstr ""
 
 #: inc/customizer/settings/mobile.php:763
 msgid "Close Icon"
+msgstr ""
+
+#: inc/customizer/settings/mobile.php:1338
+msgid "Search Icon: Focus"
 msgstr ""
 
 #: inc/customizer/settings/sidebar.php:65

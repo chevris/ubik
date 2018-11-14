@@ -98,8 +98,8 @@ Kirki::add_field( 'ubik_config', array(
 	'default'     => '0',
   'priority'    => 10,
   'choices'     => array(
-		'on'  => esc_attr__( 'Enable', 'ubik' ),
-		'off' => esc_attr__( 'Disable', 'ubik' ),
+		'on'  => esc_html__( 'Enable', 'ubik' ),
+		'off' => esc_html__( 'Disable', 'ubik' ),
 	),
 ) );
 
@@ -136,7 +136,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_frontpage_top_bar_height',
-	'label'           => esc_attr__( 'Height (em)', 'ubik' ),
+	'label'           => esc_html__( 'Height (em)', 'ubik' ),
 	'section'         => 'ubik_frontpage_top_bar_general_section',
 	'default'         => 2,
 	'choices'         => array(
@@ -248,8 +248,8 @@ function ubik_frontpage_top_bar_elements_subheading_tabs( $wp_customize ) {
 		'section'  				=> 'ubik_frontpage_top_bar_content_section',
 		'priority' 				=> 10,
 		'choices' 				=> array(
-			'left'   => esc_attr__( 'Left area', 'ubik' ),
-			'right'  => esc_attr__( 'Right area', 'ubik' ),
+			'left'   => esc_html__( 'Left area', 'ubik' ),
+			'right'  => esc_html__( 'Right area', 'ubik' ),
 		),
 		'active_callback' => 'ubik_frontpage_top_bar_is_activated',
 	) ) );
@@ -342,7 +342,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_frontpage_top_bar_logo_max_height',
-	'label'           => esc_attr__( 'Max Height (px)', 'ubik' ),
+	'label'           => esc_html__( 'Max Height (px)', 'ubik' ),
 	'section'         => 'ubik_frontpage_top_bar_content_section',
 	'default'         => 30,
 	'choices'         => array(
@@ -365,7 +365,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'        		=> 'spacing',
 	'settings'    		=> 'ubik_frontpage_top_bar_logo_spacing',
-	'label'       		=> esc_attr__( 'Spacing', 'ubik' ),
+	'label'       		=> esc_html__( 'Spacing', 'ubik' ),
 	'section'     		=> 'ubik_frontpage_top_bar_content_section',
 	'default'     		=> array(
 		'top'    => '0px',
@@ -417,7 +417,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'        			=> 'editor',
 	'settings'    			=> 'ubik_frontpage_top_bar_text_content',
-	'label'       			=> esc_attr__( 'Content', 'ubik' ),
+	'label'       			=> esc_html__( 'Content', 'ubik' ),
 	'section'     			=> 'ubik_frontpage_top_bar_content_section',
 	'default'     			=> '<strong>Top bar custom text</strong>',
 	'priority'    			=> 12,
@@ -427,7 +427,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'        		=> 'spacing',
 	'settings'    		=> 'ubik_frontpage_top_bar_text_spacing',
-	'label'       		=> esc_attr__( 'Spacing', 'ubik' ),
+	'label'       		=> esc_html__( 'Spacing', 'ubik' ),
 	'section'     		=> 'ubik_frontpage_top_bar_content_section',
 	'default'     		=> array(
 		'top'    => '0px',
@@ -610,7 +610,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_frontpage_top_bar_text_letter_spacing',
-	'description'     => esc_attr__( 'Letter Spacing (px)', 'ubik' ),
+	'description'     => esc_html__( 'Letter Spacing (px)', 'ubik' ),
 	'section'         => 'ubik_frontpage_top_bar_content_section',
 	'default'         => '0',
 	'choices'         => array(
@@ -644,7 +644,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'select',
 	'settings'        => 'ubik_frontpage_top_bar_text_text_transform',
-	'description'     => esc_attr__( 'Text Transform', 'ubik' ),
+	'description'     => esc_html__( 'Text Transform', 'ubik' ),
 	'section'         => 'ubik_frontpage_top_bar_content_section',
 	'default'         => 'none',
 	'choices'         => array(
@@ -723,7 +723,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'        		=> 'spacing',
 	'settings'    		=> 'ubik_frontpage_top_bar_search_spacing',
-	'label'       		=> esc_attr__( 'Spacing', 'ubik' ),
+	'label'       		=> esc_html__( 'Spacing', 'ubik' ),
 	'section'     		=> 'ubik_frontpage_top_bar_content_section',
 	'default'     		=> array(
 		'top'    => '0px',
@@ -762,7 +762,7 @@ add_action( 'customize_register', 'ubik_frontpage_top_bar_search_color_heading' 
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'color',
 	'settings'          => 'ubik_frontpage_top_bar_search_icon_color',
-	'description'				=> 'Icon',
+	'description'				=> esc_html__( 'Icon', 'ubik' ),
 	'section'           => 'ubik_frontpage_top_bar_content_section',
   'default'           => '#fefefe',
   'priority' 				  => 16,
@@ -793,7 +793,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'color',
 	'settings'          => 'ubik_frontpage_top_bar_search_icon_hover_color',
-	'description'				=> 'Icon: Hover',
+	'description'				=> esc_html__( 'Icon: Hover', 'ubik' ),
 	'section'           => 'ubik_frontpage_top_bar_content_section',
   'default'           => '#1779ba',
   'priority' 				  => 16,
@@ -854,7 +854,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'        		=> 'spacing',
 	'settings'    		=> 'ubik_frontpage_top_bar_nav_spacing',
-	'label'       		=> esc_attr__( 'Menu Spacing', 'ubik' ),
+	'label'       		=> esc_html__( 'Menu Spacing', 'ubik' ),
 	'section'     		=> 'ubik_frontpage_top_bar_content_section',
 	'default'     		=> array(
 		'top'    => '0px',
@@ -876,7 +876,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_frontpage_top_bar_nav_items_spacing',
-	'label'           => esc_attr__( 'Menu Items Spacing (Left/Right)', 'ubik' ),
+	'label'           => esc_html__( 'Menu Items Spacing (Left/Right)', 'ubik' ),
 	'section'         => 'ubik_frontpage_top_bar_content_section',
 	'default'         => 0,
 	'choices'         => array(
@@ -921,7 +921,7 @@ add_action( 'customize_register', 'ubik_frontpage_top_bar_nav_color_heading' );
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'color',
 	'settings'          => 'ubik_frontpage_top_bar_nav_items_color',
-	'description'				=> 'Links',
+	'description'				=> esc_html__( 'Links', 'ubik' ),
 	'section'           => 'ubik_frontpage_top_bar_content_section',
   'default'           => '#fefefe',
   'priority' 				  => 18,
@@ -957,7 +957,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'color',
 	'settings'          => 'ubik_frontpage_top_bar_nav_items_hover_color',
-	'description'				=> 'Links',
+	'description'				=> esc_html__( 'Links', 'ubik' ),
 	'section'           => 'ubik_frontpage_top_bar_content_section',
   'default'           => '#1779ba',
   'priority' 				  => 18,
@@ -1005,7 +1005,7 @@ add_action( 'customize_register', 'ubik_frontpage_top_bar_nav_typography_heading
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_frontpage_top_bar_nav_typography_font_size',
-	'description'     => esc_attr__( 'Font Size (px)', 'ubik' ),
+	'description'     => esc_html__( 'Font Size (px)', 'ubik' ),
 	'section'         => 'ubik_frontpage_top_bar_content_section',
 	'default'         => '14',
 	'choices'         => array(
@@ -1039,7 +1039,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_frontpage_top_bar_nav_typography_letter_spacing',
-	'description'     => esc_attr__( 'Letter Spacing (px)', 'ubik' ),
+	'description'     => esc_html__( 'Letter Spacing (px)', 'ubik' ),
 	'section'         => 'ubik_frontpage_top_bar_content_section',
 	'default'         => '0',
 	'choices'         => array(
@@ -1073,7 +1073,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'select',
 	'settings'        => 'ubik_frontpage_top_bar_nav_typography_text_transform',
-	'description'     => esc_attr__( 'Text Transform', 'ubik' ),
+	'description'     => esc_html__( 'Text Transform', 'ubik' ),
 	'section'         => 'ubik_frontpage_top_bar_content_section',
 	'default'         => 'none',
 	'choices'         => array(

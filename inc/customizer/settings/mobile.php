@@ -125,7 +125,7 @@ add_action( 'customize_register', 'ubik_mobile_bar_general_heading' );
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_mobile_bar_height',
-	'label'           => esc_attr__( 'Min Height (px)', 'ubik' ),
+	'label'           => esc_html__( 'Min Height (px)', 'ubik' ),
 	'section'         => 'ubik_mobile_bar_section',
 	'default'         => '40',
 	'choices'         => array(
@@ -213,7 +213,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_mobile_bar_logo_max_height',
-	'label'           => esc_attr__( 'Logo Max Height (px)', 'ubik' ),
+	'label'           => esc_html__( 'Logo Max Height (px)', 'ubik' ),
 	'section'         => 'ubik_mobile_bar_section',
 	'priority' 				=> 12,
 	'default'         => 30,
@@ -235,7 +235,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'        		=> 'spacing',
 	'settings'    		=> 'ubik_mobile_bar_logo_spacing',
-	'label'       		=> esc_attr__( 'Spacing', 'ubik' ),
+	'label'       		=> esc_html__( 'Spacing', 'ubik' ),
 	'section'     		=> 'ubik_mobile_bar_section',
 	'default'     		=> array(
 		'top'    => '0px',
@@ -284,7 +284,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field('ubik_config', array(
 	'type'            => 'text',
 	'settings'        => 'ubik_mobile_bar_toggle_icon',
-  'label'           => esc_attr__( 'Menu Toggle Icon', 'ubik' ),
+  'label'           => esc_html__( 'Menu Toggle Icon', 'ubik' ),
   'description'	    => sprintf( esc_html__( 'Enter the full icon class: %1$sfontawsome%2$s', 'ubik' ), '<a href="https://fontawesome.com" target="_blank">', '</a>' ),
   'section'         => 'ubik_mobile_bar_section',
   'default'         => 'fas fa-bars',
@@ -294,7 +294,7 @@ Kirki::add_field('ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_mobile_bar_toggle_icon_size',
-	'label'           => esc_attr__( 'Icon Size (px)', 'ubik' ),
+	'label'           => esc_html__( 'Icon Size (px)', 'ubik' ),
 	'section'         => 'ubik_mobile_bar_section',
 	'priority' 				=> 13,
 	'default'         => 15,
@@ -316,7 +316,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'        		=> 'spacing',
 	'settings'    		=> 'ubik_mobile_bar_toggle_icon_spacing',
-	'label'       		=> esc_attr__( 'Spacing', 'ubik' ),
+	'label'       		=> esc_html__( 'Spacing', 'ubik' ),
 	'section'     		=> 'ubik_mobile_bar_section',
 	'default'     		=> array(
 		'top'    => '0px',
@@ -403,7 +403,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_mobile_bar_search_icon_size',
-	'label'           => esc_attr__( 'Search Icon Size (px)', 'ubik' ),
+	'label'           => esc_html__( 'Search Icon Size (px)', 'ubik' ),
 	'section'         => 'ubik_mobile_bar_section',
 	'priority' 				=> 15,
 	'default'         => 15,
@@ -425,7 +425,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'        		=> 'spacing',
 	'settings'    		=> 'ubik_mobile_bar_search_spacing',
-	'label'       		=> esc_attr__( 'Spacing', 'ubik' ),
+	'label'       		=> esc_html__( 'Spacing', 'ubik' ),
 	'section'     		=> 'ubik_mobile_bar_section',
 	'default'     		=> array(
 		'top'    => '0px',
@@ -526,7 +526,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_mobile_menu_top_space',
-	'label'           => esc_attr__( 'Panel Top Space (px)', 'ubik' ),
+	'label'           => esc_html__( 'Panel Top Space (px)', 'ubik' ),
 	'section'         => 'ubik_mobile_menu_section',
 	'default'         => '40',
 	'choices'         => array(
@@ -560,7 +560,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_mobile_menu_width',
-	'label'           => esc_attr__( 'Panel Width (%)', 'ubik' ),
+	'label'           => esc_html__( 'Panel Width (%)', 'ubik' ),
 	'section'         => 'ubik_mobile_menu_section',
 	'default'         => '90',
 	'choices'         => array(
@@ -644,7 +644,7 @@ add_action( 'customize_register', 'ubik_mobile_menu_close_heading' );
 Kirki::add_field('ubik_config', array(
 	'type'            => 'text',
 	'settings'        => 'ubik_mobile_menu_close_button_icon',
-  'label'           => esc_attr__( 'Close Button Icon', 'ubik' ),
+  'label'           => esc_html__( 'Close Button Icon', 'ubik' ),
   'description'	    => sprintf( esc_html__( 'Enter the full icon class: %1$sfontawsome%2$s', 'ubik' ), '<a href="https://fontawesome.com" target="_blank">', '</a>' ),
   'section'         => 'ubik_mobile_menu_section',
   'default'         => 'fas fa-times',
@@ -654,7 +654,7 @@ Kirki::add_field('ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_mobile_menu_close_icon_size',
-	'label'           => esc_attr__( 'Close Icon Size (px)', 'ubik' ),
+	'label'           => esc_html__( 'Close Icon Size (px)', 'ubik' ),
 	'section'         => 'ubik_mobile_menu_section',
 	'priority' 				=> 12,
 	'default'         => 15,
@@ -697,7 +697,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'        		=> 'spacing',
 	'settings'    		=> 'ubik_mobile_menu_close_spacing',
-	'label'       		=> esc_attr__( 'Spacing', 'ubik' ),
+	'label'       		=> esc_html__( 'Spacing', 'ubik' ),
 	'section'     		=> 'ubik_mobile_menu_section',
 	'default'     		=> array(
 		'top'    => '10px',
@@ -835,7 +835,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'        		=> 'spacing',
 	'settings'    		=> 'ubik_mobile_menu_nav_spacing',
-	'label'       		=> esc_attr__( 'Menu Spacing', 'ubik' ),
+	'label'       		=> esc_html__( 'Menu Spacing', 'ubik' ),
 	'section'     		=> 'ubik_mobile_menu_section',
 	'default'     		=> array(
 		'top'    => '0px',
@@ -856,7 +856,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_mobile_menu_nav_items_spacing',
-	'label'           => esc_attr__( 'Menu Items Spacing (Top/Bottom)', 'ubik' ),
+	'label'           => esc_html__( 'Menu Items Spacing (Top/Bottom)', 'ubik' ),
 	'section'         => 'ubik_mobile_menu_section',
 	'default'         => 0,
 	'choices'         => array(
@@ -899,7 +899,7 @@ add_action( 'customize_register', 'ubik_mobile_menu_nav_color_heading' );
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'color',
 	'settings'          => 'ubik_mobile_menu_nav_items_color',
-	'description'				=> 'Links',
+	'description'				=> esc_html__( 'Links', 'ubik' ),
 	'section'           => 'ubik_mobile_menu_section',
   'default'           => '#333333',
   'priority' 				  => 15,
@@ -966,7 +966,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'color',
 	'settings'          => 'ubik_mobile_menu_nav_drilldown_submenu_bg_color',
-	'description'				=> 'Drilldown Sub Menu Background',
+	'description'				=> esc_html__( 'Drilldown Sub Menu Background', 'ubik' ),
 	'section'           => 'ubik_mobile_menu_section',
   'default'           => '#fefefe',
   'priority' 				  => 15,
@@ -1013,7 +1013,7 @@ add_action( 'customize_register', 'ubik_mobile_menu_nav_typography_heading' );
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_mobile_menu_nav_typography_font_size',
-	'description'     => esc_attr__( 'Font Size (px)', 'ubik' ),
+	'description'     => esc_html__( 'Font Size (px)', 'ubik' ),
 	'section'         => 'ubik_mobile_menu_section',
 	'default'         => '16',
 	'choices'         => array(
@@ -1042,7 +1042,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'slider',
 	'settings'        => 'ubik_mobile_menu_nav_typography_letter_spacing',
-	'description'     => esc_attr__( 'Letter Spacing (px)', 'ubik' ),
+	'description'     => esc_html__( 'Letter Spacing (px)', 'ubik' ),
 	'section'         => 'ubik_mobile_menu_section',
 	'default'         => '0',
 	'choices'         => array(
@@ -1071,7 +1071,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'            => 'select',
 	'settings'        => 'ubik_mobile_menu_nav_typography_text_transform',
-	'description'     => esc_attr__( 'Text Transform (px)', 'ubik' ),
+	'description'     => esc_html__( 'Text Transform (px)', 'ubik' ),
 	'section'         => 'ubik_mobile_menu_section',
 	'default'         => 'none',
 	'choices'         => array(
@@ -1116,7 +1116,7 @@ add_action( 'customize_register', 'ubik_mobile_menu_search_heading' );
 Kirki::add_field( 'ubik_config', array(
 	'type'        		=> 'spacing',
 	'settings'    		=> 'ubik_mobile_menu_search_spacing',
-	'label'       		=> esc_attr__( 'Spacing', 'ubik' ),
+	'label'       		=> esc_html__( 'Spacing', 'ubik' ),
 	'section'     		=> 'ubik_mobile_menu_section',
 	'default'     		=> array(
 		'top'    => '10px',
@@ -1179,7 +1179,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'color',
 	'settings'          => 'ubik_mobile_menu_search_form_border_color',
-	'description'				=> esc_attr__( 'Form Border', 'ubik' ),
+	'description'				=> esc_html__( 'Form Border', 'ubik' ),
 	'section'           => 'ubik_mobile_menu_section',
   'default'           => '#e9e9e9',
   'priority' 				  => 18,
@@ -1205,7 +1205,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'color',
 	'settings'          => 'ubik_mobile_menu_search_form_border_focus_color',
-	'description'				=> esc_attr__( 'Form Border: Focus', 'ubik' ),
+	'description'				=> esc_html__( 'Form Border: Focus', 'ubik' ),
 	'section'           => 'ubik_mobile_menu_section',
   'default'           => '#e9e9e9',
   'priority' 				  => 18,
@@ -1231,7 +1231,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'color',
 	'settings'          => 'ubik_mobile_menu_search_form_bg_color',
-	'description'				=> 'Form Background',
+	'description'				=> esc_html__( 'Form Background', 'ubik' ),
 	'section'           => 'ubik_mobile_menu_section',
   'default'           => '#fefefe',
   'priority' 				  => 18,
@@ -1257,7 +1257,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'color',
 	'settings'          => 'ubik_mobile_menu_search_form_text_color',
-	'description'				=> esc_attr__( 'Form Text', 'ubik'),
+	'description'				=> esc_html__( 'Form Text', 'ubik'),
 	'section'           => 'ubik_mobile_menu_section',
   'default'           => '#0a0a0a',
   'priority' 				  => 18,
@@ -1283,7 +1283,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'color',
 	'settings'          => 'ubik_mobile_menu_search_form_button_bg_color',
-	'description'				=> esc_attr__( 'Search Button Background', 'ubik'),
+	'description'				=> esc_html__( 'Search Button Background', 'ubik'),
 	'section'           => 'ubik_mobile_menu_section',
   'default'           => 'rgba(255,255,255,0)',
   'priority' 				  => 18,
@@ -1309,7 +1309,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'color',
 	'settings'          => 'ubik_mobile_menu_search_icon_color',
-	'description'				=> 'Search Icon',
+	'description'				=> esc_html__( 'Search Icon', 'ubik' ),
 	'section'           => 'ubik_mobile_menu_section',
   'default'           => '#929292',
   'priority' 				  => 18,
@@ -1335,7 +1335,7 @@ Kirki::add_field( 'ubik_config', array(
 Kirki::add_field( 'ubik_config', array(
 	'type'              => 'color',
 	'settings'          => 'ubik_mobile_menu_search_icon_focus_color',
-	'description'				=> 'Search Icon: Focus',
+	'description'				=> esc_html__( 'Search Icon: Focus', 'ubik' ),
 	'section'           => 'ubik_mobile_menu_section',
   'default'           => '#1779ba',
   'priority' 				  => 18,
