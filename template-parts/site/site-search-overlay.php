@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
   <form method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>" class="search-form-overlay">
 
-    <input class="search-overlay-input" type="search" name="s" autocomplete="off" placeholder="<?php esc_html_e( 'Search', 'ubik' ); ?>">
+    <input class="search-overlay-input" type="search" name="s" autocomplete="off" placeholder="<?php esc_attr_e( 'Search', 'ubik' ); ?>">
 
   </form>
 

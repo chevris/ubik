@@ -2,7 +2,7 @@
 Contributors: tchevris
 Requires at least: WordPress 4.7
 Tested up to: WordPress 4.9
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: custom-background, custom-menu, featured-images, flexible-header, left-sidebar, right-sidebar, blog, custom-colors
@@ -19,9 +19,8 @@ To customize the Ubik theme you have to open the Customizer by accessing the App
 
 == License ==
 
-Ubik WordPress Theme, Copyright 2018.
-Ubik is licensed under the GNU General Public License v3 or later
-More details here: http://www.gnu.org/licenses/gpl-3.0.html
+Ubik WordPress Theme, Copyright 2018  tchevris
+Ubik is distributed under the terms of the GNU GPL
 
 == Credits ==
 
@@ -50,6 +49,9 @@ Ubik bundles the following third-party resources:
 	License - [GPL2] (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
 
 == Changelog ==
+
+= Version 1.0.6 =
+* Fixed: escaping issues
 
 = Version 1.0.5 =
 * Modified: readme.txt
