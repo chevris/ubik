@@ -1,6 +1,11 @@
 === Ubik ===
+Contributors: tchevris
 Requires at least: WordPress 4.7
 Tested up to: WordPress 4.9
+Stable tag: 1.0.5
+License: GPLv3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: custom-background, custom-menu, featured-images, flexible-header, left-sidebar, right-sidebar, blog, custom-colors
 
 == Description ==
 
@@ -27,9 +32,7 @@ Source: https://pixabay.com/fr/cyber-caf%C3%A9-l-architecture-b%C3%A2timent-3537
 Source: https://pixabay.com/fr/vw-camper-volkswagen-vw-voiture-336606/
 Source: https://pixabay.com/fr/l-architecture-piste-en-bois-3552162/
 
-Unless otherwise specified, all the theme files and scripts are licensed under GNU General Public License.
-
-The exceptions to this license are as follows:
+Ubik bundles the following third-party resources:
 
 * Kirki by Aristeides Stathopoulos - https://github.com/aristath/kirki
   License - [MIT] (https://opensource.org/licenses/MIT)
@@ -47,6 +50,10 @@ The exceptions to this license are as follows:
 	License - [GPL2] (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
 
 == Changelog ==
+
+= Version 1.0.5 =
+* Modified: readme.txt
+* Removed: changelog.txt
 
 = Version 1.0.4 =
 * Fixed: Date display bug
