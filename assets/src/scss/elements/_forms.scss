@@ -1,53 +1,10 @@
-html {
-  overflow-x: hidden;
-}
-
-a:hover, a:active, a:focus {
-	outline: 0;
-	color: get-color(primary);
-}
+////
+/// forms.
+////
 
 button:focus {
 	outline: 0;
 }
-
-article > *, pre, code, blockquote {
-  clear: both;
-}
-
-dfn,
-cite,
-em {
-	font-style: italic;
-}
-
-blockquote {
-	font-style: italic;
-	line-height: 1.6;
-	margin: 20px;
-
-	&:before, &:after {
-		content: "";
-	}
-}
-
-pre {
-	margin: 20px 0;
-	padding: 20px;
-	background-color: #fafafa;
-}
-
-dl {
-	margin:  15px;
-}
-
-dd {
-	margin-bottom: 15px;
-}
-
-/*
- * Forms
- */
 
 input[type="text"],
 input[type="email"],
