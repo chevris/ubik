@@ -246,6 +246,15 @@ class UBIK_Init {
 		// Add editor style
 		add_editor_style( 'assets/css/editor-style.min.css' );
 
+		// Add support for default block styles in front end.
+		add_theme_support( 'wp-block-styles' );
+
+		// Add support for wide aligments.
+		add_theme_support( 'align-wide' );
+
+		// Add support for editor styles.
+		add_theme_support( 'editor-styles' );
+
 	}
 
 	/**

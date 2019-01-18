@@ -1,0 +1,15 @@
+////
+/// Table block.
+////
+
+.entry .entry-content {
+
+	.wp-block-table {
+
+		th,
+		td {
+			border-color: $color__text-light;
+		}
+	}
+
+}
