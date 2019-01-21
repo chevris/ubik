@@ -2,50 +2,48 @@
 /// Pullquote block.
 ////
 
-.entry .entry-content {
+// .entry-content,
+// .single-content,
+// .page-content {
 
 	.wp-block-pullquote {
+
 		border-color: transparent;
 		border-width: 2px;
-		padding: $size__spacing-unit;
+		padding: 3rem 3rem 3.5rem;
 
 		blockquote {
-			color: $color__text-main;
+			color: $body-font-color;
 			border: none;
-			margin-top: calc(3 * #{ $size__spacing-unit});
-			margin-bottom: calc(3.33 * #{ $size__spacing-unit});
+			margin-top: 3rem;
+			margin-bottom: 3.33rem;
 			margin-right: 0;
 			padding-left: 0;
 		}
 
 		p {
-			font-size: $font__size-lg;
+			font-size: 22px;
 			font-style: italic;
 			line-height: 1.3;
-			margin-bottom: 0.5em;
-			margin-top: 0.5em;
+			margin-bottom: 1em;
+			margin-top: 0;
 
 			em {
 				font-style: normal;
 			}
 
-			@include media(tablet) {
-				font-size: $font__size-xl;
+			@media screen and (min-width: 768px) {
+				font-size: 28px;
 			}
+
 		}
 
 		cite {
 			display: inline-block;
-			font-family: $font__heading;
 			line-height: 1.6;
 			text-transform: none;
-			color: $color__text-light;
-
-			/*
-			 * This requires a rem-based font size calculation instead of our normal em-based one,
-			 * because the cite tag sometimes gets wrapped in a p tag. This is equivalent to $font-size_xs.
-			 */
-			font-size: calc(1rem / (1.25 * #{$font__size-ratio}));
+			color: inherit;
+			font-size: 16px;
 		}
 
 		&.alignleft,
@@ -54,7 +52,7 @@
 			padding: 0;
 
 			blockquote {
-				margin: $size__spacing-unit 0;
+				margin: 1rem 0;
 				padding: 0;
 				text-align: left;
 				max-width: 100%;
@@ -66,73 +64,54 @@
 		}
 
 		&.is-style-solid-color {
-			background-color: $color__link;
+
 			padding-left: 0;
 			padding-right: 0;
 
-			@include media(tablet) {
+			@media screen and (min-width: 768px) {
 				padding-left: 10%;
 				padding-right: 10%;
 			}
 
-			p {
-				font-size: $font__size-lg;
-				line-height: 1.3;
-				margin-bottom: 0.5em;
-				margin-top: 0.5em;
-
-				@include media(tablet) {
-					font-size: $font__size-xl;
-				}
-			}
-
-			a {
-				color: $color__background-body;
-			}
-
-			cite {
-				color: inherit;
-			}
-
 			blockquote {
 				max-width: 100%;
-				color: $color__white;
 				padding-left: 0;
-				margin-left: $size__spacing-unit;
-				margin-right: $size__spacing-unit;
+				margin-left: 1rem;
+				margin-right: 1rem;
 
-				&.has-text-color p,
-				&.has-text-color a,
-				&.has-primary-color,
-				&.has-secondary-color,
-				&.has-dark-gray-color,
-				&.has-light-gray-color,
-				&.has-white-color {
-					color: inherit;
-				}
-
-				@include media(tablet) {
+				@media screen and (min-width: 768px) {
 					margin-left: 0;
 					margin-right: 0;
 				}
-			}
 
-			&.alignright,
-			&.alignleft {
-
-				@include media(tablet) {
-					padding: $size__spacing-unit calc(2 * #{$size__spacing-unit});
+				p {
+					font-size: 22px;
+					line-height: 1.3;
+					margin-bottom: 0.5em;
+					margin-top: 0.5em;
+	
+					@media screen and (min-width: 768px) {
+						font-size: 28px;
+					}
 				}
+	
+				cite {
+					color: inherit;
+				}
+
 			}
 
 			&.alignfull {
 
-				@include media(tablet) {
-					padding-left: calc(10% + 58px + (2 * #{$size__spacing-unit}));
-					padding-right: calc(10% + 58px + (2 * #{$size__spacing-unit}));
+				@media screen and (min-width: 768px) {
+					blockquote {
+						text-align: center;
+					}
 				}
 			}
+
 		}
+
 	}
 
-}
+// }

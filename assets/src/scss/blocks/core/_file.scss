@@ -2,45 +2,24 @@
 /// File block.
 ////
 
-.entry .entry-content {
+.wp-block-file {
 
-	.wp-block-file {
-		font-family: $font__heading;
+	font-family: $body-font-family;
 
-		.wp-block-file__button {
+	a:not(.wp-block-file__button) {
+		text-decoration: underline;
+	}
 
-			display: table;
-			@include button-transition;
-			border: none;
-			border-radius: 5px;
-			background: $color__background-button;
-			font-size: $font__size-base;
-			font-family: $font__heading;
-			line-height: $font__line-height-heading;
-			text-decoration: none;
-			font-weight: bold;
-			padding: ($size__spacing-unit * .75) $size__spacing-unit;
-			color: #fff;
-			margin-left: 0;
-			margin-top: calc(0.75 * #{$size__spacing-unit});
+	.wp-block-file__button {
 
-			@include media(desktop) {
-				font-size: $font__size-base;
-				padding: ($size__spacing-unit * .875) ($size__spacing-unit * 1.5);
-			}
-
-			&:hover {
-				background: $color__background-button-hover;
-				cursor: pointer;
-			}
-
-			&:focus {
-				background: $color__background-button-hover;
-				outline: thin dotted;
-				outline-offset: -4px;
-			}
-			
-		}
+		display: table;
+		border: none;
+		border-radius: 5px;
+		font-family: $body-font-family;
+		font-weight: bold;
+		margin-left: 0;
+		margin-top: 0.75rem;
+		
 	}
 
 }

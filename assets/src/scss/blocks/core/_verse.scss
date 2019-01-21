@@ -2,12 +2,12 @@
 /// Verse block.
 ////
 
-.entry .entry-content {
+// .entry .entry-content {
 
 	.wp-block-verse {
-		font-family: $font__body;
-		font-size: $font__size_base;
+		font-family: $body-font-family;
+		font-size: 1em;
 		line-height: 1.8;
 	}
 
-}
+// }

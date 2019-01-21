@@ -2,14 +2,21 @@
 /// Table block.
 ////
 
-.entry .entry-content {
+.wp-block-table {
 
-	.wp-block-table {
+	th,
+	td {
+		border-color: #bbb;
+	}
 
-		th,
-		td {
-			border-color: $color__text-light;
+	&.alignwide {
+		@media screen and (min-width: 860px) {
+			width: calc( 100% + 56px);
 		}
+	}
+
+	&.alignfull {
+		width: 100vw;
 	}
 
 }

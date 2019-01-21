@@ -2,20 +2,11 @@
 /// Gallery block.
 ////
 
-.entry .entry-content {
+.wp-block-gallery {
 
-	.wp-block-gallery {
-		list-style-type: none;
-		padding-left: 0;
-
-		.blocks-gallery-image:last-child,
-		.blocks-gallery-item:last-child {
-			margin-bottom: 16px;
-		}
-
-		figcaption a {
-			color: #fff;
-		}
+	.blocks-gallery-image:last-child,
+	.blocks-gallery-item:last-child {
+		margin-bottom: 16px;
 	}
-
+	
 }
