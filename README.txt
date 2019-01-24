@@ -2,7 +2,7 @@
 Contributors: tchevris
 Requires at least: WordPress 4.7
 Tested up to: WordPress 5.0
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: custom-background, custom-menu, featured-images, flexible-header, left-sidebar, right-sidebar, blog, custom-colors
@@ -49,6 +49,10 @@ Ubik bundles the following third-party resources:
 	License - [GPL2] (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
 
 == Changelog ==
+
+= Version 1.0.7 =
+* Modified: block editor compatibility
+* Modified: Color section
 
 = Version 1.0.6 =
 * Fixed: escaping issues
