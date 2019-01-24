@@ -34,6 +34,7 @@ if ( has_nav_menu( 'top_bar_nav' ) ) :
 		'link_before'    => '<span class="text-wrap">',
 		'link_after'     => '</span>',
 		'walker'         => new Ubik_Custom_Nav_Walker(),
+		'depth'          => 1,
 	); ?>
 	
 	<nav class="frontpage-top-bar-nav <?php echo esc_attr( ubik_frontpage_top_bar_nav_classes() ); ?>" <?php ubik_schema_markup( 'site_navigation' ); ?>>

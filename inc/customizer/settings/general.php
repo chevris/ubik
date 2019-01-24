@@ -18,8 +18,10 @@
  * 
  * 		ubik_colorscheme
  * 
- * 		[if : ubik_colorscheme == custom]
+ * 		[if : ubik_colorscheme == light]
  * 		ubik_site_primary_color
+ * 
+ * 		[if : ubik_colorscheme == custom]
  * 		ubik_site_bg_color
  * 		ubik_content_wrap_color
  * 		ubik_site_text_color
@@ -460,21 +462,75 @@ Kirki::add_field( 'ubik_config', array(
 		'alpha' 		=> false,
 	),
 	'output' 						=> array(
+
+		// Links
 		array(
-			'element'  => '.colors-custom a:hover, .colors-custom a:focus, .colors-custom .menu .is-active > a, .colors-custom button:hover, .colors-custom button:focus',
+			'element'  => 'a',
 			'property' => 'color',
 		),
+		/* not useful because active color is not set in settings
 		array(
-			'element'  => '.colors-custom .entry-readmore a:hover, .colors-custom .entry-readmore a:focus',
-			'property' => 'border-color',
+			'element'  => 'a,
+										 .menu .is-active > a,
+									   .dropdown.menu li.is-active > a',
+			'property' => 'color',
 		),
+		*/
+
+		// Links hover
+		array(
+			'element'  => 'a:hover,
+										 a:focus,
+										 a:active',
+			'property' => 'color',
+			'sanitize_callback' => 'sanitize_color_darker',
+		),
+
+		/* not useful because arrows colors are set to currentcolor in settings
+		// Dropdown arrows
+		array(
+			'element'       => '.dropdown.menu > li.is-dropdown-submenu-parent > a::after',
+			'property'      => 'border-color',
+			'value_pattern' => '$ transparent transparent',
+		),
+		array(
+			'element'       => '.is-dropdown-submenu .is-dropdown-submenu-parent.opens-right > a::after',
+			'property'      => 'border-color',
+			'value_pattern' => 'transparent transparent transparent $',
+		),
+		array(
+			'element'       => '.is-dropdown-submenu .is-dropdown-submenu-parent.opens-left > a::after',
+			'property'      => 'border-color',
+			'value_pattern' => 'transparent $ transparent transparent',
+		),
+
+		// Drilldown arrows
+		array(
+			'element'       => '.drilldown .is-drilldown-submenu-parent > a::after',
+			'property'      => 'border-color',
+			'value_pattern' => 'transparent transparent transparent $',
+		),
+		array(
+			'element'       => '.drilldown .js-drilldown-back > a::before',
+			'property'      => 'border-color',
+			'value_pattern' => 'transparent $ transparent transparent',
+		),
+
+		// Accordion arrows
+		array(
+			'element'       => '.accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle) > a::after',
+			'property'      => 'border-color',
+			'value_pattern' => '$ transparent transparent',
+		),
+		*/
+
 	),
 	'transport' => 'auto',
 	'active_callback' => array(
     array(
       'setting'       => 'ubik_colorscheme',
       'operator'      => '==',
-      'value'         => 'custom',
+      'value'         => 'light',
     ),
   ),
 ) );
@@ -595,7 +651,35 @@ Kirki::add_field( 'ubik_config', array(
 	),
 	'output' 						=> array(
 		array(
-			'element'  => '.colors-custom a',
+			//'element'  => '.colors-custom a',
+			'element'  => 'a',
+			'property' => 'color',
+		),
+	),
+	'transport' => 'auto',
+	'active_callback' => array(
+    array(
+      'setting'       => 'ubik_colorscheme',
+      'operator'      => '==',
+      'value'         => 'custom',
+    ),
+  ),
+) );
+
+Kirki::add_field( 'ubik_config', array(
+	'type'              => 'color',
+	'settings'          => 'ubik_site_links_color_hover',
+	'label'							=> 'Site Links Color Hover',
+	'section'           => 'colors',
+  'default'           => '#333',
+  'priority' 				  => 10,
+  'choices'     			=> array(
+		'alpha' 		=> false,
+	),
+	'output' 						=> array(
+		array(
+			// 'element'  => '.colors-custom a:hover, .colors-custom a:focus',
+			'element'  => 'a:hover, a:focus',
 			'property' => 'color',
 		),
 	),
@@ -625,7 +709,7 @@ Kirki::add_field( 'ubik_config', array(
 			'property' => 'border-color',
 		),
 		array(
-			'element'  => '.colors-custom .menu-bar, .colors-custom .frontpage-menu-bar',
+			'element'  => '.colors-custom .menu-bar-inner, .colors-custom .frontpage-menu-bar-inner',
 			'property' => 'border-color',
 		),
 		array(
@@ -7519,4 +7603,12 @@ function ubik_single_elements_has_post_nav() {
 	} else {
 		return false;
 	}
+}
+
+// Utilities
+
+function sanitize_color_darker( $value ) {
+
+	return Kirki_Color::adjust_brightness( $value, -34 );
+
 }

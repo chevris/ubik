@@ -919,7 +919,7 @@ Kirki::add_field( 'ubik_config', array(
 	),
 	'output' => array(
 		array(
-			'element'  			=> '.top-bar-nav .dropdown.menu a',
+			'element'  			=> '.top-bar-nav .dropdown.menu a, .top-bar-nav .dropdown.menu li.is-active > a',
 			'property' 			=> 'color',
 		),
 		array(

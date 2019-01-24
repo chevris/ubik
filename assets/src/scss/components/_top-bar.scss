@@ -40,16 +40,19 @@
     padding-bottom: 0.5rem;
     color: $white;
   }
-  .dropdown.menu a:hover, .dropdown.menu a:focus {
-    color: get-color(primary);
-  }
+  // .dropdown.menu a:hover, .dropdown.menu a:focus {
+  //   color: get-color(primary);
+	// }
+	.dropdown.menu li.is-active > a {
+		color: $white;
+	}
   & > .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
     border-color: $white transparent transparent transparent;
   }
   .is-dropdown-submenu.menu a {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    color: $anchor-color !important;
+    color: $body-font-color; // $anchor-color !important;
   }
 }
 

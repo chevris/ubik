@@ -5,8 +5,9 @@
 .wp-block-quote {
 
 	&:not(.is-large),
-	&:not(.is-style-large) {
-		border-left: 2px solid $anchor-color;
+	&:not(.is-style-large),
+	&:not(.is-large):not(.is-style-large) {
+		border-left: 2px solid #bbb;
 		padding-top: 0;
 		padding-bottom: 0;
 	}

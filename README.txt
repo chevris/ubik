@@ -1,7 +1,7 @@
 === Ubik ===
 Contributors: tchevris
 Requires at least: WordPress 4.7
-Tested up to: WordPress 4.9
+Tested up to: WordPress 5.0
 Stable tag: 1.0.6
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html

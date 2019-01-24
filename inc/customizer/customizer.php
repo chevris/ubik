@@ -23,13 +23,14 @@ if ( ! class_exists( 'Ubik_Customizer' ) ) :
 		 */
 		public function __construct() {
 
-			add_filter( 'kirki/config', 							array( $this, 'kirki_config' ) );
-			add_action( 'customize_register',					array( $this, 'sanitization_callbacks' ) );
-			add_action( 'after_setup_theme',					array( $this, 'register_options' ) );
-			add_action( 'customize_register',					array( $this, 'custom_controls' ) );
-			add_action( 'customize_register',					array( $this, 'core_modules' ), 11 );
-			add_action( 'customize_preview_init', 				array( $this, 'customize_preview_init' ) );
-			add_action( 'customize_controls_enqueue_scripts', 	array( $this, 'custom_customize_enqueue' ), 7 );
+			add_filter( 'kirki/config', 											array( $this, 'kirki_config' ) );
+			add_action( 'customize_register',									array( $this, 'sanitization_callbacks' ) );
+			add_action( 'after_setup_theme',									array( $this, 'register_options' ) );
+			add_action( 'customize_register',									array( $this, 'custom_controls' ) );
+			add_action( 'customize_register',									array( $this, 'core_modules' ), 11 );
+			add_action( 'customize_preview_init', 						array( $this, 'customize_preview_init' ) );
+			add_action( 'customize_controls_enqueue_scripts', array( $this, 'custom_customize_enqueue' ), 7 );
+			add_action( 'enqueue_block_editor_assets',				array( $this, 'editor_dynamic_styles' ) );
 
 		}
 
@@ -172,6 +173,22 @@ if ( ! class_exists( 'Ubik_Customizer' ) ) :
 		public function custom_customize_enqueue() {
 			wp_enqueue_style( 'ubik-general', UBIK_INC_DIR_URI . 'customizer/controls/general.css' );
 			wp_enqueue_script( 'ubik-general', UBIK_INC_DIR_URI . 'customizer/controls/general.js', array( 'jquery', 'customize-base' ), false, true );
+		}
+
+		/**
+		 * Add dynamic styles to the editor
+		 *
+		 * @since 1.0.7
+		 */
+		public function editor_dynamic_styles() {
+
+			// Used to inline add dynamic block styles in the block editor.
+			wp_enqueue_style( 'ubik-editor-styles-additions', UBIK_CSS_DIR_URI . '/editor-styles-additions.css' , false, UBIK_THEME_VERSION, 'all' );
+
+			// Include styles.
+			require_once UBIK_INC_DIR . 'customizer/editor-dynamic-styles.php';
+			wp_add_inline_style( 'ubik-editor-styles-additions', ubik_custom_editor_css() );
+
 		}
 
 	}

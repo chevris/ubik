@@ -347,7 +347,7 @@ ul.wp-block-archives,
 	background-color: #fafafa;
 }
 
-/** === Pullquote === */
+/* Pullquote */
 
 .wp-block-pullquote {
 
@@ -487,7 +487,8 @@ ul.wp-block-archives,
 .wp-block-quote {
 
 	&:not(.is-large):not(.is-style-large) {
-		border-left: 2px solid $anchor-color;
+		border-left: 2px solid #bbb;
+		margin-left: 0;
 	}
 
 	&.is-large,
